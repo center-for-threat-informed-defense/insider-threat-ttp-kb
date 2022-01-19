@@ -6,11 +6,11 @@ data collected on insider threat incidents and lessons learned and experience fr
 ## File List
 | File | Description |
 |------|-------------|
-| design-principles-and-methodology.docx | A document describing the design principles and methodology of the Insider Threat TTP Knowledgebase |
-| insider-threat-ttp-kb.xlsx | A spreadsheet containing the Insider Threat TTP Knowledgebase |
-| insider-threat-ttp-kb.json | A navigator layer representing the Insider Threat TTP Knowledgebase |
-| insider-threat-heatmap.xlsx | A spreadsheet containing the Insider Threat TTP Knowledgebase as a heatmap |
-| insider-threat-heatmap.json | A navigator layer representing the Insider Threat TTP Knowledgebase as a heatmap|
+| [insider-threat-ttp-design-principles-and-methodology.docx](insider-threat-ttp-design-principles-and-methodology.docx) | A document describing the design principles and methodology of the Insider Threat TTP Knowledgebase |
+| [insider-threat-ttp-kb.xlsx](insider-threat-ttp-kb.xlsx) | A spreadsheet containing the Insider Threat TTP Knowledgebase |
+| [insider-threat-ttp-kb.json](insider-threat-ttp-kb.json) | A navigator layer representing the Insider Threat TTP Knowledgebase |
+| [insider-threat-heatmap.xlsx](insider-threat-heatmap.xlsx) | A spreadsheet containing the Insider Threat TTP Knowledgebase as a heatmap |
+| [insider-threat-heatmap.json](insider-threat-heatmap.json) | A navigator layer representing the Insider Threat TTP Knowledgebase as a heatmap|
 
 ## Questions and Feedback
 Please submit issues for any technical questions/concerns or contact ctid@mitre-engenuity.org directly for more general inquiries.
