@@ -3,11 +3,6 @@ The principal objective of this project is to develop a knowledge base of the ta
 (TTPs)used by insiders in the IT environment. It will establish an Insider Threat TTP Knowledge Base, built upon
 data collected on insider threat incidents and lessons learned and experience from the ATT&CK knowledge base. 
 
-- [Insider Threat TTP Knowledgebase](#insider-threat-ttp-knowledgebase)
-  - [File List](#file-list)
-  - [Questions and Feedback](#questions-and-feedback)
-  - [Notice](#notice)
-
 ## File List
 | File | Description |
 |------|-------------|
