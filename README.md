@@ -1,23 +1,26 @@
 # Insider Threat TTP Knowledgebase
-Short description of project_name
+The principal objective of this project is to develop a knowledge base of the tactics, techniques, and procedures 
+(TTPs)used by insiders in the IT environment. It will establish an Insider Threat TTP Knowledge Base, built upon
+data collected on insider threat incidents and lessons learned and experience from the ATT&CK knowledge base. 
 
 - [Insider Threat TTP Knowledgebase](#insider-threat-ttp-knowledgebase)
+  - [File List](#file-list)
   - [Questions and Feedback](#questions-and-feedback)
-  - [Guidance](#guidance)
-    - [Getting Started](#getting-started)
-    - [Proposing Changes](#proposing-changes)
-    - [Updating Dependencies](#updating-dependencies)
   - [Notice](#notice)
+
+## File List
+| File | Description |
+|------|-------------|
+| design-principles-and-methodology.docx | A document describing the design principles and methodology of the Insider Threat TTP Knowledgebase |
+| insider-threat-ttp-kb.xlsx | A spreadsheet containing the Insider Threat TTP Knowledgebase |
+| insider-threat-ttp-kb.json | A navigator layer representing the Insider Threat TTP Knowledgebase |
+| insider-threat-heatmap.xlsx | A spreadsheet containing the Insider Threat TTP Knowledgebase as a heatmap |
+| insider-threat-heatmap.json | A navigator layer representing the Insider Threat TTP Knowledgebase as a heatmap|
 
 ## Questions and Feedback
 Please submit issues for any technical questions/concerns or contact ctid@mitre-engenuity.org directly for more general inquiries.
 
 Also see the guidance for contributors if are you interested in contributing or simply reporting issues.
-
-## Guidance
-
-### Getting Started
-TODO: Fill this out
 
 
 ### Proposing Changes
