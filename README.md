@@ -1,10 +1,7 @@
-[![codecov](https://codecov.io/gh/center-for-threat-informed-defense/project-template/branch/main/graph/badge.svg?token=ygDiymg8y3)](https://codecov.io/gh/center-for-threat-informed-defense/project-template)
-TODO: Replace with project-specific CodeCov badge
-
-# project_name
+# Insider Threat TTP Knowledgebase
 Short description of project_name
 
-- [project_name](#project_name)
+- [Insider Threat TTP Knowledgebase](#insider-threat-ttp-knowledgebase)
   - [Questions and Feedback](#questions-and-feedback)
   - [Guidance](#guidance)
     - [Getting Started](#getting-started)
@@ -20,34 +17,7 @@ Also see the guidance for contributors if are you interested in contributing or 
 ## Guidance
 
 ### Getting Started
-
-The project currently uses Python 3.8, which must be installed prior to project setup.
-
-The following commands may be useful in getting the project setup locally. All commands should be run from the project root directory.
-
-* Build Python virtualenv
-  * `make venv`
-* Install all development dependencies
-  * `make install-dev`
-* Activate newly created virtualenv
-  * `source .venv/bin/activate`
-* Update dependency resolution (after updating appropriate `*.in` file, see _Updating Dependencies_ section below)
-  * Runtime dependency update
-    * `make requirements.txt`
-  * Development dependency update
-    * `make requirements/dev.txt`
-* Setup pre-commit (required one-time process per local `git clone` repository)
-  * `pre-commit install`
-* Manually run pre-commit hooks without performing a commit
-  * `make pre-commit-run`
-* Build container image
-  * `make build-container`
-* Run linting locally
-  * `make lint`
-* Run unit tests
-  * `make test`
-
-
+TODO: Fill this out
 
 
 ### Proposing Changes
@@ -55,15 +25,9 @@ The following commands may be useful in getting the project setup locally. All c
 * Please open a [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) (PR) against the `main` branch for any desired changes. The PR will be reviewed by the project team.
 * Note that all PR checks must pass to be eligible for merge approval.
 
-### Updating Dependencies
-
-1. Add new dependency in either `requirements/requirements.in`, _or_ `requirements/dev.in`, depending on if the new dependency is a runtime or development time dependency, respectively.
-2. Run `make requirements.txt` or `make requirements/dev.txt`, depending on the file updated in the previous step.
-3. Add all modified files to the changeset (e.g. `requirements.txt`, `requirements/dev.txt`, `requirements/requirements.in`, `requirements/dev.in`).
-4. Push the changes.
 
 ## Notice
-Copyright 2021 MITRE Engenuity. Approved for public release. Document number XXXXX
+Copyright 2022 MITRE Engenuity. Approved for public release.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
