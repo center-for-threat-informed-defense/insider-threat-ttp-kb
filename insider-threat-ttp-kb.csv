@@ -1,0 +1,55 @@
+﻿Technique ID,Technique Title,Tactic ID,Tactic Title,Insider Usage Frequency
+T1595,Active Scanning,TA0043,Reconnaissance,Infrequent
+T1595.001,Scanning IP Blocks,TA0043,Reconnaissance,Infrequent
+T1585,Establish Accounts,TA0042,Resource Development,Moderate
+T1078,Valid Accounts,TA0001,Initial Access,Infrequent
+T1078.002,Domain Accounts,TA0001,Initial Access,Infrequent
+T1106,Native API,TA0002,Execution,Infrequent
+T1136,Create Account,TA0003,Persistence,Infrequent
+T1136.001,Local Account,TA0003,Persistence,Infrequent
+T1546,Event Triggered Execution,TA0003,Persistence,Infrequent
+T1546.003,WMI Event Subscription,TA0003,Persistence,Infrequent
+T1133,External Remote Services,TA0003,Persistence,Infrequent
+T1078,Valid Accounts,TA0003,Persistence,Frequent
+T1078.004,Cloud Accounts,TA0003,Persistence,Frequent
+T1078.002,Domain Accounts,TA0003,Persistence,Frequent
+T1548,Abuse Elevation Control Mechanism,TA0004,Privilege Escalation,Infrequent
+T1562,Impair Defenses,TA0005,Defense Evasion,Infrequent
+T1562.001,Disable or Modify Tools,TA0005,Defense Evasion,Infrequent
+T1070,Indicator Removal on Host,TA0005,Defense Evasion,Moderate
+T1070.001,Clear Windows Event Logs,TA0005,Defense Evasion,Infrequent
+T1070.004,File Deletion,TA0005,Defense Evasion,Infrequent
+T1036,Masquerading,TA0005,Defense Evasion,Infrequent
+T1027,Obfuscated Files or Information,TA0005,Defense Evasion,Infrequent
+T1078,Valid Accounts,TA0005,Defense Evasion,Moderate
+T1078.002,Domain Accounts,TA0005,Defense Evasion,Infrequent
+T1555,Credentials from Password Stores,TA0006,Credential Access,Infrequent
+T1555.005,Password Managers,TA0006,Credential Access,Infrequent
+T1046,Network Service Scanning,TA0007,Discovery,Infrequent
+T1135,Network Share Discovery,TA0007,Discovery,Infrequent
+T1210,Exploitation of Remote Services,TA0008,Lateral Movement,Infrequent
+T1021,Remote Services,TA0008,Lateral Movement,Infrequent
+T1021.001,Remote Desktop Protocol,TA0008,Lateral Movement,Infrequent
+T1021.004,SSH,TA0008,Lateral Movement,Infrequent
+T1560,Archive Collected Data,TA0009,Collection,Moderate
+T1560.001,Archive via Utility,TA0009,Collection,Moderate
+T1119,Automated Collection,TA0009,Collection,Frequent
+T1213,Data from Information Repositories,TA0009,Collection,Frequent
+T1213.003,Code Repositories,TA0009,Collection,Infrequent
+T1213.002,Sharepoint,TA0009,Collection,Frequent
+T1005,Data from Local System,TA0009,Collection,Infrequent
+T1074,Data Staged,TA0009,Collection,Moderate
+T1074.001,Local Data Staging,TA0009,Collection,Moderate
+T1114,Email Collection,TA0009,Collection,Frequent
+T1114.001,Local Email Collection,TA0009,Collection,Infrequent
+T1219,Remote Access Software,TA0011,Command and Control,Moderate
+T1048,Exfiltration Over Alternative Protocol,TA0010,Exfiltration,Infrequent
+T1048.001,Exfiltration Over Symmetric Encrypted Non-C2 Protocol,TA0010,Exfiltration,Infrequent
+T1011,Exfiltration Over Other Network Medium,TA0010,Exfiltration,Infrequent
+T1011.001,Exfiltration Over Bluetooth,TA0010,Exfiltration,Infrequent
+T1052,Exfiltration Over Physical Medium,TA0010,Exfiltration,Frequent
+T1052.001,Exfiltration over USB,TA0010,Exfiltration,Frequent
+T1567,Exfiltration Over Web Service,TA0010,Exfiltration,Frequent
+T1567.002,Exfiltration to Cloud Storage,TA0010,Exfiltration,Moderate
+T1485,Data Destruction,TA0040,Impact,Infrequent
+T1529,System Shutdown/Reboot,TA0040,Impact,Infrequent
