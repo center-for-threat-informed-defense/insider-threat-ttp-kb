@@ -11,9 +11,23 @@ data collected on insider threat incidents and lessons learned and experience fr
 | [insider-threat-heatmap.json](insider-threat-heatmap.json) | A navigator layer representing the Insider Threat TTP Knowledgebase as a heatmap|
 
 ## Call for Contributors
-This initial Knowledge Base is an evidence-based examination of detected, documented insider threat actions on IT systems from across various organizations and industries. We need your help to validate or refute this initial analysis. We seek to learn from the community about your insider threat use cases and data sources, enabling us to mature this KB and raise the level of difficulty for any insider. 
+This initial Knowledge Base is an evidence-based examination of detected, documented insider threat actions on IT systems from across various organizations and industries. We need your help to validate or refute this initial analysis. We seek to learn about your insider threat use cases and data sources, enabling us to mature this KB and raise the level of difficulty for any insider. Help us expand the knowledge base by contributing your data.
 
-Please see guidance for contributors if you are interested in contributing.
+Contributions must fit the guidelines listed below:
+- Only include actions that involve the use of IT systems and can be detected through structured data logs
+- Only include TTPs that are validated by documentation (e.g., exist within an organization's case files or tracking system). Details, at a minimum, must include
+-- A corresponding technique and tactic (either an existing ATT&CK technique or a proposed technique)
+-- A date or date/time offset
+-- A data source
+-- Contextual information describing the event
+- Details that would identify an organization or individuals should be anonymized
+
+Example
+| Technique ID | Sub-Technique ID | Technique Name | Proposed Tactic Group | Timestamp | Data Source | Log type within source | Notes                 |
+|--------------|------------------|----------------|-----------------------|-----------|-------------|------------------------|-----------------------|
+| T1078 | T1078.002 | Valid Accounts: Domain Accounts | Persistence | Sept 3, 2021 | Identify System Data | AAD Logs | User's account was terminated and user left the company |
+
+Contact [us](ctid@mitre-engenuity.org) to learn more about contributing to the knowledge base.  
 
 ## Questions and Feedback
 Publishing the Knowledge Base is a first step toward establishing a community-wide collaboration to advance our collective understanding of insider threat. We are actively seeking feedback on this initial release and will continue to evolve it with your support. Please submit issues for any technical questions/concerns or contact ctid@mitre-engenuity.org directly for more general inquiries.
