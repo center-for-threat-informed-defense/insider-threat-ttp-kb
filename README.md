@@ -1,7 +1,6 @@
-# Insider Threat TTP Knowledgebase
-The principal objective of this project is to develop a knowledge base of the tactics, techniques, and procedures 
-(TTPs)used by insiders in the IT environment. It will establish an Insider Threat TTP Knowledge Base, built upon
-data collected on insider threat incidents and lessons learned and experience from the ATT&CK knowledge base. 
+# Insider Threat Tactics, Techniques, and Procedures (TTP) Knowledge Base
+To advance our collective understanding of insider threats, the Center for Threat-Informed Defense developed the Insider Threat TTP Knowledge Base, a collection of TTPs used by insiders in IT environments. This Knowledge Base builds upon
+data collected on insider threat incidents and lessons learned and experience from the ATT&CK knowledge base. With this lexicon of known insider threat TTPs as a foundation, defenders will detect, mitigate, and emulate insider actions on IT systems and stop them.
 
 ## File List
 | File | Description |
@@ -11,10 +10,13 @@ data collected on insider threat incidents and lessons learned and experience fr
 | [insider-threat-ttp-kb.json](insider-threat-ttp-kb.json) | A navigator layer representing the Insider Threat TTP Knowledgebase |
 | [insider-threat-heatmap.json](insider-threat-heatmap.json) | A navigator layer representing the Insider Threat TTP Knowledgebase as a heatmap|
 
-## Questions and Feedback
-Please submit issues for any technical questions/concerns or contact ctid@mitre-engenuity.org directly for more general inquiries.
+## Call for Contributors
+This initial Knowledge Base is an evidence-based examination of detected, documented insider threat actions on IT systems from across various organizations and industries. We need your help to validate or refute this initial analysis. We seek to learn from the community about your insider threat use cases and data sources, enabling us to mature this KB and raise the level of difficulty for any insider. 
 
-Also see the guidance for contributors if are you interested in contributing or simply reporting issues.
+Please see guidance for contributors if you are interested in contributing.
+
+## Questions and Feedback
+Publishing the Knowledge Base is a first step toward establishing a community-wide collaboration to advance our collective understanding of insider threat. We are actively seeking feedback on this initial release and will continue to evolve it with your support. Please submit issues for any technical questions/concerns or contact ctid@mitre-engenuity.org directly for more general inquiries.
 
 
 ### Proposing Changes
