@@ -29,13 +29,6 @@ Contact us at ctid@mitre-engenuity.org to learn more about contributing to the k
 ## Questions and Feedback
 Publishing the Knowledge Base is a first step toward establishing a community-wide collaboration to advance our collective understanding of insider threat. We are actively seeking feedback on this initial release and will continue to evolve it with your support. Please submit issues for any technical questions/concerns or contact ctid@mitre-engenuity.org directly for more general inquiries.
 
-
-### Proposing Changes
-
-* Please open a [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) (PR) against the `main` branch for any desired changes. The PR will be reviewed by the project team.
-* Note that all PR checks must pass to be eligible for merge approval.
-
-
 ## Notice
 Copyright 2022 MITRE Engenuity. Approved for public release. Document number CT0041.
 
