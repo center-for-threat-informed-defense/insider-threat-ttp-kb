@@ -5,7 +5,7 @@ data collected on insider threat incidents and lessons learned and experience fr
 
 | Resource | Description |
 |----------|-------------|
-| [design-principles-and-methodology.docx](https://github.com/center-for-threat-informed-defense/insider-threat-ttp-kb/blob/main/design-principles-and-methodology.docx?raw=true) | A document describing the design principles and methodology of the Insider Threat TTP Knowledgebase |
+| [design-principles-and-methodology.pdf](design-principles-and-methodology.pdf?raw=true) | A document describing the design principles and methodology of the Insider Threat TTP Knowledgebase |
 | [insider-threat-ttp-kb.csv](insider-threat-ttp-kb.csv) | A spreadsheet containing the Insider Threat TTP Knowledgebase |
 | [insider-threat-ttp-kb.json](insider-threat-ttp-kb.json) | An ATT&CK navigator layer representing the Insider Threat TTP Knowledgebase |
 | [insider-threat-heatmap.json](insider-threat-heatmap.json) | An ATT&CK navigator layer representing the Insider Threat TTP Knowledgebase as a heatmap|
