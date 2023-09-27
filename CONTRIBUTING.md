@@ -2,7 +2,7 @@
 
 ## How to contribute
 
-Thanks for contributing to Insider Threat TTP Knowledgebase!
+Thanks for contributing to Insider Threat TTP Knowledge Base!
 
 You are welcome to comment on issues, open new issues, and open pull requests.
 

@@ -1,0 +1,277 @@
+/* Document styles */
+
+body {
+    --text-color: #0B2338;
+    --text-color-inverse: #FFFFFF;
+    --text-background: #FFFFFF;
+    --side-nav-background: #404040;
+
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* MITRE Engenuity Core Colors */
+    --me-core-yellow: #FFF601;
+    --me-core-green: #7DEA49;
+    --me-core-purple-light: #726DE2;
+    --me-core-purple: #6241C5;
+    --me-core-purple-dark: #2B1972;
+    --me-core-blue-dark: #212C5E;
+    --me-core-blue-darker: #0F1538;
+    --me-core-gray-light: #F0F1F2;
+    --me-core-gray: #B2B2B2;
+    --me-hyperlink: #005B94;
+
+    /* MITRE Engenuity Extended Colors */
+    --me-ext-navy: #212C5E;
+    --me-ext-navy-dark: #0F1538;
+    --me-ext-blue: #0096D1;
+    --me-ext-blue-dark: #005B94;
+    --me-ext-gray-green: #4DA185;
+    --me-ext-gray-green-dark: #024F48;
+    --me-ext-teal-highlighter: #29E6D0;
+    --me-ext-teal-dark: #15B7AD;
+    --me-ext-green-highlighter: #7DEA49;
+    --me-ext-green-dark: #3CAB41;
+    --me-ext-yellow-highlighter: #FFF601;
+    --me-ext-yellow-dark: #FEDB22;
+    --me-ext-orange-highlighter: #FF8A36;
+    --me-ext-orange-dark: #F56600;
+    --me-ext-cranberry-highlighter: #FF006B;
+    --me-ext-cranberry-dark: #BD0044;
+}
+
+@media screen and (min-width: 1100px) {
+    .wy-nav-content-wrap {
+        background-color: var(--me-core-gray-light);
+    }
+
+    .wy-nav-content {
+        background-color: var(--text-background);
+    }
+}
+
+em.newsgroup {
+    background-color: var(--me-core-yellow);
+    padding: 5px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* Anchor styles */
+
+.rst-content a,
+.rst-content a:active,
+.rst-content a:visited {
+    color: var(--me-hyperlink);
+    text-decoration: underline;
+}
+
+/* Don't underline font awesome icons in links. */
+.rst-content a .fa,
+.rst-content a:active .fa,
+.rst-content a:visited .fa {
+    text-decoration: none;
+    padding-right: 0.25em;
+}
+
+/* Don't underline the permalink icon next to headers. */
+.rst-content a.headerlink,
+.rst-content a.headerlink:active,
+.rst-content a.headerlink:visited {
+    text-decoration: none;
+}
+
+.rst-content a:hover {
+    color: var(--me-text-color);
+}
+
+.rst-content.style-external-links a.reference.external {
+    padding-right: 1em;
+}
+
+.rst-content.style-external-links a.reference.external:after {
+    font-size: 80%;
+    position: absolute;
+}
+
+/* Bootstrap button styles */
+
+.btn,
+.btn:focus,
+.btn-primary,
+.btn-primary:focus {
+    background-color: var(--me-core-purple);
+}
+
+.btn:hover,
+.btn-primary:hover {
+    background-color: var(--me-core-purple-light);
+}
+
+.btn-secondary,
+.btn-secondary:focus {
+    background-color: var(--text-color);
+}
+
+.btn-secondary:hover {
+    background-color: #737373;
+}
+
+.btn-link,
+.btn-link:focus {
+    color: var(--me-core-purple);
+}
+
+.btn-link:hover {
+    color: var(--me-core-purple-dark) !important;
+}
+
+.rst-content a.btn,
+.rst-content a.btn:active,
+.rst-content a.btn:visited {
+    color: var(--text-color-inverse);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* Table styles */
+.rst-content div.wy-table-responsive table.docutils {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.rst-content div.wy-table-responsive table.docutils thead th,
+.rst-content div.wy-table-responsive table.docutils tbody td {
+    white-space: normal;
+}
+
+.rst-content div.wy-table-responsive table.docutils thead th p,
+.rst-content div.wy-table-responsive table.docutils tbody td p {
+    margin: 0.5em 0;
+}
+
+.rst-content div.wy-table-responsive table.docutils thead th code.docutils,
+.rst-content div.wy-table-responsive table.docutils tbody td code.docutils {
+    white-space: pre-wrap;
+}
+
+/* Table of contents styles */
+.rst-content .toctree-wrapper a {
+    font-weight: normal;
+}
+
+.rst-content .toctree-wrapper ul li ul {
+    margin-top: 0;
+}
+
+/* Side bar styles */
+
+.wy-side-nav-search div.version {
+    color: var(--text-color-inverse);
+}
+
+.wy-nav-top {
+    background-color: var(--me-core-purple-dark);
+}
+
+.wy-nav-side {
+    background-color: var(--side-nav-background);
+}
+
+.wy-side-nav-search a {
+    font-size: 1.6em;
+}
+
+.wy-side-nav-search a.icon img.logo {
+    max-width: 10rem;
+}
+
+.wy-side-nav-search {
+    background-color: var(--me-core-purple);
+}
+
+.wy-menu-vertical p.caption {
+    color: var(--text-color-inverse);
+}
+
+.wy-menu-vertical li.current {
+    background-color: var(--me-core-gray-light);
+}
+
+/* Admonition styles */
+
+.admonition {
+    background-color: var(--me-core-gray-light) !important;
+    color: var(--text-color);
+}
+
+.admonition .admonition-title {
+    padding: 0.8em 1em !important;
+}
+
+.admonition a,
+.admonition a.reference.external:after {
+    color: var(--text-color) !important;
+}
+
+.admonition.attention .admonition-title {
+    background-color: var(--me-ext-yellow-dark);
+    color: var(--text-color);
+}
+
+.admonition.caution .admonition-title,
+.admonition.warning .admonition-title {
+    background-color: var(--me-ext-orange-highlighter);
+    color: var(--text-color);
+}
+
+.admonition.danger .admonition-title,
+.admonition.error .admonition-title {
+    background-color: var(--me-ext-cranberry-highlighter);
+    color: var(--text-color-inverse);
+}
+
+.admonition.important .admonition-title {
+    background-color: var(--me-ext-gray-green);
+    color: var(--text-color-inverse);
+}
+
+.admonition.hint .admonition-title,
+.admonition.tip .admonition-title {
+    background-color: var(--me-ext-blue);
+    color: var(--text-color-inverse);
+}
+
+.admonition.note .admonition-title,
+.admonition.seealso .admonition-title {
+    background-color: var(--me-ext-teal-highlighter);
+    color: var(--text-color);
+}
+
+/* Figure styles */
+
+.rst-content figcaption p span.caption-text {
+    font-size: 10pt;
+    font-style: initial;
+    color: #999;
+}
+
+/* Epigraph styles */
+
+blockquote.epigraph {
+    background-color: var(--me-core-gray-light);
+    margin: 2em 0;
+    padding: 1em;
+    border-top: 3px solid #c9c9c9;
+    border-bottom: 3px solid #c9c9c9;
+}
+
+blockquote.epigraph p {
+    font-size: 16pt;
+}
+
+blockquote.epigraph p.attribution {
+    margin: 0;
+    font-size: 12pt;
+    font-style: italic;
+}

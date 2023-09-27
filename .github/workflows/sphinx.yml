@@ -1,0 +1,69 @@
+name: Build Sphinx Docs
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.8'
+    - name: Install Poetry
+      run: curl -sSL https://install.python-poetry.org/ | python -
+    - name: Add Poetry to PATH
+      run: echo "$HOME/.poetry/bin" >> $GITHUB_PATH
+    - name: Install dependencies
+      run: poetry install
+    - name: Build HTML docs
+      run: poetry run make docs-ci
+    - name: Upload HTML docs
+      uses: actions/upload-artifact@v3
+      with:
+        name: insider-threat-ttp-kb-docs-html
+        path: docs/_build/dirhtml/
+    - name: Install TeX Live
+      run: sudo apt install -y latexmk texlive texlive-latex-extra
+    - name: Build PDF docs
+      run: poetry run sphinx-build -M latexpdf docs docs/_build
+    - name: Upload PDF docs
+      uses: actions/upload-artifact@v3
+      with:
+        name: insider-threat-ttp-kb-docs-pdf
+        path: docs/_build/latex/insiderthreatttpknowledgebase.pdf
+
+  # # TODO Uncomment before publishing repository.
+  # github_pages:
+  #   # This job only runs when committing or merging to main branch.
+  #   if: github.ref_name == 'main'
+  #   needs: docs
+  #   runs-on: ubuntu-latest
+  #   environment:
+  #     name: github-pages
+  #     url: $\{\{ steps.deployment.outputs.page_url \}\}
+
+  #   steps:
+  #   - name: Setup Pages
+  #     uses: actions/configure-pages@v2
+  #   - name: Download HTML docs
+  #     uses: actions/download-artifact@v3
+  #     with:
+  #       name: insider-threat-ttp-kb-docs-html
+  #       path: docs
+  #   - name: Upload artifact
+  #     uses: actions/upload-pages-artifact@v1
+  #     with:
+  #       path: ./docs
+  #   - name: Deploy to GitHub Pages
+  #     id: deployment
+  #     uses: actions/deploy-pages@v1

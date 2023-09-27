@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "insider-threat-ttp-kb"
+version = "2.0.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+license = "Apache"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "^4.5.0"
+sphinx-autobuild = "^2021.3.14"
+sphinx-rtd-theme = "^1.0.0"
+bumpver = "^2023.1126"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.bumpver]
+current_version = "v2.0.0"
+version_pattern = "vMAJOR.MINOR.PATCH"
+commit_message = "Bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+
+[tool.bumpver.file_patterns]
+# pep440_version does not have the "v" prefix
+"pyproject.toml" = ['version = "{pep440_version}"']
+"docs/conf.py" = ['version = "{version}"']
