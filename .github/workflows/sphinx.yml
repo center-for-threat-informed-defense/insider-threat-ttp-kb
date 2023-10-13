@@ -42,6 +42,57 @@ jobs:
         name: insider-threat-ttp-kb-docs-pdf
         path: docs/_build/latex/insiderthreatttpknowledgebase.pdf
 
+  # Delete this job before public release and clear GitHub secrets:
+  azure_blob:
+    needs: docs
+    runs-on: ubuntu-latest
+    env:
+      AZURE_STORAGE_ACCOUNT: ctidinsider
+      AZURE_STORAGE_SAS_TOKEN: ${{ secrets.AZURE_SAS_TOKEN }}
+      BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
+      STATICRYPT_PASS: ${{ secrets.STATICRYPT_PASS }}
+    steps:
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '19'
+      - run: npm install -g staticrypt
+      - name: Download HTML docs
+        uses: actions/download-artifact@v3
+        with:
+          name: sphinx-test-docs-html
+          path: docs
+      - run: >
+          staticrypt --remember 3 --salt c0c22fdf0cd9d2a099db9c90ca4a58bf \
+            --password $STATICRYPT_PASS --short \
+            --template-title "Insider Threat TTP KB 2 (branch: $BRANCH_NAME)" \
+            --template-instructions "The contents of this site are marked TLP:AMBER:CTID-R&D:23-90. Do not share with unauthorized individuals." \
+            --template-color-primary "#6241c5" \
+            --template-color-secondary "#b2b2b2" \
+            --template-button "Log In" \
+            -r docs/
+      - name: Ensure StatiCrypt ran # StatiCrypt will fail without warning; verify it created a directory
+        run: test -d encrypted
+      - name: Copy encrypted HTML files
+        run: rsync -Ir -v --include='*.html' --exclude='*.*' encrypted/docs .
+      - name: Set the branch name
+        run: mv docs "$BRANCH_NAME"
+      - name: Install Azure CLI
+        run: curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+      - name: Delete old blobs
+        run: az storage blob delete-batch -s '$web' --pattern "$BRANCH_NAME/*"
+      - name: Upload to blob storage
+        run: az storage blob upload-batch -s . --pattern "$BRANCH_NAME/*" -d '$web'
+      - uses: actions/github-script@v6
+        if: github.event_name == 'pull_request'
+        with:
+            script: |
+              github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: `This PR has been published to https://${AZURE_STORAGE_ACCOUNT}.z13.web.core.windows.net/${process.env['BRANCH_NAME']}/`,
+              })
+
   # # TODO Uncomment before publishing repository.
   # github_pages:
   #   # This job only runs when committing or merging to main branch.
