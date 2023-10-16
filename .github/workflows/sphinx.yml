@@ -32,15 +32,6 @@ jobs:
       with:
         name: insider-threat-ttp-kb-docs-html
         path: docs/_build/dirhtml/
-    - name: Install TeX Live
-      run: sudo apt install -y latexmk texlive texlive-latex-extra
-    - name: Build PDF docs
-      run: poetry run sphinx-build -M latexpdf docs docs/_build
-    - name: Upload PDF docs
-      uses: actions/upload-artifact@v3
-      with:
-        name: insider-threat-ttp-kb-docs-pdf
-        path: docs/_build/latex/insiderthreatttpknowledgebase.pdf
 
   # Delete this job before public release and clear GitHub secrets:
   azure_blob:
@@ -59,7 +50,7 @@ jobs:
       - name: Download HTML docs
         uses: actions/download-artifact@v3
         with:
-          name: sphinx-test-docs-html
+          name: insider-threat-ttp-kb-docs-html
           path: docs
       - run: >
           staticrypt --remember 3 --salt c0c22fdf0cd9d2a099db9c90ca4a58bf \
