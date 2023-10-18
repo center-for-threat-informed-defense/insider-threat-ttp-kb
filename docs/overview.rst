@@ -1,2 +1,5 @@
 Overview
 ============
+The Center for Threat-Informed Defense’s Insider Threat Tactics, Techniques, and Procedures (TTP) Knowledge Base is an emergent resource that aims to advance our collective understanding of the technical mechanisms that insider threats have used. With this knowledge, Insider Threat Programs and Security Operations Centers will detect, mitigate, and emulate insider actions on IT systems to stop insider threats.  
+
+Utilizing the Knowledge Base, cyber defenders across organizations will identify insider threat activity on IT systems and limit the damage. Publishing the initial Knowledge Base is a foundational step to establishing this community resource and enabling its broad adoption and ongoing development. Version 2 of the knowledge base will include additional reported TTPs, Observable Human Indicators, Mitigations, and Detections. 
