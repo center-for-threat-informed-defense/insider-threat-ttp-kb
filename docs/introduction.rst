@@ -3,6 +3,7 @@ Introduction
 
 Project goal 
 -------------
+The goal for the project is to create a knowledge base based on industry insider threat cases. The insider threat cases will also allow us to gain insight into the tactics, techniques, and procedures that insider threat actors. By knowing the most used tactics, techniques, and 	procedures, insider threat programs can take conscientious action to defend their systems.  
 
 Why ATT&CK 
 -----------
@@ -11,3 +12,10 @@ The Insider Threat TTP Knowledge Base is not part of Enterprise ATT&CK but repre
 Improving detection of insider threat 
 --------------------------------------
 The Insider Threat TTP Knowledge Base project addresses the unique challenges that insider threats pose by starting with a modest scope in pursuit of an evidence-based result. We constrained this research effort to the technical mechanisms that insiders use on information technology (IT) systems. This means that we deliberately exclude physical insider threats, such as workplace violence or smuggling documents on one’s person; those are non-technical and independent of IT systems. For the scope of this project, we likewise rejected discussions of the insider’s motive or what the insider did and could do once off the IT systems. This distinction is important. Within a single organization, different departments that have purview over insider threat may and do define the insider differently. This project compounds that complexity by seeking to rigorously define insider TTPs that can be used across all organizations. We were able to meet this goal by defining insider TTPs for security operations centers and cyber defenders, and by following the model of the Enterprise ATT&CK framework, which is well-established for SOCs and cyber defense professionals. 
+
+Scoping the insider threat knowledge base
+-------------------------------------------- 
+
+The Insider Threat TTP Knowledge Base project addresses the unique challenges that insider threats pose by starting with a modest scope in pursuit of an evidence-based result. We constrained this research effort to the technical mechanisms that insiders use on information technology (IT) systems. This means that we deliberately exclude physical insider threats, such as workplace violence or smuggling documents on one’s person; those are non-technical and independent of IT systems.  
+
+For the scope of this project, we also rejected discussions of the insider’s motive or what the insider did and could do once off the IT systems. This distinction is important. Within a single organization, different departments that have purview over insider threat may and do define the insider differently. This project compounds that complexity by seeking to rigorously define insider TTPs that can be used across all organizations. We were able to meet this goal by defining insider TTPs for security operations centers and cyber defenders, and by following the model of the Enterprise ATT&CK framework, which is well-established for SOCs and cyber defense professionals. 

@@ -21,6 +21,8 @@ mollit anim id est laborum.
     mitigationsanddetections
     ohi
     futurework
+    green_seen
+    heatmap
 
 Notice
 ------
