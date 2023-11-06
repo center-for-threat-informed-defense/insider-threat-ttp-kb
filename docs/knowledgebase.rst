@@ -3,13 +3,11 @@ Knowledge Base
 Method and Design 
 -----------------------
 
-
-
 Network defenders often focus on the TTPs of high-profile insider threat cases, such as Manning, Snowden, or Hanssen, causing them to overlook more mundane but equally damaging actions. This focus on one-in-a-million cases leads to prioritizing what is possible rather than what is probable, leading to speculative defense strategies. Researchers have categorized these TTPs as "could," consisting of actual, hypothetical, and fantastical insider actions.
 
-However, organizations can shift their focus to actionable detections and response by using the Insider Threat TTP Knowledge Base, which informs defenders where their resources are best spent. Researchers have narrowed down the "could" TTPs to a more manageable "would" set, considering skill level and potential benefits of each TTP for an insider threat. These TTPs have been validated by experts with extensive experience in cyber defense and insider threat detection and response.
+However, organizations can shift their focus to actionable detections and response by using the Insider Threat TTP Knowledge Base, which informs defenders where their resources are best spent. The TTPs in the Knowledge Base are categorized as "did" if they were observed in documented case files, providing a data-driven approach to insider threat defense. This enables organizations to better allocate their limited resources and focus their efforts where they are most beneficial. See the :ref:`Green = Seen` section to view the current techniques that are categorized as "did". 
 
-The TTPs in the Knowledge Base are categorized as "did" if they were observed in documented case files, providing a data-driven approach to insider threat defense. This enables organizations to better allocate their limited resources and focus their efforts where they are most beneficial. Go to the 'Green = Seen' section to view the current techniques that are categorized as "did". 
+.. image:: /images/did.png
 
 
 Cases
