@@ -1,5 +1,0 @@
-Mitigations and Detections
-===========================
-
-Methods
---------

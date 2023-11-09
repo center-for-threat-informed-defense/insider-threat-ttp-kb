@@ -3,26 +3,23 @@ Insider Threat TTP Knowledge Base |version|
 
 .. TODO Enter a one paragraph summary here.
 
-HELLO ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
+Welcome to the Insider Threat Tactic, Technique, Procedure (TTP) Knowledge Base! The insider threat knowledge base is created and maintaned by the `MITRE Engenuity Center for Threat-Informed Defense
+<https://ctid.mitre-engenuity.org/>`__.
+The Knowledge Base is an emergent resource that aims to advance our collective understanding of the technical mechanisms that insider threats have used. This website will detail the tactics, techniques, and procedures discovered in  participating organizations.
 
 .. toctree::
     :maxdepth: 2
+    :titlesonly:
     :caption: Contents
 
-    overview
     introduction
     definitions
     knowledgebase
-    mitigationsanddetections
+    mitigationsanddatasources
     ohi
-    futurework
     green_seen
     heatmap
+    futurework
 
 Notice
 ------
