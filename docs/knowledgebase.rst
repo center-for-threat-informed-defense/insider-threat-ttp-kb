@@ -31,3 +31,8 @@ Project participants provided a sequential list of TTPs per case, with informati
 
 * Brand new techniques can also be created when an existing technique is not sufficient. 
 
+:download:`Insider Threat TTP CSV File <../insider-threat-ttp-kb.csv>`
+
+
+:download:`Insider Threat TTP JSON File <../insider-threat-ttp-kb.json>`
+

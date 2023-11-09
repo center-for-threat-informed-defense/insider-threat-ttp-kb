@@ -9,7 +9,7 @@ national origin, religion, sex, age, or disability.
 
 Current OHI's
 --------------
-* Did person under investigation had elevated privileges?
+* Did the person under investigation have elevated privileges?
 * Was the individual subject to enhances monitoring at time of inicident?
 * Were they a teleworker/remote worker?
 
