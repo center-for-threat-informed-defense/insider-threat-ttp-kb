@@ -3,7 +3,7 @@ Mitigations and Data Sources
 
 Mitigations 
 ------------
-Mitigations have been identified through their mappings to ATT&CK TTPs and through validation by Center participants. Currently all insider threat TTPs within the Knowledge Base are also TTPs in ATT&CK, therefore those identified mitigations have been considered. Through dicsussion with participants, further mitigations may be identified. 
+Mitigations have been identified through their mappings to ATT&CK TTPs and through validation by Center participants. Currently all insider threat TTPs within the Knowledge Base are also TTPs in ATT&CK, therefore those identified mitigations have been considered. Through discussion with participants, further mitigations may be identified. 
 
 Data Sources
 -------------
