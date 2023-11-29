@@ -7,6 +7,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nisi lectus, 
 
 .. csv-table:: Insider Threat, Seen Mitigations & Gaps
    :class: datatable
-   :file: ..\..\insider-threat-ttp-kb-private-main\TTMs.csv
+   :file: insider-threat-ttp-kb-private-main\TTMs.csv
    :widths: 50, 50, 50
    :header-rows: 1
