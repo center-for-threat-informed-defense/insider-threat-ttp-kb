@@ -32,7 +32,7 @@ release = version
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    "sphinx_rtd_theme",
+    "sphinx_rtd_theme"
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -56,6 +56,13 @@ html_favicon = "_static/favicon.png"
 html_logo = "_static/ctid_logo_white.png"
 html_css_files = [
     "css/ctid.css",
+    'css/jquery.dataTables.min.css',
+    'css/custom.css',
+]
+html_js_files = [
+    'js/custom.js',
+    'https://code.jquery.com/jquery-3.7.0.js',
+    'https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js',
 ]
 html_copy_source = False
 html_show_sourcelink = False
