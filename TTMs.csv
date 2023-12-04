@@ -1,0 +1,150 @@
+Tactic,Technique,Mitigation
+T1595: Reconnaissance,T1595: Active Scanning,M1056: Pre-compromise
+TA0043: Reconnaissance,T1595.001: Scanning IP Blocks,M1056: Pre-compromise
+TA0042: Resource Development,T1585: Establish Accounts,M1057: Pre-compromise
+TA0001: Initial Access,T1078: Valid Accounts,M1036: Account Use Policies
+,,M1015: Active Directory Configuration
+,,M1013: Application Developer Guidance
+,,M1027: Password Policies
+,,M1026: Privileged Account Management
+,,M1018: User Account Management
+,,M1017: User Training
+TA0001: Initial Access,T1078.002: Domain Accounts,M1032: Multi-factor Authentication
+,,M1026: Privileged Account Management
+,,M1017: User Training
+TA0002: Execution,T1106: Native API,M1040: Behavior Prevention on Endpoint
+,,M1038: Execution Prevention
+TA0003: Persistence,T1136: Create Account,M1032: Multi-factor Authentication
+,,M1030: Network Segmentation
+,,M1028: Operating System Configuration
+,,M1026: Privileged Account Management
+TA0003: Persistence,T1136.001: Local Account,M1032: Multi-factor Authentication
+,,M1026: Privileged Account Management
+TA0003: Persistence,T1546: Event Triggered Execution,
+TA0003: Persistence,T1546.003: WMI Event Subscription,
+TA0003: Persistence,T1133: External Remote Services,M1042: Disable or Remove Feature or Program
+,,M1035: Limit Access to Resource Over Network
+,,M1032: Multi-factor Authentication
+,,M1030: Network Segmentation
+TA0003: Persistence,T1078: Valid Accounts,M1036: Account Use Policies
+,,M1015: Active Directory Configuration
+,,M1013: Application Developer Guidance
+,,M1027: Password Policies
+,,M1026: Privileged Account Management
+,,M1018: User Account Management
+,,M1017: User Training
+TA0003: Persistence,T1078.004: Cloud Accounts,M1036: Account Use Policies
+,,M1015: Active Directory Configuration
+,,M1013: Application Developer Guidance
+,,M1027: Password Policies
+,,M1026: Privileged Account Management
+,,M1018: User Account Management
+,,M1017: User Training
+TA0003: Persistence,T1078.002: Domain Accounts,M1032: Multi-factor Authentication
+,,M1026: Privileged Account Management
+,,M1017: User Training
+TA0004: Privilege Escalation,T1548: Abuse Elevation Control Mechanism,M1047: Audit
+,,M1038: Execution Prevention
+,,M1028: Operating System Configuration
+,,M1026: Privileged Account Management
+,,M1022: Restrict File and Directory Permissions
+,,M1052: User Account Control
+TA0005: Defense Evasion,T1562: Impair Defenses,M1047: Audit
+,,M1038: Execution Prevention
+,,M1022: Restrict File and Directory Permissions
+,,M1024: Restrict Registry Permissions
+,,M1018: User Account Management
+TA0005: Defense Evasion,T1562.001: Disable or Modify Tools,M1038: Execution Prevention
+,,M1022: Restrict File and Directory Permissions
+,,M1024: Restrict Registry Permissions
+,,M1018: User Account Management
+TA0005: Defense Evasion,T1070: Indicator Removal on Host,M1041: Encrypt Sensitive Information
+,,M1029: Remote Data Storage
+,,M1022: Restrict File and Directory Permissions
+TA0005: Defense Evasion,T1070.001: Clear Windows Event Logs,M1041: Encrypt Sensitive Information
+,,M1029: Remote Data Storage
+,,M1022: Restrict File and Directory Permissions
+TA0005: Defense Evasion,T1070.004: File Deletion,
+TA0005: Defense Evasion,T1036: Masquerading,M1049: Antivirus/Antimalware
+,,M1040: Behavior Prevention on Endpoint
+,,M1045: Code Signing
+,,M1038: Execution Prevention
+,,M1022: Restrict File and Directory Permissions
+TA0005: Defense Evasion,T1027: Obfuscated Files or Information,M1049: Antivirus/Antimalware
+,,M1047: Audit
+,,M1040: Behavior Prevention on Endpoint
+TA0006: Credential Access,T1555: Credentials from Password Stores,
+TA0006: Credential Access,T1555.005: Password Managers,M1027: Password Policies
+,,M1054: Software Configuration
+,,M1051: Update Software
+TA0007: Discovery,T1046: Network Service Scanning,M1042: Disable or Remove Feature or Program
+,,M1031: Network Intrusion Prevention
+,,M1030: Network Segmentation
+TA0007: Discovery,T1135: Network Share Discovery,
+TA0008: Lateral Movement,T1210: Exploitation of Remote Services,M1048: Application Isolation and Sandboxing
+,,M1042: Disable or Remove Feature or Program
+,,M1050: Exploit Protection
+,,M1030: Network Segmentation
+,,M1026: Privileged Account Management
+,,M1019: Threat Intelligence Program
+,,M1051: Update Software
+,,M1016: Vulnerability Scanning
+TA0008: Lateral Movement,T1021: Remote Services,M1032: Multi-factor Authentication
+,,M1018: User Account Management
+TA0008: Lateral Movement,T1021.001: Remote Desktop Protocol,M1047: Audit
+,,M1042: Disable or Remove Feature or Program
+,,M1035: Limit Access to Resource Over Network
+,,M1032: Multi-factor Authentication
+,,M1030: Network Segmentation
+,,M1028: Operating System Configuration
+,,M1026: Privileged Account Management
+,,M1018: User Account Management
+TA0008: Lateral Movement,T1021.004: SSH,M1042: Disable or Remove Feature or Program
+,,M1032: Multi-factor Authentication
+,,M1018: User Account Management
+TA0009: Collection,T1560: Archive Collected Data,M1047: Audit
+TA0009: Collection,T1560.001: Archive via Utility,M1047: Audit
+TA0009: Collection,T1119: Automated Collection,M1041: Encrypt Sensitive Information
+,,M1029: Remote Data Storage
+TA0009: Collection,T1213: Data from Information Repositories,M1047: Audit
+,,M1018: User Account Management
+,,M1017: User Training
+TA0009: Collection,T1213.003: Code Repositories,M1047: Audit
+,,M1032: Multi-factor Authentication
+,,M1018: User Account Management
+,,M1017: User Training
+TA0009: Collection,T1213.002: SharePoint,M1047: Audit
+,,M1018: User Account Management
+,,M1017: User Training
+TA0009: Collection,T1005: Data from Local System,M1057: Data Loss Prevention
+TA0009: Collection,T1074: Data Staged,
+TA0009: Collection,T1074.001: Local Data Staging,
+TA0009: Collection,T1114: Email Collection,M1047: Audit
+,,M1041: Encrypt Sensitive Information
+,,M1032: Multi-factor Authentication
+TA0009: Collection,T1114.001: Local Email Collection,M1041: Encrypt Sensitive Information
+TA0011: Command and Control,T1219: Remote Access Software,M1038: Execution Prevention
+,,M1037: Filter Network Traffic
+,,M1031: Network Intrusion Prevention
+TA0010: Exfiltration,T1048: Exfiltration Over Alternative Protocol,M1057: Data Loss Prevention
+,,M1037: Filter Network Traffic
+,,M1031: Network Intrusion Prevention
+,,M1030: Network Segmentation
+,,M1022: Restrict File and Directory Permissions
+,,M1018: User Account Management
+TA0010: Exfiltration,T1048.001: Exfiltration Over Symmetric Encrypted Non-C2 Protocol,M1037: Filter Network Traffic
+,,M1031: Network Intrusion Prevention
+,,M1030: Network Segmentation
+TA0010: Exfiltration,T1011: Exfiltration Over Other Network Medium,M1028: Operating System Configuration
+TA0010: Exfiltration,T1011.001: Exfiltration Over Bluetooth,M1042: Disable or Remove Feature or Program
+,,M1028: Operating System Configuration
+TA0010: Exfiltration,T1052: Exfiltration Over Physical Medium,M1057: Data Loss Prevention
+,,M1042: Disable or Remove Feature or Program
+,,M1034: Limit Hardware Installation
+TA0010: Exfiltration,T1052.001: Exfiltration over USB,
+TA0010: Exfiltration,T1567: Exfiltration Over Web Service,M1057: Data Loss Prevention
+,,M1021: Restrict Web-Based Content
+TA0010: Exfiltration,T1567.002: Exfiltration to Cloud Storage,M1021: Restrict Web-Based Content
+TA0040: Impact,T1485: Data Destruction,M1053: Data Backup
+TA0040: Impact,T1529: System Shutdown/Reboot,
+,,
