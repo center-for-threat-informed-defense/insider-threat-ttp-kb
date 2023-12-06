@@ -15,6 +15,7 @@ The Knowledge Base is an emergent resource that aims to advance our collective u
     introduction
     definitions
     knowledgebase
+    analysis
     how_to_use_knowledgebase
     mitigationsanddatasources
     ohi
