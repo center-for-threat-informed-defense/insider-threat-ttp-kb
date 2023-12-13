@@ -32,7 +32,8 @@ release = version
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    "sphinx_rtd_theme"
+    "sphinx_rtd_theme",
+    "sphinx_plotly_directive",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -60,6 +61,7 @@ html_css_files = [
     'css/custom.css',
 ]
 html_js_files = [
+    "js/require.min.js",
     'js/custom.js',
     'https://code.jquery.com/jquery-3.7.0.js',
     'https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js',
