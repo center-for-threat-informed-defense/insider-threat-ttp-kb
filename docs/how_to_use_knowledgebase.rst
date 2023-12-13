@@ -21,3 +21,5 @@ Using the :doc:`heatmap </analysis>`, an organization can determine the most fre
 
 
 
+.. plotly:: ../scripts/sankey.py
+
