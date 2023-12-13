@@ -8,19 +8,20 @@ Welcome to the Insider Threat Tactic, Technique, Procedure (TTP) Knowledge Base!
 The Knowledge Base is an emergent resource that aims to advance our collective understanding of the technical mechanisms that insider threats have used. This website will detail the tactics, techniques, and procedures discovered in  participating organizations.
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :titlesonly:
     :caption: Contents
 
     introduction
     definitions
     knowledgebase
+    analysis
     how_to_use_knowledgebase
     mitigationsanddatasources
     ohi
-    green_seen
-    heatmap
+    contribute
     futurework
+    
 
 Notice
 ------

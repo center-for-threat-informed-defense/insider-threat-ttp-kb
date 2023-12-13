@@ -1,7 +1,23 @@
-How to use Knowledge Base
-=========================
+How to use the Knowledge Base
+==============================
 
-Subtitle
---------
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nisi lectus, laoreet non neque nec, venenatis ornare mauris. Aenean mollis ultricies tristique. Aliquam elit augue, tempus semper finibus vel, malesuada ullamcorper tellus. Nunc id rhoncus enim. Vivamus porta, risus sed venenatis aliquet, metus turpis vehicula mauris, sed gravida ligula ipsum vitae erat. Curabitur arcu mauris, euismod nec massa eget, blandit mollis libero. Etiam sagittis arcu quis pellentesque placerat. Integer at lectus at risus aliquet efficitur. Donec malesuada volutpat lorem. Mauris cursus ipsum ac augue pulvinar, sit amet imperdiet est convallis. Phasellus vel commodo massa, at fringilla velit. Nunc at dictum nibh. Vivamus volutpat mi in metus sagittis, sit amet accumsan nibh suscipit. Maecenas congue turpis ut enim consequat, quis cursus nunc efficitur. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+Getting Started
+---------------
+The Insider Threat knowledge base can be used in many different ways, from brand new insider threat programs to the vastly mature. 
+The Center team has compiled several ways that the knowledge base has been used in the past, however it is not comprehensive or perscriptive and the team would love to hear of the other great ways programs are using the work.
+
+Let's break down the two primary use cases for the knowledge base:
+
+--------------------------------
+1. Mitigation of Insider Threat
+--------------------------------
+
+Using the :doc:`heatmap </heatmap>`, an organization can determine the most frequently used tactics and techniques and therefore quickly mitigate those before moving to some of the less commonly used TTPs. 
+
+.. admonition:: Example of using the heatmap
+
+    1. Choose the techniques in the heatmap that are colored red, and refer to :doc:`mitigations </mitigationsanddatasources>` to find their corresponding mitigation. 
+    
+
+
 
