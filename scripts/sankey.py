@@ -57,7 +57,7 @@ def main():
       value = [3] * len(sources)
   ))])
 
-  fig.update_layout(title_text="Basic Sankey Diagram", font_size=10)
+  fig.update_layout(title_text="Insider Theat Techniques and Mitigations", font_size=10)
   fig.write_html('docs/_build/how_to_use_knowledgebase/sankey.html')
          
 
