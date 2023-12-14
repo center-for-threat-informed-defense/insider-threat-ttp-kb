@@ -1,4 +1,7 @@
 import plotly.graph_objects as go
+import mappings
+from mitreattack.stix20 import MitreAttackData
+import pandas as pd
 
 fig = go.Figure(data=[go.Sankey(
     node = dict(
@@ -15,4 +18,53 @@ fig = go.Figure(data=[go.Sankey(
   ))])
 
 fig.update_layout(title_text="Basic Sankey Diagram", font_size=10)
-fig.show()
+fig.write_html('docs/_build/how_to_use_knowledgebase/sankey.html')
+
+def main():
+  mitre_attack_data = MitreAttackData("enterprise-attack-14.1.json")
+  insider_threat_ttps = pd.read_csv('insider-threat-ttp-kb.csv')
+
+  labels = []
+  sources = []
+  targets = []
+
+  technique_coutner = 0
+  mitigation_counter = insider_threat_ttps['Technique ID'].size
+
+  for technique_id, technique_name in zip(insider_threat_ttps['Technique ID'], insider_threat_ttps['Technique Title']):
+    technique = mitre_attack_data.get_object_by_attack_id(technique_id, 'attack-pattern')
+    labels.append(technique_id + ': ' + technique_name)
+    mitigations_mitigating_technique = mitre_attack_data.get_mitigations_mitigating_technique(technique.id)
+    for mitigation in mitigations_mitigating_technique:
+      sources.append(technique_coutner)
+      targets.append(mitigation_counter)
+
+      mitigation_counter += 1
+    technique_coutner += 1 
+    
+
+  fig = go.Figure(data=[go.Sankey(
+    node = dict(
+      pad = 15,
+      thickness = 20,
+      line = dict(color = "black", width = 0.5),
+      label = labels,
+      color = "blue"
+    ),
+    link = dict(
+      source = sources, # indices correspond to labels, eg A1, A2, A1, B1, ...
+      target = targets,
+      value = [3] * len(sources)
+  ))])
+
+  fig.update_layout(title_text="Basic Sankey Diagram", font_size=10)
+  fig.write_html('docs/_build/how_to_use_knowledgebase/sankey.html')
+         
+
+#source to represent source node - will be technique
+#target to represent target node - will be mitigation,
+#volume to set the flow volume - will be hardcoded 3 (?)
+#label to show the node name - will be technique / mitigation ID + name combo (?)
+
+if __name__ == "__main__":
+    main()
