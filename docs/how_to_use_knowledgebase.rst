@@ -12,7 +12,7 @@ Let's break down the two primary use cases for the knowledge base:
 1. Mitigation of Insider Threat
 --------------------------------
 
-Using the :doc:`heatmap </heatmap>`, an organization can determine the most frequently used tactics and techniques and therefore quickly mitigate those before moving to some of the less commonly used TTPs. 
+Using the :doc:`heatmap </analysis>`, an organization can determine the most frequently used tactics and techniques and therefore quickly mitigate those before moving to some of the less commonly used TTPs. 
 
 .. admonition:: Example of using the heatmap
 
