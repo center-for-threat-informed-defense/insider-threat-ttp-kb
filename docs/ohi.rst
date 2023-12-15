@@ -7,3 +7,10 @@ Observable human indicators (OHI) are objective or quantifiable facts about a pe
 
 The Center team has factored OHIs into the data collection portal for future cases and will be adding the analysis of those indicators here in the future.  
 
+Current OHIs being collected:
+    * Performance Improvement Plan required
+    * Turnover rate of subject's role
+    * Time at company
+    * Management level
+    * Senority of subject
+    * Government security clearance

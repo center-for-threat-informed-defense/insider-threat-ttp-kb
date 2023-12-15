@@ -1,21 +1,12 @@
 Knowledge Base
 ===============
-Method and Design 
------------------------
-
-Network defenders often focus on the TTPs of high-profile insider threat cases, such as Manning, Snowden, or Hanssen, causing them to overlook more mundane but equally damaging actions. This focus on one-in-a-million cases leads to prioritizing what is possible rather than what is probable, leading to speculative defense strategies. Researchers have categorized these TTPs as "could," consisting of actual, hypothetical, and fantastical insider actions.
-
-However, organizations can shift their focus to actionable detections and response by using the Insider Threat TTP Knowledge Base, which informs defenders where their resources are best spent. The TTPs in the Knowledge Base are categorized as "did" if they were observed in documented case files, providing a data-driven approach to insider threat defense. This enables organizations to better allocate their limited resources and focus their efforts where they are most beneficial. See the :ref:`Green = Seen` section to view the current techniques that are categorized as "did". 
-
-.. image:: /images/did.png
-
 
 Cases
------- 
+-----
 
-Project participants provided a sequential list of TTPs per case, with information on the data sources used to detect those TTPs. Our findings are therefore validated by both what TTPs were used by the insiders and how these TTPs were detected. Validating data appeared in the following forms: 
+Project participants have submitted their cases into the portal and provided a sequential list of TTPs per case, with additional information on the data sources used to detect those TTPs, select observable human indicators, and notes about the subject. Our findings are therefore validated by both what TTPs were used by the subject and how these TTPs were detected in line with ATT&CK guidelines. The data in the knowledge base appears as the following: 
 
-* Types of logs, analytics, or other methods will help future SOCs and insider threat analysts. 
+* Types of logs, analytics, or other methods to identify the threat including:
 
     * Data source(s) used to identify/validate each TTP within each case 
 
@@ -25,14 +16,42 @@ Project participants provided a sequential list of TTPs per case, with informati
 
     * Timestamps of each TTP to better understand the overall timeline 
 
-* The tactic each technique should fall under. Just like the Enterprise ATT&CK matrix, a technique can fall under multiple tactics depending on how the insider used the technique in each case. Along the way, there may be insider actions that do not neatly fit into Enterprise ATT&CK tactics or techniques. Contributors can propose new or modified tactics and techniques. 
+* The tactic each technique corresponds to. Just like in Enterprise ATT&CK, a technique can fall under multiple tactics depending on how the insider used the technique in each case. Along the way, there may be insider actions that do not neatly fit into Enterprise ATT&CK tactics or techniques. Contributors can propose new or modified tactics and techniques in these circumstances. 
 
-* Techniques can be modified from an existing Enterprise ATT&CK technique with new language to make it applicable to insider threats. 
+* Techniques can be modified from an existing Enterprise ATT&CK technique with new language to make it applicable to insider threats if required. 
 
 * Brand new techniques can also be created when an existing technique is not sufficient. 
 
-:download:`Insider Threat TTP CSV File <../insider-threat-ttp-kb.csv>`
+.. _green seen:
+
+Green = Seen: The Tactics, Techniques, and Procedures
+-------------------------------------------------------
+
+The ATT&CK Navigator matrix below illustrates all of the TTPs seen to be used by insiders. This information stems from the case files submitted and illustrates the potential TTPs an enterprise could see in their network. 
+
+.. raw:: html
+
+    <p>
+        <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/sensor-mappings-to-attack/navigator/Auditd-heatmap.json">
+        <i class="fa fa-map-signs"></i> Open in ATT&CK Navigator</a>
+    </p>
+
+PLACEHOLDER IMAGE
+
+.. image:: /images/green_seen.PNG
+   :scale: 75%
 
 
-:download:`Insider Threat TTP JSON File <../insider-threat-ttp-kb.json>`
+Knowledge Base Downloads
+--------------------------
+.. raw:: html
+
+    <p>
+        <a class="btn btn-primary" target="_blank" download="../insider-threat-ttp-kb.csv">
+        <i class="fa fa-table"></i> Download CSV</a>
+
+        <a class="btn btn-primary" target="_blank" download="../insider-threat-ttp-kb.json">
+        <i class="fa fa-file-excel-o"></i> Download STIX</a>
+    </p>
+
 
