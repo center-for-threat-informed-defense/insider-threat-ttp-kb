@@ -1,12 +1,7 @@
 Contribute Data
 =======================
 Interested in contributing data to enhance the knowledge base or simply want to learn how?
-Fill out the form below to be contacted by the Center team:
-
-:bdg-link-primary-line:`explicit title <https://forms.office.com/Pages/ResponsePage.aspx?id=SNwgxlAdUkmLOd9NVNdNgq65Kxa3gpVPjtxDLu3YJEVUQTFBWUs1TUdJQUlTVElCMVAyMkhLNlZZTC4u>`
-
-
-
+Contact the Center 
 
 |ImageLink|_
 
