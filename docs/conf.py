@@ -70,7 +70,7 @@ html_show_sphinx = False
 html_use_smartypants = False
 
 html_theme_options = {
-    "analytics_id": "", # TODO Create and fill in Google Analytics G-tag.
+    "analytics_id": "G-02XDSKE721",
     "display_version": True,
     "logo_only": True,
     "style_external_links": True,
