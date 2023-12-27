@@ -11,7 +11,19 @@ Data Sources
 -------------
 Identifying the most common data sources to detect insider threat will enhance the communities ability to prevent further threats. The data sources will be identified first through mappings from ATT&CK, like the mitigations. However, Center participants have identified and confirmed the data sources used for each detected TTP. 
 
+.. .. plotly::
 
+..    import plotly.express as px
+..    px.scatter(x=[0, 1, 2, 3, 4], y=[0, 1, 4, 9, 16])
+
+.. .. plotly:: scripts/test_func.py func
+
+.. Currently can open html in new browser tab
+
+.. raw:: html
+   
+   <iframe src="../_static/html/mitigationsanddatasources-1.html" height="1545px" width="100%"></iframe>
+   
 .. csv-table:: Insider Threat, Seen Mitigations & Gaps
    :class: datatable
    :file: ../TTMs.csv
