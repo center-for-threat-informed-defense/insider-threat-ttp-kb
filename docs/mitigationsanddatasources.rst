@@ -9,7 +9,7 @@ Mitigations have been identified through their mappings to ATT&CK TTPs and throu
 
 .. raw:: html
    
-   <iframe src="../_static/html/mitigations-1.html" height="845px" width="100%"></iframe>
+   <iframe src="../_static/html/mitigations-1.html" height="1045px" width="100%"></iframe>
 
 Data Sources
 -------------
@@ -17,10 +17,10 @@ Identifying the most common data sources to detect insider threat will enhance t
 
 .. raw:: html
    
-   <iframe src="../_static/html/mitigationsanddatasources-1.html" height="645px" width="100%"></iframe>
+   <iframe src="../_static/html/datasources-1.html" height="1045px" width="100%"></iframe>
    
-.. csv-table:: Insider Threat, Seen Mitigations & Gaps
-   :class: datatable
-   :file: ../TTMs.csv
-   :widths: 50, 50, 50
-   :header-rows: 1
+.. .. csv-table:: Insider Threat, Seen Mitigations & Gaps
+..    :class: datatable
+..    :file: ../TTMs.csv
+..    :widths: 50, 50, 50
+..    :header-rows: 1

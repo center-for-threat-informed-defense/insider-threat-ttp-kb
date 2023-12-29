@@ -1,4 +1,5 @@
 import plotly.graph_objects as go
+# import ipywidgets as widgets
 from mitreattack.stix20 import MitreAttackData
 import pandas as pd
 import sphinx_plotly_directive as spd
@@ -66,36 +67,45 @@ def construct_dataframes(df, mitre_attack_data, insider_threat_ttps):
   # spd.save_plotly_figure(fig, 'docs/_static/html/mitigationsanddatasources-1.html')
 
 
-"""
-dimensions=[
-{'label':'Technique',
-'values':[]},
-{'label':'Data Sources',
-'values':[]},
-'label':'Mitigations',
-'values':[]}
-]
-"""
-
 def parallel_categories(df, filepath):
-  #[f'{a} {b}' for a, b in zip(listA, list1)]
-  #df.iloc[:, 0]
-  print('here')
   dimensions=[
     {'label':'Tactics','values':[f'{a} {b}' for a, b in zip(df['Tactic'], df['Tactic ID'])]},
     {'label':'Techniques','values':[f'{a} {b}' for a, b in zip(df['Technique'], df['Technique ID'])]},
     {'label': df.columns[4] + 's','values':[f'{a} {b}' for a, b in zip(df.iloc[:, 4], df.iloc[:, 5])]}
     ]
 
-  # df = px.data.tips()
-  # fig = px.parallel_categories(df, dimensions=['sex', 'smoker', 'day'],
-  #       color="size", color_continuous_scale=px.colors.sequential.Inferno,
-  #       labels={'sex':'Payer sex', 'smoker':'Smokers at the table', 'day':'Day of week'})
-
-  # fig = px.parallel_categories(df, dimensions=df.columns(),
-  #       color="size", color_continuous_scale=px.colors.sequential.Inferno,
-  #       labels={})
-  fig = px.parallel_categories(df)
+  # Build figure as FigureWidget
+  fig = go.Figure(go.Parcats(dimensions=dimensions))
+  # tactics = widgets.Dropdown(
+  #   options=list(df['Tactics'].unique()),
+  #   value=df['Tactics'][1],
+  #   description='Filter by Tactic',
+  # )
+  # fig.update_layout(
+  #   updatemenus=[
+  #       dict(
+  #           buttons=list([
+  #               dict(
+  #                   args=["type", "surface"],
+  #                   label="3D Surface",
+  #                   method="restyle"
+  #               ),
+  #               dict(
+  #                   args=["type", "heatmap"],
+  #                   label="Heatmap",
+  #                   method="restyle"
+  #               )
+  #           ]),
+  #           direction="down",
+  #           pad={"r": 10, "t": 10},
+  #           showactive=True,
+  #           x=0.1,
+  #           xanchor="left",
+  #           y=1.1,
+  #           yanchor="top"
+  #       ),
+  #   ]
+  # )
   
   spd.save_plotly_figure(fig, filepath)
 
@@ -115,9 +125,8 @@ def main():
   tactics_techniques_mitigations_df = construct_dataframes(pd.DataFrame(columns= mitigation_columns), mitre_attack_data, insider_threat_ttps)
   parallel_categories(tactics_techniques_mitigations_df, mitigations_filepath)
 
-  # tactics_techniques_datasources_df = construct_dataframes(pd.DataFrame(columns= datasource_columns), mitre_attack_data, insider_threat_ttps)
-  # parallel_categories(tactics_techniques_datasources_df, datasources_filepath)
+  tactics_techniques_datasources_df = construct_dataframes(pd.DataFrame(columns= datasource_columns), mitre_attack_data, insider_threat_ttps)
+  parallel_categories(tactics_techniques_datasources_df, datasources_filepath)
 
 if __name__ == "__main__":
-  """ This is executed when run from the command line """
   main()
