@@ -1,18 +1,29 @@
 Case Analysis
 ==============
-Throughout the collection of cases from V1 and V2, the team has put together several resources to inform insider programs through thorough analysis of the submitted cases.
-The two primary resources are the green=seen chart, and the TTP heatmap. 
+Throughout the collection of cases from V1 and V2, the Center team has put together several resources to inform insider programs through thorough analysis of the submitted cases.
 
-Heatmap 
--------------
-This map contains the techniques of the MITRE ATT&CK framework that were used in insider threat cases. The red indicates that the technique was more commonly used, orange means it was somewhat commonly used, and yellow indicates that those were the least common techniques used. 
+
+Frequency Heatmap 
+------------------
+This heatmap contains the techniques of the MITRE ATT&CK® framework that were used in insider threat cases with an overlay of the frequency seen of each technique through submitted cases. 
+The red indicates that the technique was more commonly used, orange means it was somewhat commonly used, and yellow indicates that those were the least common techniques used. 
 
 .. raw:: html
 
     <p>
-        <a class="btn btn-primary" target="_blank" href="../insider-threat-heatmap.json">
-        <i class="fa fa-table"></i> Download Heatmap</a>
+        <a class="btn btn-primary" target="_blank" href="../navigatorlayers/insider-threat-heatmap.json">
+        <i class="fa fa-download"></i> Download Heatmap JSON</a>
+    
+        <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/sensor-mappings-to-attack/navigator/insider-threat-heatmap.json">
+        <i class="fa fa-map-signs"></i> Open Heatmap in Navigator</a>
     </p>
 
 .. image:: /images/heatmap.PNG
    :scale: 75%
+
+Inferences
+-------------
+
+
+Limitations
+------------

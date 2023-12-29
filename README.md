@@ -3,7 +3,7 @@
 To advance our collective understanding of insider threats, the Center for
 Threat-Informed Defense developed the Insider Threat TTP Knowledge Base, a collection of
 TTPs used by insiders in IT environments. This Knowledge Base builds upon data collected
-on insider threat incidents and lessons learned and experience from the ATT&CK knowledge
+on insider threat incidents and lessons learned and experience from the ATT&CK® knowledge
 base. With this lexicon of known insider threat TTPs as a foundation, defenders will
 detect, mitigate, and emulate insider actions on IT systems and stop them.
 
@@ -18,14 +18,14 @@ detect, mitigate, and emulate insider actions on IT systems and stop them.
 ## Getting Started
 
 Read the methodology paper to familiarize yourself with the project's overall goals,
-constraints, and methods. Access the TTP data in CSV, JSON, or ATT&CK Navigator format.
+constraints, and methods. Access the TTP data in CSV, JSON, or ATT&CK® Navigator format.
 
 | Resource                                                                                | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [design-principles-and-methodology.pdf](design-principles-and-methodology.pdf?raw=true) | A document describing the design principles and methodology of the Insider Threat TTP Knowledge Base                                                                                                                                                                                                                                                                                                                                                                                          |
 | [insider-threat-ttp-kb.csv](insider-threat-ttp-kb.csv)                                  | A spreadsheet containing the Insider Threat TTP Knowledge Base                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| [insider-threat-ttp-kb.json](insider-threat-ttp-kb.json)                                | An ATT&CK navigator layer representing the Insider Threat TTP Knowledge Base ([View in Navigator](https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fraw.githubusercontent.com%2Fcenter-for-threat-informed-defense%2Finsider-threat-ttp-kb%2Fmain%2Finsider-threat-ttp-kb.json&disable_techniques=false&manual_color=false&scoring=false&comments=false&comment_underline=false&links=false&link_underline=false&metadata=false&clear_annotations=false))               |
-| [insider-threat-heatmap.json](insider-threat-heatmap.json)                              | An ATT&CK navigator layer representing the Insider Threat TTP Knowledge Base as a heatmap ([View in Navigator](https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fraw.githubusercontent.com%2Fcenter-for-threat-informed-defense%2Finsider-threat-ttp-kb%2Fmain%2Finsider-threat-heatmap.json&disable_techniques=false&manual_color=false&scoring=false&comments=false&comment_underline=false&links=false&link_underline=false&metadata=false&clear_annotations=false)) |
+| [insider-threat-ttp-kb.json](insider-threat-ttp-kb.json)                                | An ATT&CK® navigator layer representing the Insider Threat TTP Knowledge Base ([View in Navigator](https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fraw.githubusercontent.com%2Fcenter-for-threat-informed-defense%2Finsider-threat-ttp-kb%2Fmain%2Finsider-threat-ttp-kb.json&disable_techniques=false&manual_color=false&scoring=false&comments=false&comment_underline=false&links=false&link_underline=false&metadata=false&clear_annotations=false))               |
+| [insider-threat-heatmap.json](insider-threat-heatmap.json)                              | An ATT&CK® navigator layer representing the Insider Threat TTP Knowledge Base as a heatmap ([View in Navigator](https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fraw.githubusercontent.com%2Fcenter-for-threat-informed-defense%2Finsider-threat-ttp-kb%2Fmain%2Finsider-threat-heatmap.json&disable_techniques=false&manual_color=false&scoring=false&comments=false&comment_underline=false&links=false&link_underline=false&metadata=false&clear_annotations=false)) |
 
 
 ## Getting Involved
@@ -82,4 +82,4 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 This project makes use of ATT&CK®
 
-[ATT&CK Terms of Use](https://attack.mitre.org/resources/terms-of-use/)
+[ATT&CK® Terms of Use](https://attack.mitre.org/resources/terms-of-use/)
