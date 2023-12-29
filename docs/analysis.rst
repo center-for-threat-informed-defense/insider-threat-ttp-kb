@@ -11,7 +11,11 @@ The red indicates that the technique was more commonly used, orange means it was
 .. raw:: html
 
     <p>
+<<<<<<< HEAD
         <a class="btn btn-primary" target="_blank" href="/extra/insider-threat-ttp-kb.json" download="insider-threat-heatmap.json">
+=======
+        <a class="btn btn-primary" target="_blank" href="../navigatorlayers/insider-threat-heatmap.json">
+>>>>>>> bc1d139 (new language edits)
         <i class="fa fa-download"></i> Download Heatmap JSON</a>
     
         <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/sensor-mappings-to-attack/navigator/insider-threat-heatmap.json">
@@ -24,11 +28,14 @@ The red indicates that the technique was more commonly used, orange means it was
 Inferences
 -------------
 
+<<<<<<< HEAD
 Fraud
 ******
 
 Outcome 
 *********
+=======
+>>>>>>> bc1d139 (new language edits)
 
 Limitations
 ------------
