@@ -9,7 +9,7 @@ Mitigations have been identified through their mappings to ATT&CK TTPs and throu
 
 .. raw:: html
    
-   <iframe src="../_static/html/mitigationsanddatasources-1.html" height="845px" width="100%"></iframe>
+   <iframe src="../_static/html/mitigations-1.html" height="845px" width="100%"></iframe>
 
 Data Sources
 -------------
