@@ -1,5 +1,4 @@
 import plotly.graph_objects as go
-# import ipywidgets as widgets
 from mitreattack.stix20 import MitreAttackData
 import pandas as pd
 
@@ -54,46 +53,10 @@ def parallel_categories(df, filepath):
     {'label': df.columns[4] + 's','values':[f'{a} {b}' for a, b in zip(df.iloc[:, 4], df.iloc[:, 5])]}
     ]
 
-  # Build figure as FigureWidget
   fig = go.Figure(go.Parcats(dimensions=dimensions))
-  # tactics = widgets.Dropdown(
-  #   options=list(df['Tactics'].unique()),
-  #   value=df['Tactics'][1],
-  #   description='Filter by Tactic',
-  # )
+
   config = {'displayModeBar': True}
 
-  # fig.update_layout(
-  #   updatemenus=[
-  #       dict(
-  #           buttons=list([
-  #               dict(
-  #                   args=["type", "surface"],
-  #                   label="3D Surface",
-  #                   method="restyle"
-  #               ),
-  #               dict(
-  #                   args=["type", "heatmap"],
-  #                   label="Heatmap",
-  #                   method="restyle"
-  #               ),
-  #                dict(
-  #                 args=["type", "fullscreen"],
-  #                 label="Fullscreen",
-  #                 method="restyle"
-  #               )
-  #           ]),
-  #           direction="down",
-  #           pad={"r": 10, "t": 10},
-  #           showactive=True,
-  #           x=0.1,
-  #           xanchor="left",
-  #           y=1.1,
-  #           yanchor="top"
-  #       ),
-  #   ]
-  # )
-  
   fig.write_html(filepath, config=config)
 
 def main():
