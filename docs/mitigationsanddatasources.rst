@@ -11,6 +11,9 @@ Data Sources
 -------------
 Identifying the most common data sources to detect insider threat will enhance the communities ability to prevent further threats. The data sources will be identified first through mappings from ATT&CK, like the mitigations. However, Center participants have identified and confirmed the data sources used for each detected TTP. 
 
+
+Select between the Mitigations and Data Sources tabs below to view their associated Insider Threat ATT&CK tactics and techniques.
+
 .. raw:: html
 
    <!-- Tab links -->
