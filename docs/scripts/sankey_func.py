@@ -2,8 +2,6 @@ import plotly.graph_objects as go
 # import ipywidgets as widgets
 from mitreattack.stix20 import MitreAttackData
 import pandas as pd
-import sphinx_plotly_directive as spd
-import plotly.express as px
 
 def construct_dataframes(df, mitre_attack_data, insider_threat_ttps):
 
