@@ -47,24 +47,6 @@ def construct_dataframes(df, mitre_attack_data, insider_threat_ttps):
           df.loc[len(df)] = obj_to_add
   return df
 
-  # fig = go.Figure(data=[go.Sankey(
-  # node = dict(
-  #   pad = 15,
-  #   thickness = 20,
-  #   line = dict(color = "black", width = 0.5),
-  #   label = labels,
-  #   color = "blue"
-  # ),
-  # link = dict(
-  #   source = sources, # indices correspond to labels, eg A1, A2, A1, B1, ...
-  #   target = targets,
-  #   value = [3] * len(sources)
-  #   ))])
-
-  # fig.update_layout(title_text="Basic Sankey Diagram", font_size=10)
-  # spd.save_plotly_figure(fig, 'docs/_static/html/mitigationsanddatasources-1.html')
-
-
 def parallel_categories(df, filepath):
   dimensions=[
     {'label':'Tactics','values':[f'{a} {b}' for a, b in zip(df['Tactic'], df['Tactic ID'])]},
@@ -113,7 +95,6 @@ def parallel_categories(df, filepath):
   # )
   
   fig.write_html(filepath, config=config)
-  # spd.save_plotly_figure(fig, filepath)
 
 def main():
   mitre_attack_data = MitreAttackData("enterprise-attack-14.1.json")

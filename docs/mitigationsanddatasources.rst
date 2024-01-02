@@ -7,9 +7,9 @@ Mitigations
 ------------
 Mitigations have been identified through their mappings to ATT&CK TTPs and through validation by Center participants. Currently all insider threat TTPs within the Knowledge Base are also TTPs in ATT&CK, therefore those identified mitigations have been considered. Through discussion with participants, further mitigations may be identified. 
 
-.. raw:: html
+.. .. raw:: html
    
-   <iframe src="../_static/html/mitigations-1.html" height="845px" width="100%"></iframe>
+..    <iframe src="../_static/html/mitigations-1.html" height="845px" width="100%"></iframe>
 
 Data Sources
 -------------
@@ -19,237 +19,185 @@ Identifying the most common data sources to detect insider threat will enhance t
    
 ..    <iframe src="../_static/html/datasources-1.html" height="1045px" width="100%"></iframe>
 
-.. raw:: html
-
-   <div id="datasource-container">
-      <iframe id="datasource" src="../_static/html/datasources-1.html" height="1045px" width="100%"></iframe>
-
-      <button id="fullscreen-button" class="btn btn-secondary btn-sm" onclick="toggleFullscreen()">
-               <i class="fa fa-arrows-alt"></i>
-               Full Screen
-         </button>
-         
-      <script>
-         function toggleFullscreen() {
-            if (document.fullscreenElement) {
-                  document.exitFullscreen();
-            } else {
-                  document.querySelector("#datasource-container").requestFullscreen();
-            }
-         }
-      </script>
-
-      <style>
-      #datasource-container {
-         position: relative;
-      }
-
-      #fullscreen-button {
-         position: absolute;
-         bottom: 5px;
-         right: 5px;
-      }
-
-      @media all and (display-mode: fullscreen) {
-         #datasource-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-         }
-
-         #datasource {
-            max-width: 80vw;
-            max-height: 100vh;
-         }
-      }
-      </style>
-
-   </div>
-   
 .. .. raw:: html
 
-..     <style>
-..     #preview {
-..         border: 1px solid black;
-..         background-color: white;
-..         height: 30rem;
-..         position: relative;
-..         overflow: scroll;
-..     }
+..    <div id="datasource-container">
+..       <iframe id="datasource" src="../_static/html/datasources-1.html" height="1045px" width="100%"></iframe>
 
-..     #preview button {
-..         position: absolute;
-..         bottom: 5px;
-..         right: 5px;
-..     }
+..       <button id="fullscreen-button" class="btn btn-secondary btn-sm" onclick="toggleFullscreen()">
+..                <i class="fa fa-arrows-alt"></i>
+..                Full Screen
+..       </button>
+..    </div>
 
-..     #preview p {
-..         color: #bebebe;
-..         margin-top: 14em;
-..         text-align: center;
-..     }
+..    <script>
+..       function toggleFullscreen() {
+..          if (document.fullscreenElement) {
+..                document.exitFullscreen();
+..          } else {
+..                document.querySelector("#datasource-container").requestFullscreen();
+..          }
+..       }
+..       function openTab(evt, tabName) {
+..          // Declare all variables
+..          var i, tabcontent, tablinks;
 
-..     #preview svg {
-..         display: block;
-..         width: 100%;
-..         height: auto;
-..     }
+..          // Get all elements with class="tabcontent" and hide them
+..          tabcontent = document.getElementsByClassName("tabcontent");
+..          for (i = 0; i < tabcontent.length; i++) {
+..             tabcontent[i].style.display = "none";
+..          }
 
-..     @media all and (display-mode: fullscreen) {
-..         #preview svg {
-..             max-width: 100vw;
-..             max-height: 100vh;
-..         }
-..     }
+..          // Get all elements with class="tablinks" and remove the class "active"
+..          tablinks = document.getElementsByClassName("tablinks");
+..          for (i = 0; i < tablinks.length; i++) {
+..             tablinks[i].className = tablinks[i].className.replace(" active", "");
+..          }
 
-..     #previewError {
-..         color: var(--me-ext-cranberry-dark);
-..         background-color: #f3bacf;
-..         border: 1px solid var(--me-ext-cranberry-dark);
-..         margin: 1em 0;
-..         padding: 1em;
-..         display: none;
-..     }
-..     </style>
-..     <div id="preview">
-..         <button class="btn btn-secondary btn-sm" onclick="toggleFullscreen()">
-..             <i class="fa fa-arrows-alt"></i>
-..             Full Screen
-..         </button>
-..         <p>
-..             Preview: Select Full Screen for entire view.
-..         </p>
-..     </div>
+..          // Show the current tab, and add an "active" class to the button that opened the tab
+..          document.getElementById(tabName).style.display = "block";
+..          evt.currentTarget.className += " active";
+..       }
+..    </script>
 
-..     <div style="display: flex; margin-top: 1em;">
-..         <div style="flex-grow: 1;">
-..             <label for="layerSelect">
-..                 Select or upload base layer:
-..             </label>
-..             <select id="layerSelect" onchange="selectBaseLayer(this)">
-..                 <option value=""></option>
-..                 <option value="enterprise-subs-blank">Enterprise Techniques and Subtechniques</option>
-..                 <option value="enterprise-mitigations-blank">Enterprise Techniques and Mitigations</option>
-..                 <option value="enterprise-datasources-blank">Enterprise Techniques and Datasources</option>
-..                 <option value="upload">Upload (.svg)</option>
-..             </select>
-..             <br>
-..             <input id="baseLayerUpload" type="file" onchange="uploadBaseLayer(this)"
-..                 accept=".svg" style="margin-top: 0.5em; visibility: hidden;">
-..         </div>
-..       </div>   
+..    <style>
+..    #datasource-container {
+..       position: relative;
+..    }
 
-..       <div style="margin-bottom: 3em;">
-..         <button class="btn btn-primary" onclick="generatePreview()">
-..             <i class="fa fa-search"></i>
-..             Generate Preview
-..         </button>
-..         <button id="downloadSvg" class="btn btn-primary" onclick="downloadSvg()" disabled>
-..             <i class="fa fa-download"></i>
-..             Download
-..         </button>
-..     </div>
+..    #fullscreen-button {
+..       position: absolute;
+..       bottom: 5px;
+..       right: 5px;
+..    }
 
-..         <script src="../matrix/matrix.js"></script>
+..    @media all and (display-mode: fullscreen) {
+..       #datasource-container {
+..          display: flex;
+..          align-items: center;
+..          justify-content: center;
+..       }
 
-..     <script>
-..     let layerSrc = null;
-..     let flowSrc = null;
-..     let svgSrc = null;
+..       #datasource {
+..          max-width: 80vw;
+..          max-height: 100vh;
+..       }
+..    }
+..    </style>
 
-..     function selectBaseLayer(el) {
-..         if (el.value === "upload") {
-..             document.querySelector("#baseLayerUpload").click();
-..         } else if (el.value !== "") {
-..             const url = `../matrix/${el.value}.svg`;
-..             fetch(url).then((response) => response.text())
-..             .then((data) => {
-..                 layerSrc = data;
-..             })
-..             .catch((err) => showError(`Cannot download base layer: ${url}`));
-..         }
-..     }
 
-..     function uploadBaseLayer(fileInput) {
-..         const fr = new FileReader();
-..         fr.onload = () => layerSrc = fr.result;
-..         fr.readAsText(fileInput.files[0]);
-..     }
+.. raw:: html
 
-..     function uploadAttackFlow(fileInput) {
-..         const fr = new FileReader();
-..         fr.onload = () => flowSrc = fr.result;
-..         fr.readAsText(fileInput.files[0]);
-..     }
+   <!-- Tab links -->
+   <div class="tab">
+   <button class="tablinks" onclick="openTab(event, 'mitigations_chart')">Mitigations</button>
+   <button class="tablinks" onclick="openTab(event, 'datasources_chart')" id="defaultOpen">Data Sources</button>
+   </div>
 
-..     function toggleFullscreen() {
-..         if (document.fullscreenElement) {
-..             document.exitFullscreen();
-..         } else {
-..             document.querySelector("#preview").requestFullscreen();
-..         }
-..     }
+   <!-- Tab content -->
+   <div id="mitigations_chart" class="tabcontent">
+      <h3>Mitigations</h3>
+      <div class="tab-container">
+         <iframe src="../_static/html/mitigations-1.html" height="1045px" width="100%"></iframe>
+         <button class="btn btn-secondary btn-sm fullscreen-button" onclick="toggleFullscreen('mitigations_chart')">
+                  <i class="fa fa-arrows-alt"></i>
+                  Full Screen
+         </button>
+      </div>
+   </div>
 
-..     function generatePreview() {
-..         if (!layerSrc) {
-..             showError("Select or upload a base layer before previewing.");
-..             return;
-..         }
+   <div id="datasources_chart" class="tabcontent">
+      <h3>Data Sources</h3>
+      <div class="tab-container">
+         <iframe src="../_static/html/datasources-1.html" height="1045px" width="100%"></iframe>
+         <button class="btn btn-secondary btn-sm fullscreen-button" onclick="toggleFullscreen('datasources_chart')">
+                  <i class="fa fa-arrows-alt"></i>
+                  Full Screen
+         </button>
+      </div>
+   </div>
 
-..         if (!flowSrc) {
-..             showError("Upload an Attack Flow (.json) before previewing.");
-..             return;
-..         }
+   <style>
+      /* Style the tab */
+      .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+      }
 
-..         try {
-..             for (const el of document.querySelectorAll("#preview svg")) {
-..                 el.remove();
-..             }
-..             svgSrc = render(layerSrc, flowSrc);
-..             const container = document.createElement("div");
-..             container.innerHTML = svgSrc;
-..             const svg = container.querySelector("svg");
-..             const svgWidth = svg.getAttribute("width");
-..             const svgHeight = svg.getAttribute("height");
-..             svg.setAttribute("viewBox", `0 0 ${svgWidth} ${svgHeight}`);
-..             container.removeChild(svg);
-..             document.querySelector("#preview").appendChild(svg);
-..             document.querySelector("#preview p").style.display = "none";
-..             document.querySelector("#downloadSvg").disabled = false;
-..             hideError();
-..         } catch (e) {
-..             showError(`Cannot generate preview: ${e}`);
-..             throw e;
-..         }
-..     }
+      /* Style the buttons that are used to open the tab content */
+      .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      }
 
-..     function downloadSvg() {
-..         const file = document.querySelector("#uploadFlow").files[0];
-..         const fileName = file.name.replace(".json", ".svg");
-..         let data = '<?xml version="1.0" standalone="no"?>\n';
-..         data += svgSrc;
-..         const blob = new Blob([data], {type:"image/svg+xml"});
-..         const anchor = document.createElement("a");
-..         anchor.download = fileName;
-..         anchor.href = URL.createObjectURL(blob);
-..         anchor.style.display = "none";
-..         document.body.appendChild(anchor);
-..         anchor.click();
-..         setTimeout(function () {
-..             document.body.removeChild(anchor);
-..             URL.revokeObjectURL(anchor.href);
-..         }, 500);
-..     }
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+      background-color: #ddd;
+      }
 
-..     function showError(txt) {
-..         const errorDiv = document.querySelector("#previewError");
-..         const errorSpan = errorDiv.querySelector("span");
-..         errorSpan.innerText = txt;
-..         errorDiv.style.display = "block";
-..     }
+      /* Create an active/current tablink class */
+      .tab button.active {
+      background-color: #ccc;
+      }
 
-..     function hideError() {
-..         document.querySelector("#previewError").style.display = "none";
-..     }
-..     </script>
+      /* Style the tab content */
+      .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+      }
 
+      .fullscreen-button {
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+      }    
+
+      .tab-container {
+      position: relative;
+      }
+
+   </style>
+
+   <script>
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+
+      function openTab(evt, tabName) {
+         console.log("Calling openTab w tab name: " + tabName);
+         // Declare all variables
+         var i, tabcontent, tablinks;
+         // Get all elements with class="tabcontent" and hide them
+         tabcontent = document.querySelectorAll(".tabcontent");
+         console.log("Hiding tabs: ")
+         console.log(tabcontent);
+         for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+         }
+         // Get all elements with class="tablinks" and remove the class "active"
+         tablinks = document.querySelectorAll(".tablinks");
+         for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+         }
+         // Show the current tab, and add an "active" class to the button that opened the tab
+         console.log("Activating tab: " + tabName);
+         console.log(document.querySelector(`#${tabName}`))
+         document.querySelector(`#${tabName}`).style.display = "block";
+         evt.currentTarget.className += " active";
+      }
+
+      function toggleFullscreen(elementName) {
+         if (document.fullscreenElement) {
+               document.exitFullscreen();
+         } else {
+               document.querySelector(`#${elementName} div`).requestFullscreen();
+         }
+      }
+   </script>
