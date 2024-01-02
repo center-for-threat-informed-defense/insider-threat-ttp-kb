@@ -17,11 +17,4 @@ Using the :doc:`heatmap </analysis>`, an organization can determine the most fre
 .. admonition:: Example of using the heatmap
 
     1. Choose the techniques in the heatmap that are colored red, and refer to :doc:`mitigations </mitigationsanddatasources>` to find their corresponding mitigation. 
-    
-
-
-
-.. plotly:: ../scripts/sankey.py
-
-.. plotly:: ../scripts/sankey.py
 
