@@ -81,6 +81,8 @@ def parallel_categories(df, filepath):
   #   value=df['Tactics'][1],
   #   description='Filter by Tactic',
   # )
+  config = {'displayModeBar': True}
+
   # fig.update_layout(
   #   updatemenus=[
   #       dict(
@@ -94,6 +96,11 @@ def parallel_categories(df, filepath):
   #                   args=["type", "heatmap"],
   #                   label="Heatmap",
   #                   method="restyle"
+  #               ),
+  #                dict(
+  #                 args=["type", "fullscreen"],
+  #                 label="Fullscreen",
+  #                 method="restyle"
   #               )
   #           ]),
   #           direction="down",
@@ -107,7 +114,8 @@ def parallel_categories(df, filepath):
   #   ]
   # )
   
-  spd.save_plotly_figure(fig, filepath)
+  fig.write_html(filepath, config=config)
+  # spd.save_plotly_figure(fig, filepath)
 
 def main():
   mitre_attack_data = MitreAttackData("enterprise-attack-14.1.json")
