@@ -106,7 +106,7 @@ Exporting TTPs
 Additional Resources
 ---------------------
 
-To see additional resources, select the Resources button to see options for the `Knowledge Base GitHub Repository <https://mitre-attack.github.io/attack-navigator>`_, :download:`a Draft Technique List <../insider-threat-ttp-kb.csv>`, :download:`the Design principles and Methodology paper <../design-principles-and-methodology.pdf>`, and `the Project Announcement <https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/our-work/insider-threat-ttp-knowledge-base/>`_. 
+To see additional resources, select the Resources button to see options for the `Knowledge Base GitHub Repository <https://mitre-attack.github.io/attack-navigator>`_, :download:`a Draft Technique List <./insider-threat-ttp-kb.csv>`, :download:`the Design principles and Methodology paper <./design-principles-and-methodology.pdf>`, and `the Project Announcement <https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/our-work/insider-threat-ttp-knowledge-base/>`_. 
 
 .. image:: images/resources.png
 .. image:: images/resourceExamples.png
