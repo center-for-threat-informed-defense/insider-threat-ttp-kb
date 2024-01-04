@@ -21,6 +21,6 @@ Already a Contributor?
         <i class="fa fa-sign-in"></i> Log into the Toolbox Here</a>
         
         <a class="btn btn-primary" target="_blank" href="../user_guide">
-        <i class="fa fa-download"></i> View the portal user guide</a>
+        <i class="fa fa-question-circle "></i> View the portal user guide</a>
 
     </p>
