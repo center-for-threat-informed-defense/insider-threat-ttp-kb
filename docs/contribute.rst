@@ -12,7 +12,7 @@ Interested in contributing data to enhance the knowledge base or simply want to 
 
 
 Already a Contributor?
-=========================
+*************************
 
 .. raw:: html
 
