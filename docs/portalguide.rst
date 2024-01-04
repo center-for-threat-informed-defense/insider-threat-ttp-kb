@@ -1,5 +1,5 @@
-Case Submission Portal User Guide
-====================================
+Portal User Guide
+=====================
 
 .. admonition:: Public Release Disclaimer
 
