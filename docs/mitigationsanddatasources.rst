@@ -93,10 +93,15 @@ Select between the Mitigations and Data Sources tabs below to view their associa
       }
 
       @media all and (display-mode: fullscreen) {
-      .container-container {
-         display: flex;
-         align-items: center;
-         justify-content: center;
+         .container-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+
+         .tab-container iframe {
+            height: 100%;
+         }
       }
    </style>
 
@@ -128,8 +133,11 @@ Select between the Mitigations and Data Sources tabs below to view their associa
       function toggleFullscreen(elementName) {
          if (document.fullscreenElement) {
                document.exitFullscreen();
+               document.querySelector(`#${elementName} div`).style.width = "100%";
          } else {
-               document.querySelector(`#${elementName} div`).requestFullscreen();
+               let element = document.querySelector(`#${elementName} div`);
+               element.requestFullscreen();
+               element.style.width = "50%";
          }
       }
    </script>
