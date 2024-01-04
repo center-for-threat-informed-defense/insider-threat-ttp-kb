@@ -2,7 +2,7 @@ Knowledge Base
 ===============
 
 Green = Seen: Insider Tactics, Techniques, and Procedures
--------------------------------------------------------
+-----------------------------------------------------------
 
 The ATT&CK® Navigator matrix - which the team calls the green = seen chart - illustrates all of the TTPs seen to be used by insiders. This information stems from the case files submitted by participating organizations and illustrates the potential TTPs an enterprise could see in their network. 
 
