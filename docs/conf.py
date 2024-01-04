@@ -32,7 +32,7 @@ release = version
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    "sphinx_rtd_theme"   
+    "sphinx_rtd_theme",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -60,6 +60,7 @@ html_css_files = [
     'css/custom.css',
 ]
 html_js_files = [
+    "js/require.min.js",
     'js/custom.js',
     'https://code.jquery.com/jquery-3.7.0.js',
     'https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js',
@@ -70,7 +71,7 @@ html_show_sphinx = False
 html_use_smartypants = False
 
 html_theme_options = {
-    "analytics_id": "", # TODO Create and fill in Google Analytics G-tag.
+    "analytics_id": "G-02XDSKE721",
     "display_version": True,
     "logo_only": True,
     "style_external_links": True,
