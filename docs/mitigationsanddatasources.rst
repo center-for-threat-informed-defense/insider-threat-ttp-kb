@@ -114,13 +114,10 @@ The chart below details the tactic, technique and data source mappings specific 
       document.getElementById("defaultOpen").click();
 
       function openTab(evt, tabName) {
-         console.log("Calling openTab w tab name: " + tabName);
          // Declare all variables
          var i, tabcontent, tablinks;
          // Get all elements with class="tabcontent" and hide them
          tabcontent = document.querySelectorAll(".tabcontent");
-         console.log("Hiding tabs: ")
-         console.log(tabcontent);
          for (i = 0; i < tabcontent.length; i++) {
             tabcontent[i].style.display = "none";
          }
