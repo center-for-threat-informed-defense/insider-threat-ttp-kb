@@ -12,5 +12,5 @@ Current OHIs being collected:
     * Turnover rate of subject's role
     * Time at company
     * Management level
-    * Senority of subject
+    * Seniority of subject
     * Government security clearance
