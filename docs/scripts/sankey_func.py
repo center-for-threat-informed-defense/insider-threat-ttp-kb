@@ -54,10 +54,6 @@ def parallel_categories(df, filepath):
     ]
 
   fig = go.Figure(go.Parcats(dimensions=dimensions))
-  # fig.update_layout(
-  #   autosize=False,
-  # )
-  # fig.update_yaxes(automargin='left+right')
   fig.update_layout(
     margin=dict(
         l=200,
