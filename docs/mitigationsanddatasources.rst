@@ -14,8 +14,9 @@ Data Sources
 Data sources that are useful for providing relevant information for insider threat identification have been detailed. Identifying the most common data sources to detect insider threat will enhance the communities' ability to mitigate insider threat. The data sources have been identified first through mappings from ATT&CK®, like the mitigations, with follow-on confirmation from Center participants. 
 The chart below details the tactic, technique and data source mappings specific to insider threat. 
 
+.. tip::
 
-Select between the Mitigations and Data Sources tabs below to view their associated Insider Threat ATT&CK tactics and techniques.
+   Select between the Mitigations and Data Sources tabs below to view their associated Insider Threat ATT&CK tactics and techniques.
 
 .. raw:: html
 
