@@ -2,7 +2,6 @@ Knowledge Base
 ===============
 
 Green = Seen: Insider Tactics, Techniques, and Procedures
-<<<<<<< HEAD
 -----------------------------------------------------------
 
 The ATT&CK® Navigator matrix - which the team calls the green = seen chart - illustrates all of the TTPs seen to be used by insiders. This information stems from the case files submitted by participating organizations and illustrates the potential TTPs an enterprise could see in their network. 
@@ -13,13 +12,6 @@ The ATT&CK® Navigator matrix - which the team calls the green = seen chart - il
 
 
 .. FIX LINKS!!!!!
-=======
--------------------------------------------------------
-
-The ATT&CK® Navigator matrix - which the team calls the green = seen chart - illustrates all of the TTPs seen to be used by insiders. This information stems from the case files submitted by participating organizations and illustrates the potential TTPs an enterprise could see in their network. 
-
-See the :doc:`heatmap </analysis>` to visualize the frequency of each technique.
->>>>>>> bc1d139 (new language edits)
 
 .. raw:: html
 
@@ -27,17 +19,10 @@ See the :doc:`heatmap </analysis>` to visualize the frequency of each technique.
         <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/sensor-mappings-to-attack/navigator/Auditd-heatmap.json">
         <i class="fa fa-map-signs"></i> Open in ATT&CK® Navigator</a>
 
-<<<<<<< HEAD
         <a class="btn btn-primary" target="_blank" href="docs\extra\extradocs\insider-threat-ttp-kb.csv" download="insider-threat-ttp-kb.csv">
         <i class="fa fa-download"></i> Download CSV</a>
 
         <a class="btn btn-primary" target="_blank" href="../insider-threat-ttp-kb.json" download="insider-threat-ttp-kb.json">
-=======
-        <a class="btn btn-primary" target="_blank" download="../insider-threat-ttp-kb.csv">
-        <i class="fa fa-download"></i> Download CSV</a>
-
-        <a class="btn btn-primary" target="_blank" download="../insider-threat-ttp-kb.json">
->>>>>>> bc1d139 (new language edits)
         <i class="fa fa-download"></i> Download JSON</a>
     </p>
 

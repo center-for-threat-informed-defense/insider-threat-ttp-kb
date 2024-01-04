@@ -28,14 +28,11 @@ The red indicates that the technique was more commonly used, orange means it was
 Inferences
 -------------
 
-<<<<<<< HEAD
 Fraud
 ******
 
 Outcome 
 *********
-=======
->>>>>>> bc1d139 (new language edits)
 
 Limitations
 ------------
