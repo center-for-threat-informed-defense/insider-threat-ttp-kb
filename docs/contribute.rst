@@ -20,7 +20,7 @@ Already a Contributor?
         <a class="btn btn-primary" target="_blank" href="https://ctid-toolbox.mitre-engenuity.org/">
         <i class="fa fa-sign-in"></i> Log into the Toolbox Here</a>
         
-        <a class="btn btn-primary" target="_blank" href="../user_guide">
+        <a class="btn btn-primary" target="_blank" href="../portalguide">
         <i class="fa fa-question-circle "></i> View the portal user guide</a>
 
     </p>
