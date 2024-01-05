@@ -54,9 +54,17 @@ def parallel_categories(df, filepath):
     ]
 
   fig = go.Figure(go.Parcats(dimensions=dimensions))
+  fig.update_layout(
+    margin=dict(
+        l=200,
+        r=200,
+        b=20,
+        t=20,
+        pad=4
+    )
+  )
 
   config = {'displayModeBar': True}
-
   fig.write_html(filepath, config=config)
 
 def main():

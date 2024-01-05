@@ -31,7 +31,7 @@ The ATT&CK® Navigator matrix - which the team calls the green = seen chart - il
 
 PLACEHOLDER IMAGE
 
-.. image:: /images/green_seen.PNG
+.. image:: /images/greenseen.svg
    :scale: 75%
 
 

@@ -11,7 +11,8 @@ The chart below details the tactic, technique and mitigation mappings specific t
 
 Data Sources
 -------------
-Identifying the most common data sources to detect insider threat will enhance the communities ability to prevent further threats. The data sources will be identified first through mappings from ATT&CK, like the mitigations. However, Center participants have identified and confirmed the data sources used for each detected TTP. 
+Data sources that are useful for providing relevant information for insider threat identification have been detailed. Identifying the most common data sources to detect insider threat will enhance the communities' ability to mitigate insider threat. The data sources have been identified first through mappings from ATT&CK®, like the mitigations, with follow-on confirmation from Center participants. 
+The chart below details the tactic, technique and data source mappings specific to insider threat. 
 
 .. tip::
 
@@ -96,10 +97,15 @@ Identifying the most common data sources to detect insider threat will enhance t
       }
 
       @media all and (display-mode: fullscreen) {
-      .container-container {
-         display: flex;
-         align-items: center;
-         justify-content: center;
+         .container-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+
+         .tab-container iframe {
+            height: 100%;
+         }
       }
    </style>
 
@@ -131,8 +137,11 @@ Identifying the most common data sources to detect insider threat will enhance t
       function toggleFullscreen(elementName) {
          if (document.fullscreenElement) {
                document.exitFullscreen();
+               document.querySelector(`#${elementName} div`).style.width = "100%";
          } else {
-               document.querySelector(`#${elementName} div`).requestFullscreen();
+               let element = document.querySelector(`#${elementName} div`);
+               element.requestFullscreen();
+               element.style.width = "50%";
          }
       }
    </script>
