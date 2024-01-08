@@ -23,7 +23,7 @@ The ATT&CK® Navigator matrix - which the team calls the green = seen chart - il
         <a class="btn btn-primary" target="_blank" href="..\extradocs\insider-threat-ttp-kb.csv" download="insider-threat-ttp-kb.csv">
         <i class="fa fa-download"></i> Download CSV</a>
 
-        <a class="btn btn-primary" target="_blank" href="..\insider-threat-ttp-kb.json" download="insider-threat-ttp-kb.json">
+        <a class="btn btn-primary" target="_blank" href="..\insider-threat-ttp-knowledgebase.json" download="insider-threat-ttp-knowledgebase.json">
         <i class="fa fa-download"></i> Download JSON</a>
     </p>
 

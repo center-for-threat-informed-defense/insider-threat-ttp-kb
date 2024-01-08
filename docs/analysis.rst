@@ -24,12 +24,21 @@ The red indicates that the technique was more commonly used, orange means it was
 
 Inferences
 -------------
+* The majority of cases can be broken into two categories: **exfiltration** and **fraud**
+* 
 
 Fraud
 ******
 
-Outcome 
-*********
+* Account creation
+* Accessing accounts
+* Processing refunds/payments
+* Account alteration
+
+Exfiltration 
+*************
+* Exfiltration via USA/removable storage media
+* Access of data repository such as One Drive or SharePoint
 
 Limitations
 ------------

@@ -9,4 +9,7 @@ The Insider Threat Knowledge Base team includes:
     * Adam Hlavek
     * Cassidy Olsen
     * Suneel Sundar
-    
+
+Other Center Work
+------------------
+Check out other CTID projects here!
