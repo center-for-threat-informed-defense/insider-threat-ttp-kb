@@ -22,14 +22,38 @@ The red indicates that the technique was more commonly used, orange means it was
 .. image:: /images/heatmap.PNG
    :scale: 75%
 
+.. TODO add inferences below
+
 Inferences
 -------------
+* The majority of cases can be broken into two categories: **exfiltration** and **fraud**
+
 
 Fraud
 ******
 
-Outcome 
-*********
+* Account creation
+
+* Accessing accounts
+
+* Processing refunds/payments
+
+* Account alteration
+
+.. TODO add sub-heading for fraud heatmap below
+
+
+
+Exfiltration 
+*************
+* Exfiltration via USA/removable storage media
+
+* Access of data repository such as One Drive or SharePoint
+
+.. TODO add sub-heading for exfil heatmap below
+
+
+.. TODO add limitations below
 
 Limitations
 ------------
