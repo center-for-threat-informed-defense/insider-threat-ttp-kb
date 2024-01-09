@@ -24,7 +24,7 @@ def construct_dataframes(df, mitre_attack_data, insider_threat_ttps):
         mitigations_mitigating_technique = mitre_attack_data.get_mitigations_mitigating_technique(technique_obj.id)
 
         for mitigation in mitigations_mitigating_technique:
-          obj_to_add = [tactic_shortname, mitre_attack_data.get_attack_id(tactic.id),
+          obj_to_add = [tactic.name, mitre_attack_data.get_attack_id(tactic.id),
                             technique_obj.name, mitre_attack_data.get_attack_id(technique_obj.id),
                             mitigation["object"].name, mitre_attack_data.get_attack_id(mitigation["object"].id),
                             ]
@@ -39,7 +39,7 @@ def construct_dataframes(df, mitre_attack_data, insider_threat_ttps):
             datasources_detecting_technique.append(mitre_attack_data.get_object_by_stix_id(datacomponent["object"].x_mitre_data_source_ref))
 
         for datasource in datasources_detecting_technique:
-          obj_to_add = [tactic_shortname, mitre_attack_data.get_attack_id(tactic.id),
+          obj_to_add = [tactic.name, mitre_attack_data.get_attack_id(tactic.id),
                     technique_obj.name, mitre_attack_data.get_attack_id(technique_obj.id),
                     mitre_attack_data.get_attack_id(datasource.id), datasource.name
                     ]
