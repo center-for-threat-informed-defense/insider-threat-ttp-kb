@@ -1,17 +1,27 @@
 Knowledge Base
 ===============
 
+.. _green=seen:
+
 Green = Seen: Insider Tactics, Techniques, and Procedures
 -----------------------------------------------------------
 
 The ATT&CK® Navigator matrix - which the team calls the green = seen chart - illustrates all the TTPs seen to be used by insiders. This information stems from the case files submitted by participating organizations and illustrates the potential TTPs an enterprise could see in their network. 
 
-.. tip::
-
-    See the :doc:`heatmap </analysis>` to visualize the frequency of each technique.
-
 
 .. FIX LINKS!!!!!
+
+.. hint::
+
+    Click image to enlarge
+
+.. image:: /images/greenseen.svg
+   :scale: 75%
+
+
+
+View or Download Green=Seen Data
+***********************************
 
 .. raw:: html
 
@@ -20,21 +30,18 @@ The ATT&CK® Navigator matrix - which the team calls the green = seen chart - il
         <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/sensor-mappings-to-attack/navigator/Auditd-heatmap.json">
         <i class="fa fa-map-signs"></i> Open in ATT&CK® Navigator</a>
 
-        <a class="btn btn-primary" target="_blank" href="..\extradocs\insider-threat-ttp-kb.csv" download="insider-threat-ttp-kb.csv">
-        <i class="fa fa-download"></i> Download CSV</a>
+        <a class="btn btn-primary" target="_blank" href="..\extradocs\insider-threat-seen-ttps.xlsx" download="insider-threat-seen-ttps.xlsx">
+        <i class="fa fa-download"></i> Download Excel</a>
 
-        <a class="btn btn-primary" target="_blank" href="..\insider-threat-ttp-knowledgebase.json" download="insider-threat-ttp-knowledgebase.json">
+        <a class="btn btn-primary" target="_blank" href="..\extradocs\insider-threat-ttp.json" download="insider-threat-ttp.json">
         <i class="fa fa-download"></i> Download JSON</a>
     </p>
 
+.. seealso::
+
+    See the :doc:`heatmap </analysis>` to visualize the frequency of each technique.
+
     
-
-PLACEHOLDER IMAGE
-
-.. image:: /images/greenseen.svg
-   :scale: 75%
-
-
 Data Collection
 ----------------
 
@@ -50,8 +57,12 @@ The data in the knowledge base is validated by identification of TTPs used by th
 
     * Timestamps of each TTP to better understand the overall timeline 
 
-* The tactic each technique corresponds to. Just like in Enterprise ATT&CK®, a technique can fall under multiple tactics depending on how the insider used the technique in each case. Along the way, there may be insider actions that do not neatly fit into Enterprise ATT&CK® tactics or techniques. Contributors can propose new or modified tactics and techniques in these circumstances. 
+* The tactic each technique corresponds to:
 
-* Techniques can be modified from an existing Enterprise ATT&CK® technique with new language to make it applicable to insider threats if required. 
+    * Just like in Enterprise ATT&CK®, a technique can fall under multiple tactics depending on how the insider used the technique in each case. 
 
-* Brand new techniques can also be created when an existing technique is not sufficient. 
+    * Along the way, there may be insider actions that do not neatly fit into Enterprise ATT&CK® tactics or techniques. Contributors can propose new or modified tactics and techniques in these circumstances. 
+
+* Techniques that can be modified from an existing Enterprise ATT&CK® technique with new language to make it applicable to insider threats if required. 
+
+* Brand new techniques that can also be created when an existing technique is not sufficient. 
