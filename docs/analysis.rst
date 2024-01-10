@@ -19,7 +19,7 @@ The red indicates that the technique was more commonly used, orange means it was
     
     </p>
 
-.. image:: /images/heatmap.PNG
+.. image:: /images/heatmap.svg
    :scale: 75%
 
 .. TODO add inferences below
