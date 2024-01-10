@@ -1,6 +1,7 @@
 import plotly.graph_objects as go
 from mitreattack.stix20 import MitreAttackData
 import pandas as pd
+from textwrap import wrap
 
 def construct_dataframes(df, mitre_attack_data, insider_threat_ttps):
 
@@ -24,10 +25,13 @@ def construct_dataframes(df, mitre_attack_data, insider_threat_ttps):
         mitigations_mitigating_technique = mitre_attack_data.get_mitigations_mitigating_technique(technique_obj.id)
 
         for mitigation in mitigations_mitigating_technique:
-          obj_to_add = [tactic.name, mitre_attack_data.get_attack_id(tactic.id),
-                            technique_obj.name, mitre_attack_data.get_attack_id(technique_obj.id),
-                            mitigation["object"].name, mitre_attack_data.get_attack_id(mitigation["object"].id),
-                            ]
+          # obj_to_add = [tactic.name, mitre_attack_data.get_attack_id(tactic.id),
+          #                   technique_obj.name, mitre_attack_data.get_attack_id(technique_obj.id),
+          #                   mitigation["object"].name, mitre_attack_data.get_attack_id(mitigation["object"].id),
+          #                   ]
+          obj_to_add = [technique_obj.name, mitre_attack_data.get_attack_id(technique_obj.id),
+                  mitigation["object"].name, mitre_attack_data.get_attack_id(mitigation["object"].id),
+                  ]
           df.loc[len(df)] = obj_to_add
 
       #Datasources
@@ -39,33 +43,55 @@ def construct_dataframes(df, mitre_attack_data, insider_threat_ttps):
             datasources_detecting_technique.append(mitre_attack_data.get_object_by_stix_id(datacomponent["object"].x_mitre_data_source_ref))
 
         for datasource in datasources_detecting_technique:
-          obj_to_add = [tactic.name, mitre_attack_data.get_attack_id(tactic.id),
-                    technique_obj.name, mitre_attack_data.get_attack_id(technique_obj.id),
+          # obj_to_add = [tactic.name, mitre_attack_data.get_attack_id(tactic.id),
+          #           technique_obj.name, mitre_attack_data.get_attack_id(technique_obj.id),
+          #           mitre_attack_data.get_attack_id(datasource.id), datasource.name
+          #           ]
+          obj_to_add = [technique_obj.name, mitre_attack_data.get_attack_id(technique_obj.id),
                     mitre_attack_data.get_attack_id(datasource.id), datasource.name
                     ]
           df.loc[len(df)] = obj_to_add
   return df
 
+def wrap_labels(labels):
+  wrapped_labels = []
+  for label in labels:
+    wrapped_label = "<br>".join(wrap(label, width=40))
+    wrapped_labels.append(wrapped_label)
+  return wrapped_labels
+
 def parallel_categories(df, filepath):
   dimensions=[
-    {'label':'Tactics','values':[f'{a} {b}' for a, b in zip(df['Tactic'], df['Tactic ID'])]},
-    {'label':'Techniques','values':[f'{a} {b}' for a, b in zip(df['Technique'], df['Technique ID'])]},
-    {'label': df.columns[4] + 's','values':[f'{a} {b}' for a, b in zip(df.iloc[:, 4], df.iloc[:, 5])]}
+    # {'label':'Tactics','values':[f'{a} {b}' for a, b in zip(df['Tactic'], df['Tactic ID'])]},
+    {'label':'Techniques','values':wrap_labels([f'{a} {b}' for a, b in zip(df['Technique'], df['Technique ID'])])},
+    {'label': df.columns[2] + 's','values':wrap_labels([f'{a} {b}' for a, b in zip(df.iloc[:, 2], df.iloc[:, 3])])}
     ]
-
-  fig = go.Figure(go.Parcats(dimensions=dimensions))
+    #index were 4, 4, 5
+  fig = go.Figure(data = go.Parcats(dimensions=dimensions))
   fig.update_layout(
+    # hovermode = 'x',
+    # hoverinfo='none',
+    height=1900,
     margin=dict(
         l=200,
         r=200,
         b=20,
         t=20,
         pad=4
-    )
+    ),
+    # xaxis={'automargin': True},
+    # yaxis={'automargin': True}
+    # xaxis = dict(
+    #     tickmode = 'array',
+    #     ticktext = [txt[:15] + ' ' + txt[15:] if len(txt) > 15 else txt for txt in fig['layout']['xaxis']['categoryarray']]
+    # )
   )
 
   config = {'displayModeBar': True}
+  # fig.show()
   fig.write_html(filepath, config=config)
+  #just generate the div and then use the cdn link as a script tag in mds.rst
+  #don't generate the html at all??? Just what I need for the graph and them style *-1.html myself? 
 
 def main():
   mitre_attack_data = MitreAttackData("enterprise-attack-14.1.json")
@@ -73,10 +99,10 @@ def main():
   mitigations_filepath = 'docs/_static/html/mitigations-1.html'
   datasources_filepath = 'docs/_static/html/datasources-1.html'
 
-  mitigation_columns = ['Tactic', 'Tactic ID',
+  mitigation_columns = [#'Tactic', 'Tactic ID',
             'Technique', 'Technique ID',
             'Mitigation', 'Mitigation ID']
-  datasource_columns = ['Tactic', 'Tactic ID',
+  datasource_columns = [#'Tactic', 'Tactic ID',
             'Technique', 'Technique ID',
             'Datasource', 'Datasource ID']
 

@@ -17,6 +17,9 @@ The chart below details the tactic, technique and data source mappings specific 
 .. tip::
 
    Select between the Mitigations and Data Sources tabs below to view their associated Insider Threat ATT&CK tactics and techniques.
+.. .. raw:: html
+
+   .. <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
 
 .. raw:: html
 
@@ -30,7 +33,7 @@ The chart below details the tactic, technique and data source mappings specific 
    <div id="mitigations_fig" class="tabcontent">
       <h3>Mitigations</h3>
       <div class="tab-container">
-         <iframe src="../_static/html/mitigations-1.html" height="1045px" width="100%"></iframe>
+         <iframe src="../_static/html/mitigations-1.html" height="1145px" width="100%"></iframe>
          <button class="btn btn-secondary btn-sm fullscreen-button" onclick="toggleFullscreen('mitigations_fig')">
                   <i class="fa fa-arrows-alt"></i>
                   Full Screen
@@ -41,7 +44,7 @@ The chart below details the tactic, technique and data source mappings specific 
    <div id="datasources_fig" class="tabcontent">
       <h3>Data Sources</h3>
       <div class="tab-container">
-         <iframe src="../_static/html/datasources-1.html" height="1045px" width="100%"></iframe>
+         <iframe src="../_static/html/datasources-1.html" height="1145px" width="100%"></iframe>
          <button class="btn btn-secondary btn-sm fullscreen-button" onclick="toggleFullscreen('datasources_fig')">
                   <i class="fa fa-arrows-alt"></i>
                   Full Screen
@@ -84,6 +87,16 @@ The chart below details the tactic, technique and data source mappings specific 
       padding: 6px 12px;
       border: 1px solid #ccc;
       border-top: none;
+      }
+
+      path:hover {
+      fill: gold !important;
+      fill-opacity: 1 !important;
+      }
+
+      .sankey-link:hover {
+      fill: gold !important;
+      fill-opacity: 1 !important;
       }
 
       .fullscreen-button {
