@@ -51,7 +51,13 @@ def construct_dataframes(df, mitre_attack_data, insider_threat_ttps):
                     mitre_attack_data.get_attack_id(datasource.id), datasource.name
                     ]
           df.loc[len(df)] = obj_to_add
-  return df
+  return order_techniques_by_size(df)
+
+#orders the techniques by number of linked mitigations or datasources, most to least
+def order_techniques_by_size(df):
+  df['count'] = df.groupby('Technique')['Technique'].transform('count')
+  df = df.sort_values('count', ascending=False)
+  return df.drop('count', axis=1)
 
 def wrap_labels(labels):
   wrapped_labels = []
@@ -69,8 +75,6 @@ def parallel_categories(df, filepath):
     #index were 4, 4, 5
   fig = go.Figure(data = go.Parcats(dimensions=dimensions))
   fig.update_layout(
-    # hovermode = 'x',
-    # hoverinfo='none',
     height=1900,
     margin=dict(
         l=200,
@@ -79,12 +83,6 @@ def parallel_categories(df, filepath):
         t=20,
         pad=4
     ),
-    # xaxis={'automargin': True},
-    # yaxis={'automargin': True}
-    # xaxis = dict(
-    #     tickmode = 'array',
-    #     ticktext = [txt[:15] + ' ' + txt[15:] if len(txt) > 15 else txt for txt in fig['layout']['xaxis']['categoryarray']]
-    # )
   )
 
   config = {'displayModeBar': True}
