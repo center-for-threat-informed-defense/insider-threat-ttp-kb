@@ -25,13 +25,10 @@ def construct_dataframes(df, mitre_attack_data, insider_threat_ttps):
         mitigations_mitigating_technique = mitre_attack_data.get_mitigations_mitigating_technique(technique_obj.id)
 
         for mitigation in mitigations_mitigating_technique:
-          # obj_to_add = [tactic.name, mitre_attack_data.get_attack_id(tactic.id),
-          #                   technique_obj.name, mitre_attack_data.get_attack_id(technique_obj.id),
-          #                   mitigation["object"].name, mitre_attack_data.get_attack_id(mitigation["object"].id),
-          #                   ]
-          obj_to_add = [technique_obj.name, mitre_attack_data.get_attack_id(technique_obj.id),
-                  mitigation["object"].name, mitre_attack_data.get_attack_id(mitigation["object"].id),
-                  ]
+          obj_to_add = [#tactic.name, mitre_attack_data.get_attack_id(tactic.id),
+                            technique_obj.name, mitre_attack_data.get_attack_id(technique_obj.id),
+                            mitigation["object"].name, mitre_attack_data.get_attack_id(mitigation["object"].id),
+                            ]
           df.loc[len(df)] = obj_to_add
 
       #Datasources
@@ -43,22 +40,20 @@ def construct_dataframes(df, mitre_attack_data, insider_threat_ttps):
             datasources_detecting_technique.append(mitre_attack_data.get_object_by_stix_id(datacomponent["object"].x_mitre_data_source_ref))
 
         for datasource in datasources_detecting_technique:
-          # obj_to_add = [tactic.name, mitre_attack_data.get_attack_id(tactic.id),
-          #           technique_obj.name, mitre_attack_data.get_attack_id(technique_obj.id),
-          #           mitre_attack_data.get_attack_id(datasource.id), datasource.name
-          #           ]
-          obj_to_add = [technique_obj.name, mitre_attack_data.get_attack_id(technique_obj.id),
+          obj_to_add = [#tactic.name, mitre_attack_data.get_attack_id(tactic.id),
+                    technique_obj.name, mitre_attack_data.get_attack_id(technique_obj.id),
                     mitre_attack_data.get_attack_id(datasource.id), datasource.name
                     ]
           df.loc[len(df)] = obj_to_add
-  return order_techniques_by_size(df)
+  return order_techniques_by_frequency(df)
 
-#orders the techniques by number of linked mitigations or datasources, most to least
-def order_techniques_by_size(df):
+#Orders the techniques by number of linked mitigations or datasources, most to least
+def order_techniques_by_frequency(df):
   df['count'] = df.groupby('Technique')['Technique'].transform('count')
   df = df.sort_values('count', ascending=False)
   return df.drop('count', axis=1)
 
+#Wraps labels at 40 characters
 def wrap_labels(labels):
   wrapped_labels = []
   for label in labels:
@@ -72,7 +67,7 @@ def parallel_categories(df, filepath):
     {'label':'Techniques','values':wrap_labels([f'{a} {b}' for a, b in zip(df['Technique'], df['Technique ID'])])},
     {'label': df.columns[2] + 's','values':wrap_labels([f'{a} {b}' for a, b in zip(df.iloc[:, 2], df.iloc[:, 3])])}
     ]
-    #index were 4, 4, 5
+    #indexes were 4, 4, 5 
   fig = go.Figure(data = go.Parcats(dimensions=dimensions))
   fig.update_layout(
     height=1900,
