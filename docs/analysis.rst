@@ -24,7 +24,7 @@ The heatmap consists of three categories of frequency:
         <i class="fa fa-map-signs"></i> Open Heatmap in Navigator</a>
 
         <a class="btn btn-primary" target="_blank" href="..\insider-threat-heatmap.json" download="insider-threat-heatmap.json">
-        <i class="fa fa-download"></i> Download Heatmap JSON</a>
+        <i class="fa fa-download"></i> Download Heatmap JSON 145KB</a>
     
     </p>
 
@@ -35,7 +35,11 @@ The heatmap consists of three categories of frequency:
 
 Evidence Based Inferences
 -------------
-The majority of cases can be broken into two categories: **exfiltration** and **fraud**.
+* The majority of cases can be broken into two categories: **exfiltration** and **fraud**.
+
+* During analysis it was seen that all cases utilized the current permissions given to the employee and no privilege escalation was required to achieve their goal. 
+
+* In many cases where fraud was detected there was some form of immediate monetary compensation. In all of those cases the compensation was under $250 and in most of those cases there were multiple instances of small amounts.  
 
 
 
