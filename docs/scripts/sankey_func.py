@@ -45,23 +45,26 @@ def construct_dataframes(df, mitre_attack_data, insider_threat_ttps):
                     mitre_attack_data.get_attack_id(datasource.id), datasource.name
                     ]
           df.loc[len(df)] = obj_to_add
-  return order_techniques_by_frequency(df)
+  return order_graph_by_frequency(df)
 
 #Orders the techniques by number of linked mitigations or datasources, most to least
-def order_techniques_by_frequency(df):
-  df['count'] = df.groupby('Technique')['Technique'].transform('count')
+def order_graph_by_frequency(df):
+  column_name = df.columns[2]
+  df['count'] = df.groupby(column_name)[column_name].transform('count')
   df = df.sort_values('count', ascending=False)
   return df.drop('count', axis=1)
 
-#Wraps labels at 40 characters
+# Wraps labels at 40 characters
 def wrap_labels(labels):
   wrapped_labels = []
   for label in labels:
-    wrapped_label = "<br>".join(wrap(label, width=40))
+    wrapped_label = "<br>".join(wrap(label, width=50))
     wrapped_labels.append(wrapped_label)
   return wrapped_labels
 
 def parallel_categories(df, filepath):
+  #Get only techniques + mitigations, or techniques + datasources
+  df = df[['Technique', 'Technique ID', df.columns[2], df.columns[3]]].drop_duplicates()
   dimensions=[
     # {'label':'Tactics','values':[f'{a} {b}' for a, b in zip(df['Tactic'], df['Tactic ID'])]},
     {'label':'Techniques','values':wrap_labels([f'{a} {b}' for a, b in zip(df['Technique'], df['Technique ID'])])},
@@ -70,16 +73,16 @@ def parallel_categories(df, filepath):
     #indexes were 4, 4, 5 
   fig = go.Figure(data = go.Parcats(dimensions=dimensions))
   fig.update_layout(
-    height=1900,
-    margin=dict(
-        l=200,
-        r=200,
-        b=20,
-        t=20,
-        pad=4
-    ),
-  )
-
+    hovermode="closest",
+    showlegend=False,
+    xaxis={'automargin': True},
+    yaxis={'automargin': True},
+    margin=dict(l=215, r=200, b=20, t=20, pad=None),
+  ) 
+  if df.columns[2] == 'Datasource':
+    fig.update_layout(
+      margin=dict(l=215, r=100, b=20, t=20, pad=None),
+  ) 
   config = {'displayModeBar': True}
   # fig.show()
   fig.write_html(filepath, config=config)
