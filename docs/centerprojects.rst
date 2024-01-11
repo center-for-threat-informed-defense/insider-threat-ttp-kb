@@ -1,4 +1,4 @@
-Center Projects
+Other Center Projects
 --------------------------
 
 **Sensor Mappings** – *Published: December 12, 2023*

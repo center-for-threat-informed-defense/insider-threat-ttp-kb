@@ -46,7 +46,7 @@ Fraud
 
 Exfiltration 
 *************
-* Exfiltration via USA/removable storage media
+* Exfiltration via USB/removable storage media
 
 * Access of data repository such as One Drive or SharePoint
 
