@@ -45,7 +45,7 @@ def construct_dataframes(df, mitre_attack_data, insider_threat_ttps):
                     mitre_attack_data.get_attack_id(datasource.id), datasource.name
                     ]
           df.loc[len(df)] = obj_to_add
-  return order_graph_by_frequency(df)
+  return df
 
 #Orders the techniques by number of linked mitigations or datasources, most to least
 def order_graph_by_frequency(df):
@@ -54,7 +54,7 @@ def order_graph_by_frequency(df):
   df = df.sort_values('count', ascending=False)
   return df.drop('count', axis=1)
 
-# Wraps labels at 40 characters
+# Wraps labels at width limit
 def wrap_labels(labels):
   wrapped_labels = []
   for label in labels:
@@ -64,7 +64,7 @@ def wrap_labels(labels):
 
 def parallel_categories(df, filepath):
   #Get only techniques + mitigations, or techniques + datasources
-  df = df[['Technique', 'Technique ID', df.columns[2], df.columns[3]]].drop_duplicates()
+  df = order_graph_by_frequency(df[['Technique', 'Technique ID', df.columns[2], df.columns[3]]].drop_duplicates())
   dimensions=[
     # {'label':'Tactics','values':[f'{a} {b}' for a, b in zip(df['Tactic'], df['Tactic ID'])]},
     {'label':'Techniques','values':wrap_labels([f'{a} {b}' for a, b in zip(df['Technique'], df['Technique ID'])])},
