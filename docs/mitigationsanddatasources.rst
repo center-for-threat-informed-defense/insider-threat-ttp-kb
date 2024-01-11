@@ -17,6 +17,9 @@ The chart below details the tactic, technique and data source mappings specific 
 .. tip::
 
    Select between the Mitigations and Data Sources tabs below to view their associated Insider Threat ATT&CK tactics and techniques.
+.. .. raw:: html
+
+   .. <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
 
 .. raw:: html
 
@@ -84,6 +87,16 @@ The chart below details the tactic, technique and data source mappings specific 
       padding: 6px 12px;
       border: 1px solid #ccc;
       border-top: none;
+      }
+
+      path:hover {
+      fill: gold !important;
+      fill-opacity: 1 !important;
+      }
+
+      .sankey-link:hover {
+      fill: gold !important;
+      fill-opacity: 1 !important;
       }
 
       .fullscreen-button {
