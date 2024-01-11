@@ -15,7 +15,7 @@ The red indicates that the technique was more commonly used, orange means it was
         <i class="fa fa-map-signs"></i> Open Heatmap in Navigator</a>
 
         <a class="btn btn-primary" target="_blank" href="..\insider-threat-heatmap.json" download="insider-threat-heatmap.json">
-        <i class="fa fa-download"></i> Download Heatmap JSON</a>
+        <i class="fa fa-download"></i> Download Heatmap JSON 145KB</a>
     
     </p>
 
