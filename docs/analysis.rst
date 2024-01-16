@@ -43,15 +43,15 @@ Evidence Based Inferences
 
 * Indicators deemed non-technical can typically be grouped into Financial Theft (T1657). These techniques can be broken down further into:
 
-    * Circumventing Security Controls: security checks put in place by an organization were circumvented to avoid detection (e.x. improper key control or avoidance of cameras)
+    * **Circumventing Security Controls**: security checks put in place by an organization were circumvented to avoid detection (e.x. improper key control or avoidance of cameras)
 
-    * Collusion: multiple employees worked together to perform actions such as sending all customers to one employee for compensation
+    * **Collusion**: multiple employees worked together to perform actions such as sending all customers to one employee for compensation
 
-    * Deceit for Personal Gain: Use of insider knowledge to decieve untrained employees
+    * **Deceit for Personal Gain**: Use of insider knowledge to decieve untrained employees
 
-    * Failure to Follow Procedure: Employees unintentionally or intentionally gave the wrong amount of money to a customer or not properly log cash flow 
+    * **Failure to Follow Procedure**: Employees unintentionally or intentionally gave the wrong amount of money to a customer or not properly log cash flow 
 
-    * Physical Theft: any type of theft that occurs with physical objects such as cash or physical machines
+    * **Physical Theft**: any type of theft that occurs with physical objects such as cash or physical machines
 
 
 Fraud
