@@ -34,7 +34,7 @@ The heatmap consists of three categories of frequency:
 .. TODO add inferences below
 
 Evidence Based Inferences
--------------
+----------------------------
 * The majority of cases can be broken into two categories: **exfiltration** and **fraud**.
 
 * During analysis it was seen that all cases utilized the current permissions given to the employee and no privilege escalation was required to achieve their goal. 
