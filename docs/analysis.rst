@@ -41,6 +41,17 @@ Evidence Based Inferences
 
 * In many cases where fraud was detected there was some form of immediate monetary compensation. In all of those cases the compensation was under $250 and in most of those cases there were multiple instances of small amounts.  
 
+* Indicators deemed non-technical can typically be grouped into Financial Theft (T1657). These techniques can be broken down further into:
+
+    * Circumventing Security Controls: security checks put in place by an organization were circumvented to avoid detection (e.x. improper key control or avoidance of cameras)
+
+    * Collusion: multiple employees worked together to perform actions such as sending all customers to one employee for compensation
+
+    * Deceit for Personal Gain: Use of insider knowledge to decieve untrained employees
+
+    * Failure to Follow Procedure: Employees unintentionally or intentionally gave the wrong amount of money to a customer or not properly log cash flow 
+
+    * Physical Theft: any type of theft that occurs with physical objects such as cash or physical machines
 
 
 Fraud
