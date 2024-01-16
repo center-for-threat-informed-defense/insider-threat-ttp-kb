@@ -14,7 +14,7 @@ The *Insider Threat TTP Knowledge Base* uses this framework as a basis for colle
 As the Knowledge Base evolves, Center researchers anticipate discovering and documenting new insider techniques that may not fit within Enterprise ATT&CK®. These novel insider techniques will be added to the *Insider Threat Knowledge Base* where eventually, the Knowledge Base will consist of a mix of techniques referenced in Enterprise ATT&CK® along with techniques that are unique to insider threats.
 
 Scoping the Insider Threat TTP Knowledge Base
-------------------------------------------
+-----------------------------------------------
 The project addresses the unique challenges that insider threats pose by starting with a modest scope in pursuit of an evidence-based result. Version 1 of the project constrained the research effort to technical mechanisms that insiders use on information technology (IT) systems - deliberately excluding physical insider threat actions, such as workplace violence or smuggling documents on one’s person; those are non-technical and independent of IT systems. 
 
 In Version 2 of the project, some interesting non-technical indicators were identified in case data therefore the scope was widened to include these non-technical indicators as well.   
