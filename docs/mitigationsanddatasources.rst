@@ -69,11 +69,13 @@ The chart below details the tactic, technique and data source mappings specific 
       cursor: pointer;
       padding: 14px 16px;
       transition: 0.3s;
+      color: var(--me-hyperlink)
       }
 
       /* Change background color of buttons on hover */
       .tab button:hover {
       background-color: #ddd;
+      color: var(--me-text-color)
       }
 
       /* Create an active/current tablink class */
