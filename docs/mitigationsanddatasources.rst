@@ -16,7 +16,7 @@ The chart below details the tactic, technique and data source mappings specific 
 
 .. tip::
 
-   Select between the Mitigations and Data Sources tabs below to view their associated Insider Threat ATT&CK tactics and techniques.
+   Select between the Mitigations and Data Sources tabs below to view insider threat techniques with their corresponding mitigations.
 .. .. raw:: html
 
    .. <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
@@ -33,7 +33,7 @@ The chart below details the tactic, technique and data source mappings specific 
    <div id="mitigations_fig" class="tabcontent">
       <h3>Mitigations</h3>
       <div class="tab-container">
-         <iframe src="../_static/html/mitigations-1.html" height="1045px" width="100%"></iframe>
+         <iframe src="../_static/html/mitigations-1.html" height="1145px" width="100%"></iframe>
          <button class="btn btn-secondary btn-sm fullscreen-button" onclick="toggleFullscreen('mitigations_fig')">
                   <i class="fa fa-arrows-alt"></i>
                   Full Screen
@@ -44,7 +44,7 @@ The chart below details the tactic, technique and data source mappings specific 
    <div id="datasources_fig" class="tabcontent">
       <h3>Data Sources</h3>
       <div class="tab-container">
-         <iframe src="../_static/html/datasources-1.html" height="1045px" width="100%"></iframe>
+         <iframe src="../_static/html/datasources-1.html" height="1145px" width="100%"></iframe>
          <button class="btn btn-secondary btn-sm fullscreen-button" onclick="toggleFullscreen('datasources_fig')">
                   <i class="fa fa-arrows-alt"></i>
                   Full Screen
@@ -69,11 +69,13 @@ The chart below details the tactic, technique and data source mappings specific 
       cursor: pointer;
       padding: 14px 16px;
       transition: 0.3s;
+      color: var(--me-hyperlink)
       }
 
       /* Change background color of buttons on hover */
       .tab button:hover {
       background-color: #ddd;
+      color: var(--me-text-color)
       }
 
       /* Create an active/current tablink class */

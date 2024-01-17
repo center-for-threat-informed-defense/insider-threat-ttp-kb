@@ -276,3 +276,8 @@ blockquote.epigraph p.attribution {
     font-size: 12pt;
     font-style: italic;
 }
+
+section ul li {
+    margin-bottom: .5rem;
+    margin-top: .5rem
+}
