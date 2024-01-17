@@ -8,9 +8,6 @@ Green = Seen: Insider Tactics, Techniques, and Procedures
 
 The ATT&CK® Navigator matrix - which the team calls the green = seen chart - illustrates all the TTPs seen to be used by insiders. This information stems from the case files submitted by participating organizations and illustrates the potential TTPs an enterprise could see in their network. 
 
-
-.. FIX LINKS!!!!!
-
 .. hint::
 
     Click image to enlarge
@@ -24,21 +21,24 @@ View or Download Green=Seen Data
 ***********************************
 
 .. raw:: html
-
+    
     <p>
     
         <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/sensor-mappings-to-attack/navigator/Auditd-heatmap.json">
         <i class="fa fa-map-signs"></i> Open in ATT&CK® Navigator</a>
 
-        <a class="btn btn-primary" target="_blank" href="..\extradocs\insider-threat-seen-ttps.xlsx" download="insider-threat-seen-ttps.xlsx">
-        <i class="fa fa-download"></i> Download Excel</a>
-        <a class="btn btn-primary" target="_blank" href="..\extradocs\insider-threat-ttp-kb.csv" download="insider-threat-ttp-kb.csv">
-        <i class="fa fa-download"></i> Download CSV 4KB</a>
+        <a class="btn btn-primary" target="_blank" href="..\extradocs\insider-threat-seen-ttps.csv" download="insider-threat-seen-ttps.csv">
+        <i class="fa fa-download"></i> Download CSV (12kb)</a>
+    </p>
+
+    <p>   
+        <a class="btn btn-primary" target="_blank" href="..\extradocs\insider-threat-seen-ttp.xlsx" download="insider-threat-seen-ttps.xlsx">
+        <i class="fa fa-download"></i> Download EXCEL (12.8kb)</a>
 
         <a class="btn btn-primary" target="_blank" href="..\extradocs\insider-threat-ttp.json" download="insider-threat-ttp.json">
-        <i class="fa fa-download"></i> Download JSON</a>
-        <a class="btn btn-primary" target="_blank" href="..\insider-threat-ttp-knowledgebase.json" download="insider-threat-ttp-knowledgebase.json">
-        <i class="fa fa-download"></i> Download JSON 145KB</a>
+        <i class="fa fa-download"></i> Download JSON (63kb)</a>
+
+
     </p>
 
 .. seealso::
