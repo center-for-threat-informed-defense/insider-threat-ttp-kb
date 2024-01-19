@@ -145,6 +145,7 @@ To get assistance with either submitting cases or portal administration, select 
     .. raw:: html
 
         <img src="/_images/help.png" class="img-space"></img>
+        
 .. image:: images/helpResources.png
 
 Password Changes
