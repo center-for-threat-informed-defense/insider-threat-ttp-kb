@@ -73,3 +73,5 @@ html_theme_options = {
     "logo_only": True,
     "style_external_links": True,
 }
+
+html_css_files = ['css/ctid.css']

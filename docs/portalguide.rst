@@ -8,9 +8,12 @@ Portal User Guide
 Creating a Case
 ----------------
 
-#. To enter a new case, select the purple + Add New Case button. 
+#. To enter a new case, select the purple **+ Add New Case** button. 
 
-    .. image:: images/addNewCase.png
+    .. raw:: html
+
+        <img src="/_images/addNewCase.png" class="img-space"></img>
+        
 
 #. On the New Case page, enter the following on the left side. 
 
@@ -21,31 +24,43 @@ Creating a Case
         * **Bad Example:** *John Smith placed roughly 230 documents into a new folder on his desktop, many of which were related to the NeuralNails and SynapseScrews which is proprietary technology being developed within Acme Corporation’s AI-powered Construction and Building Materials Division. He collected these documents over the course of 16 days. Three days later they started uploading the documents to their personal cloud storage account under the username TakeTheDataAndRun. He performed this task over the course of the 3 days, placing between 15 and 20 documents in his account at a time.*
     * **Industry:** This is the industry your organization belongs to, or if submitting on behalf of a customer organization outside of your own, their industry.
 
-    .. image:: images/NewCase.png
+    .. raw:: html
+
+        <img src="/_images/NewCase.png" class="img-space"></img>
         
 #. Put any additional information about the person under investigation in the text box on the left. This can be anything that can possibly help the research. 
 
     * **Good Example:** *Subject worked at the company for 16 years and was a team lead on a project related to the documents they exfiltrated. Prior to the time of their data collection activity, they were seen looking for new employment outside the organization. Subject has a background in Artificial Intelligence and Machine Learning.*
     * **Bad Example:** *John Smith worked at Acme Co. for 16 years and was an AI subject matter expert on the NeuralNails project. Prior to the time of his data collection activity, he was seen looking for new employment outside the organization on his work computer. John has a background in Artificial Intelligence and Machine Learning.*
+    
+    .. raw:: html
 
-    .. image:: images/PersonInfo.png
+        <img src="/_images/PersonInfo.png" class="img-space"></img>
 
 #. Select from the available choices on the right side that apply. If unsure, hover over the question mark to see an additional explanation and example. 
 
-    .. image:: images/OHI.png
+    .. raw:: html
+
+        <img src="/_images/OHI.png" class="img-space"></img>
 
 Entering TTPs
 --------------
 Once all the case information is filled out, it is time to enter the TTPs used by the person under investigation.
 
-#. Select the purple + Add TTP button.
-    .. image:: images/addTTP.png
+#. Select the purple **+ Add TTP** button.
+
+    .. raw:: html
+
+        <img src="/_images/addTTP.png" class="img-space"></img>
+        
 
 #. Select the Technique and sub-Technique (if available and known) from the drop-down menus. These are the tactics and techniques that best describe the action taken by the insider. Some actions by the Subject may not fit perfectly into the definition within the MITRE ATT&CK® framework. If the action mostly fits a current technique, use the existing options. We have included an option to submit a New Technique which this guide will get into later.
 
 #. Proposed Tactic: Techniques within the MITRE ATT&CK® framework are already placed under one or more Tactics. We want to understand how people are using these techniques, regardless of whether their actions were intentional or malicious, or their actions were accidental or due to complacency. This information will help us understand where insider threats act similar to APTs and where they might differ.
 
-    .. image:: images/TTP.png
+    .. raw:: html
+
+        <img src="/_images/TTP.png" class="img-space"></img>
 
 #. Timestamp/Time Offset: We want to understand the timeframe and sequencing of each action, as well as the interval between each action. We have included two options for submitting this data.
 
@@ -75,11 +90,15 @@ Once all the case information is filled out, it is time to enter the TTPs used b
 
 #. Select the data source, data component (optional) and type in additional information about the log type (optional) that corresponds to where the insiders’ action was identified. This information can help other Insider Threat Programs better understand how to identify the use of these techniques.
 
-    .. image:: images/DC.png
+    .. raw:: html
+
+        <img src="/_images/DC.png" class="img-space"></img>
 
 #. Add in any additional notes or details about the insiders’ action in the notes box. **These notes will not be released to the public and can be seen ONLY by the submitter and the researchers within MITRE.**
 
-            .. image:: images/notes.png
+    .. raw:: html
+
+        <img src="/_images/notes.png" class="img-space"></img>
 #. Add as many TTPs as necessary within each case to give a full picture of the Subjects actions.
 
 #. TTPs can be deleted by clicking on the trash can button.
@@ -90,14 +109,18 @@ Once all the case information is filled out, it is time to enter the TTPs used b
 
 #. Once all case information is entered, select the Add Case button to submit the case to the portal.
 
-    .. image:: images/addCase.png
+    .. raw:: html
+
+        <img src="/_images/addCase.png" class="img-space"></img>
 
 
 Exporting TTPs
 ---------------
 #. To export TTPs from submitted cases, select the Export TTPs button on the right side of the portal.
 
-    .. image:: images/export.png
+    .. raw:: html
+
+        <img src="/_images/export.png" class="img-space"></img>
 #. Choose to download as either CSV or JSON.
 
     .. image:: images/csvJSON.png
@@ -108,21 +131,29 @@ Additional Resources
 
 To see additional resources, select the Resources button to see options for the `Knowledge Base GitHub Repository <https://mitre-attack.github.io/attack-navigator>`_, :download:`a Draft Technique List </extra/extradocs/insider-threat-ttp-kb.csv>`, :download:`the Design principles and Methodology paper </extra/extradocs/design-principles-and-methodology.pdf>`, and `the Project Announcement <https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/our-work/insider-threat-ttp-knowledge-base/>`_. 
 
-.. image:: images/resources.png
+    .. raw:: html
+
+        <img src="/_images/resources.png" class="img-space"></img>
+        
+
 .. image:: images/resourceExamples.png
 
 Getting Help 
 --------------
 To get assistance with either submitting cases or portal administration, select the question mark button on the top right of the screen. 
 
-.. image:: images/help.png
+    .. raw:: html
+
+        <img src="/_images/help.png" class="img-space"></img>
 .. image:: images/helpResources.png
 
 Password Changes
 -----------------
 #. To change a password if the current password is known, select the profile button on the top right of the screen. This will bring you to your profile.
 
-.. image:: images/profile.png
+    .. raw:: html
+
+        <img src="/_images/profile.png" class="img-space"></img>
 
 #. Click on Change Password to change the account password. 
 
