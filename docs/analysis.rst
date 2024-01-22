@@ -1,6 +1,6 @@
 Case Analysis
 ==============
-Throughout the collection of cases from V1 and V2, the Center team has put together several resources to inform insider programs through thorough analysis of the submitted cases.
+Throughout the collection of cases from V1 and V2, the Center team has put together several resources to inform insider programs through analysis of the submitted cases.
 
 
 Frequency Heatmap 
