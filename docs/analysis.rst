@@ -10,17 +10,17 @@ The red indicates that the technique was more commonly used, orange means it was
 
 The heatmap consists of three categories of frequency:
 
-* Frequent: The technique was seen in more than 50% of cases submitted by participants.
+* **Frequent**: The technique was seen in more than 16% of cases submitted by participants.
 
-* **Moderate:** The technique was seen in 15-49% of cases submitted by participants.
+* **Moderate:** The technique was seen in 6-15% of cases submitted by participants.
 
-* **Infrequent:** The technique was seen in less than 15% of cases submitted by participants.
+* **Infrequent:** The technique was seen in less than 5% of cases submitted by participants.
 
 
 .. raw:: html
 
     <p>
-        <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/sensor-mappings-to-attack/navigator/insider-threat-heatmap.json">
+        <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/navigator/insider-threat-heatmap.json">
         <i class="fa fa-map-signs"></i> Open Heatmap in Navigator</a>
 
         <a class="btn btn-primary" target="_blank" href="..\insider-threat-heatmap.json" download="insider-threat-heatmap.json">
@@ -57,6 +57,7 @@ Evidence Based Inferences
 Fraud
 ******
 
+
 **Insider threats routinely utilized their current given permissions to commit fraud.** 
 This was most commonly seen with (T1565) Data Manipulation and (T1136) Create Account. These permissions were used to generate illegitimate refunds and payments to accounts handled by the subject as well as to apply and approve for illegitimate loans. Privilege escalation was rarely identified when a subject was commiting fraud.
 
@@ -73,12 +74,23 @@ This was most commonly seen with (T1565) Data Manipulation and (T1136) Create Ac
 * **Altering accounts:** Existing customer accounts were altered to allow for insider threats to remain in access without being detected. This included changing the email or phone number associated with the account.  
 
 
-.. TODO add sub-heading for fraud heatmap below
+.. raw:: html
+
+    <p>
+
+        <a class="btn btn-primary" target="_blank" href="..\fraud_heat.json" download="fraud_heat.json">
+        <i class="fa fa-download"></i> Download Fraud Heatmap JSON 4KB</a>
+    
+    </p>
+
+.. image:: /images/fraud_heat.svg
+   :scale: 75%
 
 
 
 Exfiltration 
 *************
+
 
 **Data was often accessed from a data repository such as One Drive or SharePoint:** Prior to exfiltration, files were accessed and downloaded from data repositories such as One Drive and SharePoint.
 
@@ -86,7 +98,18 @@ Exfiltration
 
 **A common exfiltration channel is USB/removable device storage:** Due to the physical size of USB devices and other removable media it is easy to conceal and be transported in and out of organizations with little difficulty. Furthermore, these devices are often used frequently so their movement is less likely to raise red flags. Exfiltration Over Physical Medium (T1052) is seen with a higher frequency, specifically USB devices (T1052.001) than other exfiltration techniques. 
 
-.. TODO add sub-heading for exfil heatmap below
+.. raw:: html
+
+    <p>
+
+        <a class="btn btn-primary" target="_blank" href="..\exfil_heat.json" download="exfil_heat.json">
+        <i class="fa fa-download"></i> Download Exfiltration Heatmap JSON 6KB</a>
+    
+    </p>
+    
+.. image:: /images/exfil_heat.svg
+   :scale: 75%
+
 
 
 .. TODO add limitations below
