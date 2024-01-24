@@ -20,7 +20,7 @@ The heatmap consists of three categories of frequency:
 .. raw:: html
 
     <p>
-        <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/sensor-mappings-to-attack/navigator/Auditd-heatmap.json">
+        <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/navigator/insider-threat-heatmap.json">
         <i class="fa fa-map-signs"></i> Open Heatmap in Navigator</a>
 
         <a class="btn btn-primary" target="_blank" href="..\insider-threat-heatmap.json" download="insider-threat-heatmap.json">
