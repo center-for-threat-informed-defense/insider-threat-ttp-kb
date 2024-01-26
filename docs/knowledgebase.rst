@@ -49,7 +49,7 @@ View or Download Green=Seen Data
 Data Collection
 ----------------
 
-The data in the knowledge base is validated by identification of TTPs used by the subject and method of detection, in line with ATT&CK® guidelines. Data in the knowledge base is collected through submission of project participant cases into a secure case submission portal. Participants provided a sequential list of TTPs per case, with additional information on the data sources used to detect those TTPs, select observable human indicators, and notes about the subject. The data in the knowledge base appears as the following:
+The data in the knowledge base is reported by contributors and validated by the CTID research team. It is represented as TTPs used by the subject and method of detection, in line with ATT&CK. Data in the knowledge base is collected through submissions by data contributors into a secure case submission portal. Contributors provided a sequential list of TTPs per case, with additional information on the data sources used to detect those TTPs, observable human indicators, and notes about the subject. The data in the knowledge base includes the following:
 
 
 .. list-table:: 
@@ -80,13 +80,3 @@ The data in the knowledge base is validated by identification of TTPs used by th
      - Seniority Level of Suspect 
    * - Log Type
      - Government Security Clearance of Suspect 
-
-* The tactic each technique corresponds to:
-
-    * Just like in Enterprise ATT&CK®, a technique can fall under multiple tactics depending on how the insider used the technique in each case. 
-
-    * Along the way, there may be insider actions that do not neatly fit into Enterprise ATT&CK® tactics or techniques. Contributors can propose new or modified tactics and techniques in these circumstances. 
-
-* Techniques that can be modified from an existing Enterprise ATT&CK® technique with new language to make it applicable to insider threats if required. 
-
-* Brand new techniques can also be created when an existing technique is not sufficient. 

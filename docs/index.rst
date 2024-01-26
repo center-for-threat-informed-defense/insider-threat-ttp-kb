@@ -10,7 +10,6 @@ The Knowledge Base is an emergent resource that aims to advance our collective u
     :caption: Contents
 
     introduction
-    definitions
     knowledgebase
     analysis
     mitigationsanddatasources
@@ -20,7 +19,7 @@ The Knowledge Base is an emergent resource that aims to advance our collective u
     futurework
     acknowledgements
     centerprojects
-    
+    definitions
     
 
 Notice
