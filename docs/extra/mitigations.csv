@@ -1,0 +1,77 @@
+Technique ID,Mitigation IDs
+`T1595 <https://attack.mitre.org/techniques/T1595>`_,M1056
+`T1595.001 <https://attack.mitre.org/techniques/T1595/001>`_,M1056
+`T1585 <https://attack.mitre.org/techniques/T1585>`_,M1056
+`T1078 <https://attack.mitre.org/techniques/T1078>`_,"M1027, M1018, M1026, M1013, M1017, M1015, M1036"
+`T1078.002 <https://attack.mitre.org/techniques/T1078/002>`_,"M1032, M1026, M1017"
+`T1106 <https://attack.mitre.org/techniques/T1106>`_,"M1038, M1040"
+`T1136 <https://attack.mitre.org/techniques/T1136>`_,"M1030, M1028, M1032, M1026"
+`T1136.001 <https://attack.mitre.org/techniques/T1136/001>`_,"M1032, M1026"
+`T1546 <https://attack.mitre.org/techniques/T1546>`_,
+`T1546.003 <https://attack.mitre.org/techniques/T1546/003>`_,"M1018, M1026, M1040"
+`T1133 <https://attack.mitre.org/techniques/T1133>`_,"M1030, M1042, M1035, M1032"
+`T1078 <https://attack.mitre.org/techniques/T1078>`_,"M1027, M1018, M1026, M1013, M1017, M1015, M1036"
+`T1078.004 <https://attack.mitre.org/techniques/T1078/004>`_,"M1027, M1015, M1026, M1032, M1036, M1017, M1018"
+`T1078.002 <https://attack.mitre.org/techniques/T1078/002>`_,"M1032, M1026, M1017"
+`T1548 <https://attack.mitre.org/techniques/T1548>`_,"M1038, M1028, M1052, M1026, M1018, M1047, M1022"
+`T1562 <https://attack.mitre.org/techniques/T1562>`_,"M1054, M1018, M1038, M1022, M1024, M1047"
+`T1562.001 <https://attack.mitre.org/techniques/T1562/001>`_,"M1038, M1024, M1018, M1022"
+`T1070 <https://attack.mitre.org/techniques/T1070>`_,"M1041, M1029, M1022"
+`T1070.001 <https://attack.mitre.org/techniques/T1070/001>`_,"M1022, M1029, M1041"
+`T1070.004 <https://attack.mitre.org/techniques/T1070/004>`_,
+`T1036 <https://attack.mitre.org/techniques/T1036>`_,"M1017, M1045, M1040, M1022, M1049, M1038"
+`T1027 <https://attack.mitre.org/techniques/T1027>`_,"M1047, M1040, M1017, M1049"
+`T1078 <https://attack.mitre.org/techniques/T1078>`_,"M1027, M1018, M1026, M1013, M1017, M1015, M1036"
+`T1078.002 <https://attack.mitre.org/techniques/T1078/002>`_,"M1032, M1026, M1017"
+`T1555 <https://attack.mitre.org/techniques/T1555>`_,"M1026, M1027"
+`T1555.005 <https://attack.mitre.org/techniques/T1555/005>`_,"M1051, M1054, M1027"
+`T1046 <https://attack.mitre.org/techniques/T1046>`_,"M1042, M1031, M1030"
+`T1135 <https://attack.mitre.org/techniques/T1135>`_,M1028
+`T1210 <https://attack.mitre.org/techniques/T1210>`_,"M1042, M1016, M1050, M1030, M1019, M1048, M1026, M1051"
+`T1021 <https://attack.mitre.org/techniques/T1021>`_,"M1018, M1042, M1032"
+`T1021.001 <https://attack.mitre.org/techniques/T1021/001>`_,"M1047, M1035, M1030, M1028, M1042, M1018, M1032, M1026"
+`T1021.004 <https://attack.mitre.org/techniques/T1021/004>`_,"M1042, M1032, M1018"
+`T1560 <https://attack.mitre.org/techniques/T1560>`_,M1047
+`T1560.001 <https://attack.mitre.org/techniques/T1560/001>`_,M1047
+`T1119 <https://attack.mitre.org/techniques/T1119>`_,"M1029, M1041"
+`T1213 <https://attack.mitre.org/techniques/T1213>`_,"M1017, M1018, M1047"
+`T1213.003 <https://attack.mitre.org/techniques/T1213/003>`_,"M1017, M1047, M1018, M1032"
+`T1213.002 <https://attack.mitre.org/techniques/T1213/002>`_,"M1047, M1018, M1017"
+`T1005 <https://attack.mitre.org/techniques/T1005>`_,M1057
+`T1074 <https://attack.mitre.org/techniques/T1074>`_,
+`T1074.001 <https://attack.mitre.org/techniques/T1074/001>`_,
+`T1114 <https://attack.mitre.org/techniques/T1114>`_,"M1032, M1041, M1047"
+`T1114.001 <https://attack.mitre.org/techniques/T1114/001>`_,M1041
+`T1219 <https://attack.mitre.org/techniques/T1219>`_,"M1038, M1037, M1031"
+`T1048 <https://attack.mitre.org/techniques/T1048>`_,"M1030, M1057, M1037, M1031, M1022, M1018"
+`T1048.001 <https://attack.mitre.org/techniques/T1048/001>`_,"M1037, M1031, M1030"
+`T1011 <https://attack.mitre.org/techniques/T1011>`_,"M1042, M1028"
+`T1011.001 <https://attack.mitre.org/techniques/T1011/001>`_,"M1042, M1028"
+`T1052 <https://attack.mitre.org/techniques/T1052>`_,"M1057, M1034, M1042"
+`T1052.001 <https://attack.mitre.org/techniques/T1052/001>`_,"M1042, M1034, M1057"
+`T1567 <https://attack.mitre.org/techniques/T1567>`_,"M1021, M1057"
+`T1567.002 <https://attack.mitre.org/techniques/T1567/002>`_,M1021
+`T1485 <https://attack.mitre.org/techniques/T1485>`_,M1053
+`T1529 <https://attack.mitre.org/techniques/T1529>`_,
+`T1589 <https://attack.mitre.org/techniques/T1589>`_,M1056
+`T1650 <https://attack.mitre.org/techniques/T1650>`_,M1056
+`T1588 <https://attack.mitre.org/techniques/T1588>`_,M1056
+`T1588.002 <https://attack.mitre.org/techniques/T1588/002>`_,M1056
+`T1199 <https://attack.mitre.org/techniques/T1199>`_,"M1032, M1018, M1030"
+`T1098 <https://attack.mitre.org/techniques/T1098>`_,"M1030, M1018, M1032, M1026, M1028"
+`T1098.005 <https://attack.mitre.org/techniques/T1098/005>`_,M1032
+`T1070 <https://attack.mitre.org/techniques/T1070>`_,"M1041, M1029, M1022"
+`T1078.001 <https://attack.mitre.org/techniques/T1078/001>`_,M1027
+`T1552 <https://attack.mitre.org/techniques/T1552>`_,"M1041, M1051, M1017, M1015, M1027, M1028, M1037, M1022, M1035, M1047, M1026"
+`T1552.008 <https://attack.mitre.org/techniques/T1552/008>`_,"M1047, M1017"
+`T1046 <https://attack.mitre.org/techniques/T1046>`_,"M1042, M1031, M1030"
+`T1016 <https://attack.mitre.org/techniques/T1016>`_,
+`T1016.001 <https://attack.mitre.org/techniques/T1016/001>`_,
+`T1039 <https://attack.mitre.org/techniques/T1039>`_,
+`T1113 <https://attack.mitre.org/techniques/T1113>`_,
+`T1565 <https://attack.mitre.org/techniques/T1565>`_,"M1041, M1029, M1030, M1022"
+`T1565.001 <https://attack.mitre.org/techniques/T1565/001>`_,"M1022, M1029, M1041"
+`T1561 <https://attack.mitre.org/techniques/T1561>`_,M1053
+`T1561.001 <https://attack.mitre.org/techniques/T1561/001>`_,M1053
+`T1657 <https://attack.mitre.org/techniques/T1657>`_,"M1017, M1018"
+`T1496 <https://attack.mitre.org/techniques/T1496>`_,
