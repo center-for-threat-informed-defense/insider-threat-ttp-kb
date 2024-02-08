@@ -281,3 +281,12 @@ section ul li {
     margin-bottom: .5rem;
     margin-top: .5rem
 }
+
+section ol li {
+    margin-bottom: .5rem;
+    margin-top: .5rem
+}
+
+.img-space {
+    margin-top: 1rem;
+}
