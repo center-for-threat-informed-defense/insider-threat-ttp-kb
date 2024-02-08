@@ -12,7 +12,7 @@ The ATT&CK® Navigator matrix - which the team calls the green = seen chart - il
 
     Click image to enlarge
 
-.. image:: /images/greenseen.svg
+.. image:: /images/green_seen_v1_v2.svg
    :scale: 75%
 
 
@@ -27,16 +27,11 @@ View or Download Green=Seen Data
         <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/sensor-mappings-to-attack/navigator/Auditd-heatmap.json">
         <i class="fa fa-map-signs"></i> Open in ATT&CK® Navigator</a>
 
-        <a class="btn btn-primary" target="_blank" href="..\extradocs\insider-threat-seen-ttps.csv" download="insider-threat-seen-ttps.csv">
-        <i class="fa fa-download"></i> Download CSV (12kb)</a>
-    </p>
+        <a class="btn btn-primary" target="_blank" href="..\green_seen_v1_v2.xlsx" download="green_seen_v1_v2.xlsx">
+        <i class="fa fa-download"></i> Download EXCEL (18kb)</a>
 
-    <p>   
-        <a class="btn btn-primary" target="_blank" href="..\extradocs\insider-threat-seen-ttp.xlsx" download="insider-threat-seen-ttps.xlsx">
-        <i class="fa fa-download"></i> Download EXCEL (12.8kb)</a>
-
-        <a class="btn btn-primary" target="_blank" href="..\extradocs\insider-threat-ttp.json" download="insider-threat-ttp.json">
-        <i class="fa fa-download"></i> Download JSON (63kb)</a>
+        <a class="btn btn-primary" target="_blank" href="..\green_seen_v1_v2.json" download="green_seen_v1_v2.json">
+        <i class="fa fa-download"></i> Download JSON (153kb)</a>
 
 
     </p>
