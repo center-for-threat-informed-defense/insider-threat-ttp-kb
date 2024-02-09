@@ -23,12 +23,12 @@ The heatmap consists of three categories of frequency:
         <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/navigator/insider-threat-heatmap.json">
         <i class="fa fa-map-signs"></i> Open Heatmap in Navigator</a>
 
-        <a class="btn btn-primary" target="_blank" href="..\insider-threat-heatmap.json" download="insider-threat-heatmap.json">
+        <a class="btn btn-primary" target="_blank" href="..\heatmap_InT_2.09.json" download="heatmap_InT_2.09.json">
         <i class="fa fa-download"></i> Download Heatmap JSON 145KB</a>
     
     </p>
 
-.. image:: /images/heatmap.svg
+.. image:: /images/heatmap_InT_2.09.svg
    :scale: 75%
 
 .. TODO add inferences below
@@ -112,7 +112,10 @@ Exfiltration
 
 
 
-.. TODO add limitations below
+V1 vs V2
+--------
+
+The knowledge base has grown between V1 and V2. Cases are showing that some techniques are continuing to be used with some frequency, but are also showing new techniques as well. In the latest version, V2, there were more case data collected from various types of institutions including financial institutions. Due to this new variety of organizations it has opened the knowledge base to different types of techniques being seen. In V1 the common goal between cases was exfiltration. While this remained a key goal in case data from V2, fraud was also seen as another common goal. This added techniques  such as financial theft and account manipulation. As the knowledge continues to grow receiving data from various types of organizations allows the team to see a broader picture of what techniques insider threats are using. In V1 there were 16% of ATT&CK techniques accounted for and in V2, even with ATT&CK techniques being added, it is now at 22% of all techniques.
 
 Limitations
 ------------
