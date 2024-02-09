@@ -10,9 +10,7 @@ Other Center Projects
     create actionable intelligence for their consumers, and consumers will take specific
     threat-informed action.
 
-`Defending IAAS with ATT&CK
-<https://center-for-threat-informed-defense.github.io/defending-iaas-with-attack/>`__ -
-*November 2022*
+`Defending IAAS with ATT&CK <https://center-for-threat-informed-defense.github.io/defending-iaas-with-attack/>`__ - *November 2022*
     Defending IaaS with ATT&CK developed an ATT&CK matrix that enables users to easily
     understand and work with the techniques applicable to Infrastructure-as-a-Service
     (IaaS) environments, regardless of whether the attacks target the cloud management

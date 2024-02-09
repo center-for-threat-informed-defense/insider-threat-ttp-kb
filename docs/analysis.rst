@@ -13,7 +13,6 @@ consists of three categories of frequency:
 
 * **Frequent (Red)**: The technique was seen in more than 16% of cases submitted by participants.
 * **Moderate (Orange):** The technique was seen in 6-15% of cases submitted by participants.
-
 * **Infrequent (Yellow):** The technique was seen in less than 5% of cases submitted by participants.
 
 .. raw:: html
@@ -148,7 +147,7 @@ techniques.
         <i class="fa fa-download"></i> Download Exfiltration Heatmap JSON 6KB</a>
     </p>
 
-.. image:: /images/exfil_heat.svg
+.. figure:: /images/exfil_heat.svg
    :scale: 75%
    :align: center
 
