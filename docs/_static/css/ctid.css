@@ -38,7 +38,6 @@ body {
     --me-ext-orange-dark: #F56600;
     --me-ext-cranberry-highlighter: #FF006B;
     --me-ext-cranberry-dark: #BD0044;
-
 }
 
 @media screen and (min-width: 1100px) {
@@ -277,16 +276,6 @@ blockquote.epigraph p.attribution {
     font-style: italic;
 }
 
-section ul li {
-    margin-bottom: .5rem;
-    margin-top: .5rem
-}
-
-section ol li {
-    margin-bottom: .5rem;
-    margin-top: .5rem
-}
-
-.img-space {
-    margin-top: 1rem;
+.rst-content a.btn {
+    margin-bottom: 0.5em;
 }

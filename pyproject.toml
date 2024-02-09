@@ -2,12 +2,14 @@
 name = "insider-threat-ttp-kb"
 version = "2.0.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = []
 license = "Apache"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.10"
+pandas = "^2.2.0"
+mitreattack-python = "^3.0.2"
 
 
 [tool.poetry.group.dev.dependencies]

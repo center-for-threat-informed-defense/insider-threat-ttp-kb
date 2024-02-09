@@ -56,7 +56,7 @@ html_favicon = "_static/favicon.png"
 html_logo = "_static/ctid_logo_white.png"
 html_css_files = [
     "css/ctid.css",
-    'css/custom.css',
+    "css/insider.css",
 ]
 html_js_files = [
     "js/require.min.js",
@@ -73,5 +73,3 @@ html_theme_options = {
     "logo_only": True,
     "style_external_links": True,
 }
-
-html_css_files = ['css/ctid.css']

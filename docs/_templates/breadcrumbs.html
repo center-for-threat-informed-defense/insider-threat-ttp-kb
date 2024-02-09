@@ -3,35 +3,13 @@
 {% block breadcrumbs_aside %}
 {% if not meta or meta.get('github_url') != 'hide' %}
 <li style="float: right; text-align: right;">
-	<ul>
-		{{ super() }}
-	</ul>
-
-	<style>
-		#contribute-button,
-    #contribute-button:active,
-    #contribute-button:visited {
-      background-color: #6241C5;
-      border: none;
-      color: white;
-      padding: 8px 16px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 16px;
-    }
-
-    #contribute-button:hover {
-      background-color: #726DE2;
-		}
-
-    
-	</style>
-	<a class="knowledge-base-edit-guidelines" id="contribute-button" href="mailto: ctid@mitre-engenuity.org?subject= Insider Threat Knowledge Base Request">
-		Become a Data Contributor
-	</a>
+  <ul>
+    {{ super() }}
+  </ul>
 </li>
+
+<a class="knowledge-base-edit-guidelines" id="contribute-button" href="../contribute/">
+  <i class="fa fa-file-text" aria-hidden="true"></i>
+  Become a Data Contributor </a>
 {% endif %}
 {% endblock %}

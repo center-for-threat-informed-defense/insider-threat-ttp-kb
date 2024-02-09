@@ -1,9 +1,12 @@
 Insider Threat TTP Knowledge Base |version|
 ===========================================
 
-Welcome to the Insider Threat Tactic, Technique, and Procedure (TTP) Knowledge Base! The Insider Threat Knowledge Base is created and maintained by the `MITRE Engenuity Center for Threat-Informed Defense
-<https://ctid.mitre-engenuity.org/>`__.
-The Knowledge Base is an emergent resource that aims to advance our collective understanding of the technical mechanisms that insider threat actors have used. This website will detail the tactics, techniques, and procedures discovered in participating organizations.
+The Insider Threat Knowledge Base is created and maintained by the `MITRE Engenuity
+Center for Threat-Informed Defense <https://ctid.mitre-engenuity.org/>`__. The Knowledge
+Base is an emergent resource that aims to advance our collective understanding of the
+technical mechanisms that insider threat actors use. This website documents the tactics,
+techniques, and procedures discovered by organizations who contributed data to this
+research project.
 
 .. toctree::
     :maxdepth: 2
@@ -20,12 +23,12 @@ The Knowledge Base is an emergent resource that aims to advance our collective u
     acknowledgements
     centerprojects
     definitions
-    
+
 
 Notice
 ------
 
-© 2023 MITRE Engenuity. Approved for public release. Document number
+© 2024 MITRE Engenuity. Approved for public release. Document number
 REPLACE_WITH_PRS_NUMBER.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
@@ -37,5 +40,5 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS
 KIND, either express or implied. See the License for the specific language governing
 permissions and limitations under the License.
 
-This project makes use of ATT&CK®: `ATT&CK® Terms of Use
+This project makes use of MITRE ATT&CK®: `ATT&CK® Terms of Use
 <https://attack.mitre.org/resources/terms-of-use/>`__
