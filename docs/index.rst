@@ -15,15 +15,14 @@ research project.
     introduction
     knowledgebase
     analysis
-    mitigationsanddatasources
+    identifying-threats
     ohi
     contribute
-    portalguide
-    futurework
-    acknowledgements
-    centerprojects
+    portal-guide
     definitions
-
+    future-work
+    acknowledgements
+    center-projects
 
 Notice
 ------

@@ -44,8 +44,9 @@ Evidence-Based Inferences
   compensation. In all of those cases, the compensation was under $250. and in most
   cases there were multiple instances of small amounts.
 
-* Indicators deemed non-technical can typically be grouped into `T1657 - Financial Theft <https://attack.mitre.org/versions/v14/techniques/T1657/>`_.
-  These techniques can be broken down further into:
+* Indicators deemed non-technical can typically be grouped into `T1657 - Financial Theft
+  <https://attack.mitre.org/techniques/T1657/>`_. These techniques can be broken down
+  further into:
 
     * **Circumventing Security Controls**: security checks put in place by an
       organization were circumvented to avoid detection (e.g. improper key control or
@@ -64,77 +65,123 @@ Evidence-Based Inferences
       cash or physical machines.
 
 Fraud
-*****
+-----
 
 **Insider threats routinely utilized their current given permissions to commit fraud.**
 This was most commonly seen with `T1565 Data Manipulation
-<https://attack.mitre.org/versions/v14/techniques/T1565>` and `T1136 Create Account
-<https://attack.mitre.org/versions/v14/techniques/T1136>`. These permissions were used
-to generate illegitimate refunds and payments to accounts handled by the subject as well
-as to apply and approve for illegitimate loans. Privilege escalation was rarely
-identified when a subject was commiting fraud.
+<https://attack.mitre.org/techniques/T1565>`__ and `T1136 Create Account
+<https://attack.mitre.org/techniques/T1136>`__. These permissions were used to generate
+illegitimate refunds and payments to accounts handled by the subject as well as to apply
+and approve for illegitimate loans. Privilege escalation was rarely identified when a
+subject was commiting fraud.
 
-**In fraud cases insider threats routinely researched the customer before committing fraud.** This is seen in many instances of (T1213) Data from Information Repositories prior to techniques such as (T1098) Account Manipulation and (T1565) Data Manipulation. The insider threat would utilize the internal customer database to review account information prior to targeting the customer’s account.
+**In fraud cases insider threats routinely researched the customer before committing
+fraud.** This is seen in many instances of `T1213 Data from Information Repositories
+<https://attack.mitre.org/techniques/T1213>`__ prior to techniques such as `T1098 Account
+Manipulation <https://attack.mitre.org/techniques/T1098>`__ and `T1565 Data Manipulation
+<https://attack.mitre.org/techniques/T1565>`__. The insider threat would utilize the
+internal customer database to review account information prior to targeting the
+customer’s account.
 
-**The common goal among insider threats committing fraud was monetary compensation. This occurred through four main methods:**
+**The common goal among insider threats committing fraud was monetary compensation. This
+occurred through four main methods:**
 
-* **Creation of accounts:** The accounts created were loans for customers not present but verified by the insider threat, as well as the creation of illegitimate bank accounts. The information used to create these accounts were of family members or friends with no knowledge of the account. The account was maintained and used by the insider threat.
+* **Creation of accounts:** The accounts created were loans for customers not present
+  but verified by the insider threat, as well as the creation of illegitimate bank
+  accounts. The information used to create these accounts were of family members or
+  friends with no knowledge of the account. The account was maintained and used by the
+  insider threat.
 
-* **Unauthorized accessing of accounts:** Legitimate accounts of customers that were accessed by the insider threat led to acts such as the processing of illegitimate payments or the altering of account data.
+* **Unauthorized accessing of accounts:** Legitimate accounts of customers that were
+  accessed by the insider threat led to acts such as the processing of illegitimate
+  payments or the altering of account data.
 
-* **Processing refunds/payments:** The insider threat processed payments from an existing customer account to an account managed by them, or processed refunds for accounts managed by them or a close acquaintance.
+* **Processing refunds/payments:** The insider threat processed payments from an
+  existing customer account to an account managed by them, or processed refunds for
+  accounts managed by them or a close acquaintance.
 
-* **Altering accounts:** Existing customer accounts were altered to allow for insider threats to remain in access without being detected. This included changing the email or phone number associated with the account.
+* **Altering accounts:** Existing customer accounts were altered to allow for insider
+  threats to remain in access without being detected. This included changing the email
+  or phone number associated with the account.
 
 
 .. raw:: html
 
     <p>
-
         <a class="btn btn-primary" target="_blank" href="..\fraud_heat.json" download="fraud_heat.json">
         <i class="fa fa-download"></i> Download Fraud Heatmap JSON 4KB</a>
-
     </p>
 
-.. image:: /images/fraud_heat.svg
+.. figure:: /images/fraud_heat.svg
    :scale: 75%
+   :align: center
 
+   Click to enlarge.
 
 
 Exfiltration
-*************
+------------
 
+**Data was often accessed from a data repository such as One Drive or SharePoint:**
+Prior to exfiltration, files were accessed and downloaded from data repositories such as
+One Drive and SharePoint.
 
-**Data was often accessed from a data repository such as One Drive or SharePoint:** Prior to exfiltration, files were accessed and downloaded from data repositories such as One Drive and SharePoint.
+**Data was commonly staged by the subject prior to exfiltration:** Large quantities of
+files, 500+, were downloaded from shared resources such as OneDrive and SharePoint then
+stored locally on the insider’s system (`T1074 Data Staged
+<https://attack.mitre.org/techniques/T1074>`__) or to an archived file (`T1560 Archive
+Collected Data <https://attack.mitre.org/techniques/T1560>`__) prior to exfiltration.
 
-**Data was commonly staged by the subject prior to exfiltration:** Large quantities of files, 500+, were downloaded from shared resources such as OneDrive and SharePoint then stored locally on the insider’s system (T1074) or to an archived file (T1560) prior to exfiltration.
-
-**A common exfiltration channel is USB/removable device storage:** Due to the physical size of USB devices and other removable media it is easy to conceal and be transported in and out of organizations with little difficulty. Furthermore, these devices are often used frequently so their movement is less likely to raise red flags. Exfiltration Over Physical Medium (T1052) is seen with a higher frequency, specifically USB devices (T1052.001) than other exfiltration techniques.
+**A common exfiltration channel is USB/removable device storage:** Due to the physical
+size of USB devices and other removable media it is easy to conceal and be transported
+in and out of organizations with little difficulty. Furthermore, these devices are often
+used frequently so their movement is less likely to raise red flags. `T1052 Exfiltration
+Over Physical Medium <https://attack.mitre.org/techniques/T1052>`__ is seen with a
+higher frequency, specifically USB devices (`T1052.001 Exfiltration over USB
+<https://attack.mitre.org/techniques/T1052/001>`__) more than other exfiltration
+techniques.
 
 .. raw:: html
 
     <p>
-
         <a class="btn btn-primary" target="_blank" href="..\exfil_heat.json" download="exfil_heat.json">
         <i class="fa fa-download"></i> Download Exfiltration Heatmap JSON 6KB</a>
-
     </p>
 
 .. image:: /images/exfil_heat.svg
    :scale: 75%
+   :align: center
 
+   Click to enlarge.
 
 
 V1 vs V2
 --------
 
-The knowledge base has grown between V1 and V2. Cases are showing that some techniques are continuing to be used with some frequency, but are also showing new techniques as well. In the latest version, V2, there were more case data collected from various types of institutions including financial institutions. Due to this new variety of organizations it has opened the knowledge base to different types of techniques being seen. In V1 the common goal between cases was exfiltration. While this remained a key goal in case data from V2, fraud was also seen as another common goal. This added techniques  such as financial theft and account manipulation. As the knowledge continues to grow receiving data from various types of organizations allows the team to see a broader picture of what techniques insider threats are using. In V1 there were 16% of ATT&CK techniques accounted for and in V2, even with ATT&CK techniques being added, it is now at 22% of all techniques.
+The knowledge base has grown between V1 and V2. Cases are showing that some techniques
+are continuing to be used with some frequency, but are also showing new techniques as
+well. In V2, we see more case data collected from various types of institutions
+including financial institutions. Due to this new variety of organizations it has opened
+the knowledge base to different types of techniques being seen. In V1 the common goal
+between cases was exfiltration. While this remained a key goal in case data from V2,
+fraud was also seen as another common goal. This added techniques such as financial
+theft and account manipulation. As the knowledge continues to grow receiving data from
+various types of organizations allows the team to see a broader picture of what
+techniques insider threats are using. In V1 there were 16% of ATT&CK techniques
+accounted. Even with the net increase of techniques contained in the ATT&CK knowledge
+base as it evolves over time, the V2 case data includes 22% of all techniques.
 
 Limitations
-------------
+-----------
 
-* When analyzing these submissions, it is important to keep in mind that researchers will not know the ins and outs of the organization contributing data therefore context such as detection mechanism may not be known.
+* When analyzing these submissions, it is important to keep in mind that researchers
+  will not know the ins and outs of the organization contributing data. Therefore,
+  context such as detection mechanism may not be known.
 
-* Some insider threats can go years without being detected, therefore all of the techniques an insider has done may not be identified.
+* Some insider threats can go years without being detected, therefore all of the
+  techniques an insider has used may not be identified.
 
-* The human factor has been identified as an area for growth, and researchers are working to expand upon it. This specifically focuses on the Observable Human Indicators (OHIs). Collecting data about the insider threat allows for the identification of patterns, insights and possible warning signs.
+* The human factor has been identified as an area for growth, and our researchers are
+  working to expand upon it. This specifically focuses on the :doc:`Observable Human
+  Indicators (OHIs) <ohi>`. Collecting data about the insider threat allows for the
+  identification of patterns, insights and possible warning signs.

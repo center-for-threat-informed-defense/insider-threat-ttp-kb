@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = "Insider Threat TTP Knowledge Base"
-copyright = "2023, Center for Threat-Informed Defense"
+copyright = "2024, Center for Threat-Informed Defense"
 author = "Center for Threat-Informed Defense"
 
 # The full version, including alpha/beta/rc tags
