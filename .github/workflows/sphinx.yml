@@ -5,6 +5,13 @@ on:
     branches: [main]
   pull_request:
 
+# If another web build starts for the same branch, cancel the previous build. This
+# protects us from two build trying to upload at the same time and clobbering each
+# other.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
   pages: write
