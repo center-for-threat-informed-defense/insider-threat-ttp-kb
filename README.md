@@ -74,7 +74,8 @@ directly for more general inquiries.
 
 ## Notice
 
-Copyright 2024 MITRE Engenuity. Approved for public release. Document numbers CT0041, REPLACE_WITH_PRS_NUMBER.
+Copyright 2024 MITRE Engenuity. Approved for public release. Document numbers CT0041,
+CT0102.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 

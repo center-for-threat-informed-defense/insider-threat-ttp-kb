@@ -27,8 +27,7 @@ research project.
 Notice
 ------
 
-© 2024 MITRE Engenuity. Approved for public release. Document number
-REPLACE_WITH_PRS_NUMBER.
+© 2024 MITRE Engenuity. Approved for public release. Document numbers CT0041, CT0102.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
 file except in compliance with the License. You may obtain a copy of the License at
