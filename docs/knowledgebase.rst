@@ -23,7 +23,7 @@ View or Download Green=Seen Data
 .. raw:: html
 
     <p>
-        <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/sensor-mappings-to-attack/navigator/Auditd-heatmap.json">
+        <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fcenter-for-threat-informed-defense.github.io%2Finsider-threat-ttp-kb%2Fgreen_seen_v1_v2.json">
         <i class="fa fa-map-signs"></i> Open in ATT&CK® Navigator</a>
 
         <a class="btn btn-primary" target="_blank" href="..\green_seen_v1_v2.xlsx" download="green_seen_v1_v2.xlsx">

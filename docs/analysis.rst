@@ -22,7 +22,7 @@ consists of three categories of frequency:
         <i class="fa fa-map-signs"></i> Open Heatmap in Navigator</a>
 
         <a class="btn btn-primary" target="_blank" href="..\heatmap_InT_2.09.json" download="heatmap_InT_2.09.json">
-        <i class="fa fa-download"></i> Download Heatmap JSON 145KB</a>
+        <i class="fa fa-download"></i> Download Heatmap JSON</a>
     </p>
 
 .. figure:: /images/heatmap_InT_2.09.svg
@@ -107,8 +107,11 @@ occurred through four main methods:**
 .. raw:: html
 
     <p>
+        <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fcenter-for-threat-informed-defense.github.io%2Finsider-threat-ttp-kb%2Ffraud_heat.json">
+        <i class="fa fa-map-signs"></i> Open Fraud Heatmap in Navigator</a>
+
         <a class="btn btn-primary" target="_blank" href="..\fraud_heat.json" download="fraud_heat.json">
-        <i class="fa fa-download"></i> Download Fraud Heatmap JSON 4KB</a>
+        <i class="fa fa-download"></i> Download Fraud Heatmap JSON</a>
     </p>
 
 .. figure:: /images/fraud_heat.svg
@@ -143,8 +146,11 @@ techniques.
 .. raw:: html
 
     <p>
+        <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fcenter-for-threat-informed-defense.github.io%2Finsider-threat-ttp-kb%2Fexfil_heat.json">
+        <i class="fa fa-map-signs"></i> Open Exfiltration Heatmap in Navigator</a>
+
         <a class="btn btn-primary" target="_blank" href="..\exfil_heat.json" download="exfil_heat.json">
-        <i class="fa fa-download"></i> Download Exfiltration Heatmap JSON 6KB</a>
+        <i class="fa fa-download"></i> Download Exfiltration Heatmap as JSON</a>
     </p>
 
 .. figure:: /images/exfil_heat.svg

@@ -11,18 +11,15 @@ Portal User Guide
 Creating a Case
 ---------------
 
-#. To enter a new case, select the purple **+ Add New Case** button.
+1. To enter a new case, select the purple **+ Add New Case** button.
 
-    .. raw:: html
+.. image:: images/add-new-case.png
+  :class: img-border
 
-        <img src="/_images/addNewCase.png" class="img-space"></img>
+2. On the New Case page, enter the following on the left side.
 
-
-#. On the New Case page, enter the following on the left side.
-
-    .. raw:: html
-
-        <img src="/_images/NewCase.png" class="img-space"></img>
+    .. image:: images/new-case.png
+      :class: img-border
 
     * **Case Number:** This is any combination of numbers and letters and should be be
       unique to your organization. **Case numbers are not released to the public.** It
@@ -51,12 +48,11 @@ Creating a Case
     * **Industry:** This is the industry your organization belongs to, or if submitting
       on behalf of a third-party organization, their industry.
 
-#. Put any additional information about the person under investigation in the text box
+3. Put any additional information about the person under investigation in the text box
    on the left. This can be anything that can possibly help the research.
 
-    .. raw:: html
-
-        <img src="/_images/PersonInfo.png" class="img-space"></img>
+    .. image:: images/person-info.png
+      :class: img-border
 
     * **Good Example:** *Subject worked at the company for 16 years and was a team lead
       on a project related to the documents they exfiltrated. Prior to the time of their
@@ -69,12 +65,11 @@ Creating a Case
       work computer. John has a background in Artificial Intelligence and Machine
       Learning.*
 
-#. Select from the available choices on the right side that apply. If unsure, hover over
+4. Select from the available choices on the right side that apply. If unsure, hover over
    the question mark to see an additional explanation and example.
 
-    .. raw:: html
-
-        <img src="/_images/OHI.png" class="img-space"></img>
+.. image:: images/OHI.png
+  :class: img-border
 
 Entering TTPs
 -------------
@@ -82,30 +77,28 @@ Entering TTPs
 Once all the case information is filled out, it is time to enter the TTPs used by the
 person under investigation.
 
-#. Select the purple **+ Add TTP** button.
+1. Select the purple **+ Add TTP** button.
 
-    .. raw:: html
+.. image:: images/add-ttp.png
+  :class: img-border
 
-        <img src="/_images/addTTP.png" class="img-space"></img>
-
-#. Select the technique and sub-technique (if available and known) from the drop-down
+2. Select the technique and sub-technique (if available and known) from the drop-down
    menus. These are the tactics and techniques that best describe the action taken by
    the insider. Some actions by the Subject may not fit perfectly into the definition
    within the ATT&CK framework. If the action mostly fits a current technique, use the
    existing options. We have included an option to submit a new technique which this
    guide will get into later.
 
-#. Proposed Tactic: Techniques within the ATT&CK framework are already placed under one
+3. Proposed Tactic: Techniques within the ATT&CK framework are already placed under one
    or more tactics. We want to understand how people are using these techniques,
    regardless of whether their actions were intentional or malicious, or their actions
    were accidental or due to complacency. This information will help us understand where
    insider threats act similar to other threat actors and where they might differ.
 
-    .. raw:: html
+.. image:: images/TTP.png
+  :class: img-border
 
-        <img src="/_images/TTP.png" class="img-space"></img>
-
-#. Timestamp/Time Offset: We want to understand the timeframe and sequencing of each
+4. Timestamp/Time Offset: We want to understand the timeframe and sequencing of each
    action, as well as the interval between each action. We have included two options for
    submitting this data.
 
@@ -129,8 +122,9 @@ person under investigation.
             #.	Technique 3: 2023-09-08 T 09:54:06
             #.	Technique 4: 2023-09-08 T 10:02:26
 
-                .. image:: images/time.png
-                    :scale: 30%
+          .. image:: images/time.png
+              :class: img-border img-scale
+
         * The Time Offset would be entered as:
 
             #. Technique 1: Days 00; Hours 00; Minutes 00; Seconds 00
@@ -138,55 +132,51 @@ person under investigation.
             #.	Technique 3: Days 02; Hours 20; Minutes 27; Seconds 27
             #.	Technique 4: Days 02; Hours 20; Minutes 35; Seconds 47
 
-                .. image:: images/offset.png
-                    :scale: 30%
+          .. image:: images/offset.png
+              :class: img-border img-scale
 
-#. Select the data source, data component (optional) and type in additional information
+5. Select the data source, data component (optional) and type in additional information
    about the log type (optional) that corresponds to where the insiders’ action was
    identified. This information can help insider threat programs better understand
    how to identify the use of these techniques.
 
-    .. raw:: html
+.. image:: images/DC.png
+  :class: img-border
 
-        <img src="/_images/DC.png" class="img-space"></img>
-
-#. Add in any additional notes or details about the insiders’ action in the notes box.
+6. Add in any additional notes or details about the insiders’ action in the notes box.
    **These notes will not be released to the public and can be seen ONLY by the
    submitter and the researchers within MITRE.**
 
-    .. raw:: html
+.. image:: images/notes.png
+  :class: img-border
 
-        <img src="/_images/notes.png" class="img-space"></img>
-
-#. Add as many TTPs as necessary within each case to give a full picture of the Subjects
+7. Add as many TTPs as necessary within each case to give a full picture of the Subjects
    actions.
 
-#. TTPs can be deleted by clicking on the trash can button.
+8. TTPs can be deleted by clicking on the trash can button.
 
     .. image:: images/delete.png
-        :scale: 30%
+      :class: img-border img-scale
 
-#. Once all case information is entered, select the Add Case button to submit the case
+9. Once all case information is entered, select the Add Case button to submit the case
    to the portal.
 
-    .. raw:: html
-
-        <img src="/_images/addCase.png" class="img-space"></img>
+.. image:: images/add-case.png
+  :class: img-border img-scale
 
 Exporting TTPs
 --------------
 
-#. To export TTPs from submitted cases, select the Export TTPs button on the right side
+1. To export TTPs from submitted cases, select the Export TTPs button on the right side
    of the portal.
 
-    .. raw:: html
+.. image:: images/export.png
+  :class: img-border img-scale
 
-        <img src="/_images/export.png" class="img-space"></img>
+2. Choose to download as either CSV or JSON.
 
-#. Choose to download as either CSV or JSON.
-
-    .. image:: images/csvJSON.png
-        :scale: 70%
+    .. image:: images/csv-json.png
+        :class: img-border img-scale
 
 Additional Resources
 --------------------
@@ -198,11 +188,11 @@ Methodology paper </extra/extradocs/design-principles-and-methodology.pdf>`, and
 Project Announcement
 <https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/our-work/insider-threat-ttp-knowledge-base/>`_.
 
-    .. raw:: html
+.. image:: images/resources.png
+  :class: img-border img-scale
 
-        <img src="/_images/resources.png" class="img-space"></img>
-
-.. image:: images/resourceExamples.png
+.. image:: images/resource-examples.png
+  :class: img-border img-scale
 
 Getting Help
 ------------
@@ -210,24 +200,22 @@ Getting Help
 To get assistance with either submitting cases or portal administration, select the
 question mark button on the top right of the screen.
 
-    .. raw:: html
+.. image:: images/help.png
+  :class: img-border img-scale
 
-        <img src="/_images/help.png" class="img-space"></img>
-
-.. image:: images/helpResources.png
+.. image:: images/help-resources.png
+  :class: img-border img-scale
 
 Password Changes
 ----------------
 
-#. To change a password if the current password is known, select the profile button on
+1. To change a password if the current password is known, select the profile button on
    the top right of the screen. This will bring you to your profile.
 
-    .. raw:: html
+.. image:: images/profile.png
+  :class: img-border img-scale
 
-        <img src="/_images/profile.png" class="img-space"></img>
+2. Click on Change Password to change the account password.
 
-#. Click on Change Password to change the account password.
-
-.. image:: images/changePassword.png
-
-
+.. figure:: images/change-password.png
+  :class: img-border img-scale

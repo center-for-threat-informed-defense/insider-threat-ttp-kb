@@ -18,7 +18,7 @@ Other Center Projects
     developed documentation and tools to simplify creating overlays for other domains
     like Industrial Control Systems (ICS) or Operational Technology (OT).
 
-`Sensor Mappings <https://github.com/center-for-threat-informed-defense/sensor-mappings-to-attack>`__ – *December 2023*
+`Sensor Mappings <https://center-for-threat-informed-defense.github.io/sensor-mappings-to-attack/>`__ – *December 2023*
     The Sensor Mappings to ATT&CK Project (SMAP) is a collection of resources to assist
     security operations teams and security leaders with understanding which tools,
     capabilities, and events can help provide visibility into real-world adversary

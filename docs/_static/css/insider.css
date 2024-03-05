@@ -25,6 +25,11 @@
     background-color: var(--me-hyperlink);
 }
 
-.img-space {
-    margin-top: 1rem;
+.img-border {
+    border: 1px solid var(--me-core-gray-light);
+    padding: 1em;
+}
+
+.img-scale {
+    max-width: 75% !important;
 }

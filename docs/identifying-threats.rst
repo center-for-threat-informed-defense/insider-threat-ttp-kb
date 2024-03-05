@@ -21,16 +21,16 @@ are relevant to insider threats. Through discussion with project participants, f
 mitigations may be identified in the future. The table below details the tactic,
 technique, and mitigation mappings specific to insider threat.
 
+.. csv-table:: Techniques and Mitigations
+   :file: /extra/mitigations.csv
+   :header-rows: 1
+
 .. raw:: html
 
     <p>
         <a class="btn btn-primary" target="_blank" href="..\mitigations.csv" download="mitigations.csv">
         <i class="fa fa-download"></i> Download Table CSV</a>
     </p>
-
-.. csv-table:: Techniques and Mitigations
-   :file: /extra/mitigations.csv
-   :header-rows: 1
 
 Data Sources
 ------------
@@ -42,13 +42,13 @@ data sources have been identified first through mappings from ATT&CK, like the
 mitigations, with follow-on confirmation from project participants. The table below
 details the tactic, technique, and data source mappings specific to insider threat.
 
+.. csv-table:: Techniques and Data Sources
+   :file: /extra/datasources.csv
+   :header-rows: 1
+
 .. raw:: html
 
     <p>
         <a class="btn btn-primary" target="_blank" href="..\datasources.csv" download="datasources.csv">
-        <i class="fa fa-download"></i> Download Table CSV</a>
+        <i class="fa fa-download"></i> Download Table as CSV</a>
     </p>
-
-.. csv-table:: Techniques and Data Sources
-   :file: /extra/datasources.csv
-   :header-rows: 1
