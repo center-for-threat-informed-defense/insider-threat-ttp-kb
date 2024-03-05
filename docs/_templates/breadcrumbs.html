@@ -8,7 +8,8 @@
   </ul>
 </li>
 
-<a class="knowledge-base-edit-guidelines" id="contribute-button" href="../contribute/">
+<a class="knowledge-base-edit-guidelines" id="contribute-button"
+  href="{%- if pagename == 'index' -%}./contribute{%- else -%}../contribute{%- endif -%}">
   <i class="fa fa-file-text" aria-hidden="true"></i>
   Become a Data Contributor </a>
 {% endif %}
