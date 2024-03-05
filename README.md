@@ -14,7 +14,6 @@ detect, mitigate, and protect against insider actions on IT systems.
 - [Getting Started](#getting-started)
 - [Getting Involved](#getting-involved)
 - [Questions and Feedback](#questions-and-feedback)
-- [How Do I Contribute?](#how-do-i-contribute)
 - [Notice](#notice)
 
 ## Getting Started
@@ -22,13 +21,11 @@ detect, mitigate, and protect against insider actions on IT systems.
 Read the methodology paper to familiarize yourself with the project's overall goals,
 constraints, and methods. Access the TTP data in CSV, JSON, or ATT&CK® Navigator format.
 
-| Resource                                                                                                         | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Project Website]([https://center](https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/)) | The project website containing documentation, data, and other pertinent resources.                                                                                                                                                                                                                                                                                                                                                                                                             |
-| [design-principles-and-methodology.pdf](docs/design-principles-and-methodology.pdf)                              | A document describing the design principles and methodology of the Insider Threat TTP Knowledge Base                                                                                                                                                                                                                                                                                                                                                                                           |
-| [insider-threat-ttp-kb.csv](scripts/insider-threat-ttp-kb.csv)                                                   | A spreadsheet containing the Insider Threat TTP Knowledge Base                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| [insider-threat-ttp-kb.json](docs/extra/insider-threat-ttp-kb.json)                                              | An ATT&CK® navigator layer representing the Insider Threat TTP Knowledge Base ([View in Navigator](https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fraw.githubusercontent.com%2Fcenter-for-threat-informed-defense%2Finsider-threat-ttp-kb%2Fmain%2Finsider-threat-ttp-kb.json&disable_techniques=false&manual_color=false&scoring=false&comments=false&comment_underline=false&links=false&link_underline=false&metadata=false&clear_annotations=false))               |
-| [insider-threat-heatmap.json](docs/extra/insider-threat-heatmap.json)                                            | An ATT&CK® navigator layer representing the Insider Threat TTP Knowledge Base as a heatmap ([View in Navigator](https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fraw.githubusercontent.com%2Fcenter-for-threat-informed-defense%2Finsider-threat-ttp-kb%2Fmain%2Finsider-threat-heatmap.json&disable_techniques=false&manual_color=false&scoring=false&comments=false&comment_underline=false&links=false&link_underline=false&metadata=false&clear_annotations=false)) |
+| Resource                                                                                                                                                       | Description                                                                 |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| [Project Website](https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/)                                                                 | The project website containing data, analsysis, and all project artifacts.  |
+| [Insider Techniques – Excel](https://github.com/center-for-threat-informed-defense/insider-threat-ttp-kb/raw/main/docs/extra/green_seen_v1_v2.xlsx)            | A spreadsheet containing the Insider Threat TTP Knowledge Base.             |
+| [Insider Techniques – ATT&CK Navigator](https://github.com/center-for-threat-informed-defense/insider-threat-ttp-kb/raw/main/docs/extra/green_seen_v1_v2.json) | An ATT&CK Navigator layer containing the Insider Threat TTP Knowledge Base. |
 
 ## Getting Involved
 
@@ -50,15 +47,6 @@ defense:
   you have ideas or suggestions, please let us know.
 
 ## Questions and Feedback
-
-Please submit issues for any technical questions/concerns or contact
-[ctid@mitre-engenuity.org](mailto:ctid@mitre-engenuity.org?subject=Question%20about%20insider-threat-ttp-kb)
-directly for more general inquiries.
-
-Also see the guidance for contributors if are you interested in contributing or simply
-reporting issues.
-
-## How Do I Contribute?
 
 Publishing the Knowledge Base is a first step toward establishing a community-wide
  collaboration to advance our collective understanding of insider threat. We are
