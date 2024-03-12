@@ -178,22 +178,6 @@ Exporting TTPs
     .. image:: images/csv-json.png
         :class: img-border img-scale
 
-Additional Resources
---------------------
-
-To see additional resources, select the Resources button to see options for the
-Knowledge Base GitHub Repository, :download:`a Draft Technique List
-</extra/extradocs/insider-threat-ttp-kb.csv>`, :download:`the Design principles and
-Methodology paper </extra/extradocs/design-principles-and-methodology.pdf>`, and `the
-Project Announcement
-<https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/our-work/insider-threat-ttp-knowledge-base/>`_.
-
-.. image:: images/resources.png
-  :class: img-border img-scale
-
-.. image:: images/resource-examples.png
-  :class: img-border img-scale
-
 Getting Help
 ------------
 
