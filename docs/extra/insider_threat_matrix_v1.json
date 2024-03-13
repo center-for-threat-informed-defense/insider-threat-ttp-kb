@@ -3082,7 +3082,7 @@
 			"#31a354ff",
 			"#31a354ff"
 		],
-		"minValue": 1,
+		"minValue": 0,
 		"maxValue": 1
 	},
 	"legendItems": [
