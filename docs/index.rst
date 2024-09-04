@@ -17,7 +17,6 @@ research project.
     analysis
     identifying-threats
     ohi
-    portal-guide
     definitions
     future-work
     acknowledgements

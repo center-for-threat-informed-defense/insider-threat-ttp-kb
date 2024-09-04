@@ -44,10 +44,10 @@ Data Collection
 The data in the knowledge base is reported by contributors and validated by the Center's
 research team. It is represented as TTPs used by the subject and method of detection, in
 line with ATT&CK. Data in the knowledge base is collected through submissions by data
-contributors into a :doc:`secure case submission portal <portal-guide>`. Contributors
-provided a sequential list of TTPs per case, with additional information on the data
-sources used to detect those TTPs, observable human indicators, and notes about the
-subject. The data in the knowledge base includes the following:
+contributors into a secure case submission portal. Contributors provided a sequential
+list of TTPs per case, with additional information on the data sources used to detect
+those TTPs, observable human indicators, and notes about the subject. The data in the
+knowledge base includes the following:
 
 
 .. list-table::
