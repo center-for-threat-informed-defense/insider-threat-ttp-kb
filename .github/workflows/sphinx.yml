@@ -41,7 +41,6 @@ jobs:
         name: insider-threat-ttp-kb-docs-html
         path: docs/_build/dirhtml/
 
-  # TODO Uncomment before publishing repository.
   github_pages:
     # This job only runs when committing or merging to main branch.
     if: github.ref_name == 'main'
@@ -49,7 +48,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: $\{\{ steps.deployment.outputs.page_url \}\}
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
     - name: Setup Pages
