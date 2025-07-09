@@ -8,9 +8,6 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-pandas = "^2.2.0"
-mitreattack-python = "^3.0.2"
-
 
 [tool.poetry.group.dev.dependencies]
 sphinx = "^4.5.0"

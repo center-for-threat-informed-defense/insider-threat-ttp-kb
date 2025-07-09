@@ -32,7 +32,7 @@ jobs:
     - name: Add Poetry to PATH
       run: echo "$HOME/.poetry/bin" >> $GITHUB_PATH
     - name: Install dependencies
-      run: poetry install
+      run: poetry install --no-root
     - name: Build HTML docs
       run: poetry run make docs-ci
     - name: Upload HTML docs
