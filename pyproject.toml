@@ -2,18 +2,20 @@
 name = "insider-threat-ttp-kb"
 version = "2.0.0"
 description = ""
-authors = []
+authors = ["Center for Threat-Informed Defense <ctid@mitre.org>"]
 license = "Apache"
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.10"
+python-slugify = "^8.0.4"
 
 [tool.poetry.group.dev.dependencies]
-sphinx = "^4.5.0"
+sphinx = "6.2"
 sphinx-autobuild = "^2021.3.14"
-sphinx-rtd-theme = "^1.0.0"
 bumpver = "^2023.1126"
+sphinx-wagtail-theme = "^6.5.0"
 
 [build-system]
 requires = ["poetry-core"]

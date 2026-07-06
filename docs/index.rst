@@ -1,8 +1,8 @@
 Insider Threat TTP Knowledge Base |version|
 ===========================================
 
-The Insider Threat Knowledge Base is created and maintained by the `MITRE Engenuity
-Center for Threat-Informed Defense <https://ctid.mitre-engenuity.org/>`__. The Knowledge
+The Insider Threat Knowledge Base is created and maintained by the `MITRE
+Center for Threat-Informed Defense <https://ctid.mitre.org/>`__. The Knowledge
 Base is an emergent resource that aims to advance our collective understanding of the
 technical mechanisms that insider threat actors use. This website documents the tactics,
 techniques, and procedures discovered by organizations who contributed data to this
@@ -25,7 +25,7 @@ research project.
 Notice
 ------
 
-© 2024 MITRE Engenuity. Approved for public release. Document numbers CT0041, CT0102.
+© 2024 Center for Threat-Informed Defense. Approved for public release. Document numbers CT0041, CT0102.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
 file except in compliance with the License. You may obtain a copy of the License at
