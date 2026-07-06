@@ -40,7 +40,7 @@ defense:
 - **Apply the methodology and share your data.** We seek to learn about your insider
   threat use cases and data sources, enabling us to mature this KB and raise the level
   of difficulty for any insider. Help us expand the knowledge base by contributing your
-  data. Contact us at ctid@mitre-engenuity.org to learn more about contributing to the
+  data. Contact us at ctid@mitre.org to learn more about contributing to the
   knowledge base.
 - **Share your ideas.** We are interested in developing additional resources to help the
   community understand and make threat-informed decisions regarding insider threat. If
@@ -57,12 +57,12 @@ your support. Please see the guidance for contributors if are you interested in
 Please submit
 [issues](https://github.com/center-for-threat-informed-defense/insider-threat-ttp-kb/issues) for
 any technical questions/concerns or contact
-[ctid@mitre-engenuity.org](mailto:ctid@mitre-engenuity.org?subject=subject=Question%20about%20insider-threat-ttp-kb)
+[ctid@mitre.org](mailto:ctid@mitre.org?subject=subject=Question%20about%20insider-threat-ttp-kb)
 directly for more general inquiries.
 
 ## Notice
 
-Copyright 2024 MITRE Engenuity. Approved for public release. Document numbers CT0041,
+Copyright 2024 Center for Threat-Informed Defense. Approved for public release. Document numbers CT0041,
 CT0102.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at

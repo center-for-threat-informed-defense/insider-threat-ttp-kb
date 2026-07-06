@@ -10,7 +10,7 @@ Other Center Projects
     create actionable intelligence for their consumers, and consumers will take specific
     threat-informed action.
 
-`Defending IAAS with ATT&CK <https://center-for-threat-informed-defense.github.io/defending-iaas-with-attack/>`__ - *November 2022*
+`Defending IAAS with ATT&CK <https://ctid.mitre.org/projects/defending-iaas-with-attack/>`__ - *November 2022*
     Defending IaaS with ATT&CK developed an ATT&CK matrix that enables users to easily
     understand and work with the techniques applicable to Infrastructure-as-a-Service
     (IaaS) environments, regardless of whether the attacks target the cloud management
@@ -18,7 +18,7 @@ Other Center Projects
     developed documentation and tools to simplify creating overlays for other domains
     like Industrial Control Systems (ICS) or Operational Technology (OT).
 
-`Sensor Mappings <https://center-for-threat-informed-defense.github.io/sensor-mappings-to-attack/>`__ – *December 2023*
+`Sensor Mappings <https://ctid.mitre.org/projects/sensor-mappings-to-attack/>`__ – *December 2023*
     The Sensor Mappings to ATT&CK Project (SMAP) is a collection of resources to assist
     security operations teams and security leaders with understanding which tools,
     capabilities, and events can help provide visibility into real-world adversary
@@ -27,7 +27,7 @@ Other Center Projects
     that can be collected to concrete logs, sensors, and other security capabilities
     that provide that type of data.
 
-`Sightings Ecosystem <https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/our-work/sightings-ecosystem/>`__  - *February 2022*
+`Sightings Ecosystem <https://ctid.mitre.org/projects/sightings-ecosystem/>`__  - *February 2022*
     This project provides cybersecurity defenders and researchers with critical insight
     into real-world, in the wild adversary behaviors mapped to ATT&CK. The ecosystem
     aims to fundamentally advance the collective ability to see threat activity across
@@ -36,14 +36,14 @@ Other Center Projects
     to ATT&CK, anonymized, and aggregated to produce intelligence describing insights
     from that data.
 
-`Summiting The Pyramid <https://center-for-threat-informed-defense.github.io/summiting-the-pyramid/>`__ – *September 2023*
+`Summiting The Pyramid <https://ctid.mitre.org/projects/summiting-the-pyramid/>`__ – *September 2023*
     Many analytics are dependent on specific tools or artifacts. Adversaries can easily
     evade these with low-cost changes that exploit the dependencies. This project
     developed a method to evaluate analytics relative to the adversary’s cost to evade.
     We further created approaches and tips for defenders to make their analytics less
     evadable. We demonstrated the methodology with a core set of analytics.
 
-`Threat Report ATT&CK Mapper <https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/our-work/threat-report-attck-mapper-tram/>`__ - *August 2023*
+`Threat Report ATT&CK Mapper <https://ctid.mitre.org/projects/threat-report-attck-mapper-tram/>`__ - *August 2023*
     Many analytics are dependent on specific tools or artifacts. Adversaries can easily
     evade these with low-cost changes that exploit the dependencies. This project
     developed a method to evaluate analytics relative to the adversary’s cost to evade.
